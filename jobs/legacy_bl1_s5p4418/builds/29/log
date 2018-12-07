@@ -1,0 +1,116 @@
+Triggered by Gerrit: https://review.gerrithub.io/435953
+Building in workspace /var/lib/jenkins/workspace/legacy_bl1_s5p4418
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins8567299937898892252.sh
+/var/lib/jenkins/workspace/legacy_bl1_s5p4418
+Current Project dir if Empty False
+Dir make Time : 1543885693
+Now Time is : 1543888455
+Diff Time is : 2762
+#---------------- git pull start --------------------#
+Removing obj/
+Removing out/
+Your branch is up-to-date with 'origin/nexell'.
+From https://review.gerrithub.io/NexellCorp/bl1_s5p4418
+ * branch            nexell     -> FETCH_HEAD
+Already up-to-date.
+#---------------- git pull End ----------------------#
+
+Already on 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Switched to a new branch 'jenkins-build'
+Branch jenkins-build set up to track remote branch nexell from origin.
+========================================
+947f28a70419dac3761fb9eab396c4ed3f2c13ae
+========================================
+_none_
+projectName : bl1_s5p4418
+commitID    : 947f28a70419dac3761fb9eab396c4ed3f2c13ae
+branchName  : nexell
+status      : open
+json parse start
+printInfo : ready
+===========================================================
+ Make CherryPick Info Running...
+===========================================================
+
+ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+gerritQuery cmd : ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+{"type":"stats","rowCount":0,"runTimeMilliseconds":0,"moreChanges":false}
+
+search revision ...
+There is no exist revision infomation!
+printInfo : not_cherrypick
+===========================================================
+ Have not CherryPick Info...
+===========================================================
+
+printInfo : end
+===========================================================
+ Success CherryPick...
+===========================================================
+
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins5090723471146900201.sh
+========================================
+ environment setup 
+========================================
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins6086961025287110792.sh
+========================================
+ nxp4330-navi-ref build start 
+========================================
+[compile....src/startup.S]
+[compile....src/armv7_libs.S]
+[compile....src/devices/clock.c]
+[compile....src/devices/clkpwr.c]
+[compile....src/main.c]
+[compile....src/subcpu.c]
+[compile....src/plat_pm.c]
+[compile....src/devices/ema.c]
+[compile....src/devices/resetcon.c]
+[compile....src/devices/gpio.c]
+[compile....src/devices/serial.c]
+[compile....src/libstd.c]
+[compile....src/devices/gic.c]
+[compile....src/devices/memory/ddr3/ddr3_sdram.c]
+[compile....src/devices/memory/memory.c]
+[compile....src/crc.c]
+[compile....src/build_info.c]
+[compile....src/printf.c]
+[compile....src/board/board_navi.c]
+[compile....src/nxp4330.c]
+[compile....src/plat_load.c]
+[compile....src/boot/iUSBBOOT.c]
+[compile....src/non_secure.c]
+[compile....src/devices/CRYPTO.c]
+[compile....src/devices/i2c_gpio.c]
+[compile....src/devices/pmic/pmic.c]
+[compile....src/devices/pmic/nxe1500.c]
+[compile....src/devices/pmic/nxe2000.c]
+[compile....src/devices/pmic/mp8845.c]
+[compile....src/devices/pmic/axp228.c]
+[compile....src/boot/iSDHCBOOT.c]
+[link.... out/bl1-navi.elf]
+[binary.... out/bl1-navi.bin]
+./tools/bingen -c NXP4330 -i out/bl1-navi.bin -o out/bl1-emmcboot.bin -l 0xFFFF0000 -e 0xFFFF0000 -d SDMMC -u 2 -a 0x10200
+----------------------------------------------------
+ NXP4330 2ndboot Binary file Information.        
+ SDMMC Binary Boot Mode 	 		
+ Input  Binary File : out/bl1-navi.bin		
+ Output Binary File : out/bl1-emmcboot.bin		
+ Input  Binary size : 24396 Byte (24KB)	
+ Output Binary size : 24396 Byte (24KB)   
+----------------------------------------------------
+ NSIH(Header) Information.             
+ SDMMC Binary Boot Mode 	
+  -> DevicePort :        2h		
+  -> DeviceAddr :    10200h			
+  -> DeviceType :        3h			
+  -> LoadSize	:     5F4Ch			
+  -> LoadAddr	: FFFF0000h			
+  -> LauchAddr	: FFFF0000h			
+  -> SigNature	: 4849534Eh			
+  -> CRC32	:  3EE03F1h			
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins1371295299264788098.sh
+Switched to branch 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Deleted branch jenkins-build (was 7c7e7d5).
+Finished: SUCCESS

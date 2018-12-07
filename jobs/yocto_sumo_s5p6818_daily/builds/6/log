@@ -1,0 +1,254 @@
+Started by user [8mha:////4FlN9SIAIeL1DM3Dr7nZlucy63JsMJ0Nqr9nq9Wz+cKpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZ+/dLi1CL9vIqs1LzszLxiAKzzsnXEAAAA[0mNexell Jenkins
+Building in workspace /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily
+[yocto_sumo_s5p6818_daily] $ /bin/bash /tmp/jenkins4424230836587640982.sh
+***************************************
+   Jenkins - Yocto environment setup   
+***************************************
+************************************
+   Yocto Sumo s5p6818 qt            
+************************************
+HEAD is now at dcfcb58... qtbase: don't use thumb for armv[45]
+meta-qt5 branch changed!! to 5.6.x
+Can't do inplace edit: . is not a regular file.
+Can't do inplace edit: ./files is not a regular file.
+Can't do inplace edit: ./recipes-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qttools is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt5-creator is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebengine is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtdeclarative is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebkit is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwayland is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtquickcontrols is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt3d is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtimageformats is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtbase is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtmultimedia is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles/qt5-demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/packagegroups is not a regular file.
+Can't do inplace edit: ./recipes-qt/libconnman-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qsiv is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/qt5nmapper is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/cinematicexperience is not a regular file.
+Can't do inplace edit: ./recipes-qt/meta is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit/maliit-framework-qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/quazip is not a regular file.
+Can't do inplace edit: ./lib is not a regular file.
+Can't do inplace edit: ./lib/recipetool is not a regular file.
+Can't do inplace edit: ./.git is not a regular file.
+Can't do inplace edit: ./.git/rr-cache is not a regular file.
+Can't do inplace edit: ./.git/hooks is not a regular file.
+Can't do inplace edit: ./.git/info is not a regular file.
+Can't do inplace edit: ./.git/svn is not a regular file.
+Can't do inplace edit: ./.git/logs is not a regular file.
+Can't do inplace edit: ./.git/refs is not a regular file.
+Can't open ./.git/shallow: No such file or directory.
+Can't do inplace edit: ./.git/objects is not a regular file.
+Can't do inplace edit: ./recipes-devtools is not a regular file.
+Can't do inplace edit: ./recipes-devtools/gdb is not a regular file.
+Can't do inplace edit: ./classes is not a regular file.
+Can't do inplace edit: ./conf is not a regular file.
+Can't do inplace edit: ./licenses is not a regular file.
+[47;34m Select targets : s5p6818-avn-ref [0m
+[47;34m Select imageTypes : 5.6.x [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       .bbappend files generate                     [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/arm-trusted-firmware/arm-trusted-firmware_%.bbappend  ---> OK 
+arm-trusted-firmware_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p4418.bbappend  ---> OK 
+bl1-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p6818.bbappend  ---> OK 
+bl1-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl2/bl2-s5p4418.bbappend  ---> OK 
+bl2-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/armv7-dispatcher/dispatcher-s5p4418.bbappend  ---> OK 
+dispatcher-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-camera_%.bbappend  ---> OK 
+gst-plugins-camera_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_%.bbappend  ---> OK 
+gst-plugins-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_%.bbappend  ---> OK 
+gst-plugins-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_%.bbappend  ---> OK 
+gst-plugins-video-dec_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_%.bbappend  ---> OK 
+gst-plugins-video-sink_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/l-loader/l-loader_%.bbappend  ---> OK 
+l-loader_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/libdrm-nx_%.bbappend  ---> OK 
+libdrm-nx_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p4418.bbappend  ---> OK 
+linux-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p6818.bbappend  ---> OK 
+linux-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-drm-allocator_%.bbappend  ---> OK 
+nx-drm-allocator_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-gst-meta_%.bbappend  ---> OK 
+nx-gst-meta_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-renderer_%.bbappend  ---> OK 
+nx-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-scaler_%.bbappend  ---> OK 
+nx-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-v4l2_%.bbappend  ---> OK 
+nx-v4l2_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-video-api_%.bbappend  ---> OK 
+nx-video-api_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-build_%.bbappend  ---> OK 
+optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-client_%.bbappend  ---> OK 
+optee-client_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-linuxdriver_%.bbappend  ---> OK 
+optee-linuxdriver_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-os_%.bbappend  ---> OK 
+optee-os_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-test_%.bbappend  ---> OK 
+optee-test_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-multimedia/smart-voice-app/smart-voice-testapp.bbappend  ---> OK 
+smart-voice-testapp.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-application/testsuite/testsuite_%.bbappend  ---> OK 
+testsuite_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/u-boot/u-boot-nexell.bbappend  ---> OK 
+u-boot-nexell.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-graphics/xorg-driver/xf86-video-armsoc-nexell_%.bbappend  ---> OK 
+xf86-video-armsoc-nexell_%.bbappend
+[47;34m ------------------------ Generate Done ! ------------------------- [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+file name : ./Makefile
+dir name : ./kernel-4.4.x
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5 /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+Finally kernel dirname : ./kernel-4.4.x
+ROOT PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily
+Kernel PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x
+kernel Makefile exist
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bbappend
+Linux Kernel VERSION = 4.4.83
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       Bitbake Auto Running                         [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+local.conf override : MACHINE = "s5p6818-avn-ref"
+local.conf override : DL_DIR = "${TOPDIR}/../downloads"
+local.conf override : SSTATE_DIR = "${TOPDIR}/sstate-cache"
+local.conf override : PACKAGECONFIG_FB_pn-qtbase = "kms"
+local.conf override : PACKAGECONFIG_DISTRO_pn-qtbase = "accessibility linuxfb eglfs fontconfig alsa tslib gles2 glib examples tools openssl"
+local.conf override : DISTRO_FEATURES_append = " nexell-qt5.6"
+local.conf override : DISTRO_FEATURES_append = " nexell-mali-qt"
+local.conf override : DISTRO_FEATURES_append = " qt-default-platform-eglfs"
+local.conf override : BBMASK = " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.4.x "
+local.conf override : BBMASK += " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.10.x "
+local.conf override : DISTRO_FEATURES_append = " zeroconf"
+local.conf override : PACKAGECONFIG_append_pn-qtmultimedia  = " gstreamer"
+local.conf override : 
+local.conf override : DISTRO_FEATURES_remove = " x11"
+local.conf override : DISTRO_FEATURES_append = " systemd opengl"
+local.conf override : VIRTUAL-RUNTIME_init_manager = "systemd"
+local.conf override : VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+local.conf override : CORE_IMAGE_EXTRA_INSTALL += "wayland iputils"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_virtual/libgles1 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgles2 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/egl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libopencl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgl = "mesa"
+local.conf override : PREFERRED_PROVIDER_virtual/mesa = "mesa"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_libgbm = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_libgbm-dev = "nexell-drm-mali-qt"
+local.conf override : 
+local.conf override : LICENSE_FLAGS_WHITELIST = "commercial"
+local.conf override : GLIBC_GENERATE_LOCALES = "ko_KR.EUC-KR ko_KR.UTF-8 en_GB.UTF-8 en_US.UTF-8"
+local.conf override : IMAGE_LINGUAS = " ko-kr en-us en-gb"
+[0;33m                                                                    [0m
+[0;33m #########  Start bitbake pre operateion for optee & ATF ########## [0m
+[0;33m                                                                    [0m
+[0;33m #########  Already Done, optee & ATF pre-fetch & pre-unpack ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+[0;33m #########  Already same machine name built ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                          All Build                                 [0m
+[47;34m ------------------------------------------------------------------ [0m
+WARNING: Layer nexell should set LAYERSERIES_COMPAT_nexell in its conf/layer.conf file to list the core layer names it is compatible with.
+WARNING: Layer nexell should set LAYERSERIES_COMPAT_nexell in its conf/layer.conf file to list the core layer names it is compatible with.
+Loading cache...done.
+Parsing recipes...done.
+Initialising tasks...WARNING: Unable to get checksum for arm-trusted-firmware SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/arm-trusted-firmware/.git/shallow'
+WARNING: Unable to get checksum for libdrm-nx SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/libdrm/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-video-sink SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-video-sink/.git/shallow'
+WARNING: Unable to get checksum for optee-os SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_os/.git/shallow'
+WARNING: Unable to get checksum for u-boot-nexell SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/u-boot/u-boot-2016.01/.git/shallow'
+WARNING: Unable to get checksum for optee-linuxdriver SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_linuxdriver/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-video-dec SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-video-dec/.git/shallow'
+WARNING: Unable to get checksum for testsuite SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/apps/testsuite/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-camera SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-camera/.git/shallow'
+WARNING: Unable to get checksum for nx-v4l2 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-v4l2/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-renderer SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-renderer/.git/shallow'
+WARNING: Unable to get checksum for optee-client SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_client/.git/shallow'
+WARNING: Unable to get checksum for nx-drm-allocator SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-drm-allocator/.git/shallow'
+WARNING: Unable to get checksum for nx-scaler SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-scaler/.git/shallow'
+WARNING: Unable to get checksum for l-loader SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/l-loader/.git/shallow'
+WARNING: Unable to get checksum for nx-gst-meta SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-gst-meta/.git/shallow'
+WARNING: Unable to get checksum for optee-test SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_test/.git/shallow'
+WARNING: Unable to get checksum for optee-build SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_build/.git/shallow'
+WARNING: Unable to get checksum for bl1-s5p6818 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/bl1/bl1-s5p6818/.git/shallow'
+WARNING: Unable to get checksum for nx-video-api SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-video-api/.git/shallow'
+WARNING: Unable to get checksum for nx-renderer SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-renderer/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-scaler SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-scaler/.git/shallow'
+WARNING: Unable to get checksum for linux-s5p6818 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x/.git/shallow'
+WARNING: Unable to get checksum for linux-s5p6818 SRC_URI entry vmlinux: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x/arch/arm64/boot/vmlinux'
+done.
+ERROR: qtquick1-5.6.3+gitAUTOINC+b934c54583-r0 do_compile: oe_runmake failed
+ERROR: qtquick1-5.6.3+gitAUTOINC+b934c54583-r0 do_compile: Function failed: do_compile (log file is located at /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/temp/log.do_compile.11043)
+ERROR: Logfile of failure stored in: /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/temp/log.do_compile.11043
+ERROR: Task (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5/recipes-qt/qt5/qtquick1_git.bb:do_compile) failed with exit code '1'
+Log data follows:
+| DEBUG: Executing shell function do_compile
+| NOTE: make -j 56 MAKEFLAGS=-j 56 OE_QMAKE_COMPILER=aarch64-poky-linux-gcc  --sysroot=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot OE_QMAKE_CC=aarch64-poky-linux-gcc  --sysroot=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot OE_QMAKE_CXX=aarch64-poky-linux-g++  --sysroot=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot OE_QMAKE_CFLAGS= -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0=/usr/src/debug/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0 -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot= -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot-native=  OE_QMAKE_CXXFLAGS= -O2 -pipe -g -feliminate-unused-debug-types -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0=/usr/src/debug/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0 -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot= -fdebug-prefix-map=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot-native=  -fvisibility-inlines-hidden OE_QMAKE_LINK=aarch64-poky-linux-g++  --sysroot=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot OE_QMAKE_LDFLAGS=-Wl,-O1 -Wl,--hash-style=gnu -Wl,--as-needed OE_QMAKE_AR=aarch64-poky-linux-ar OE_QMAKE_STRIP=echo OE_QMAKE_WAYLAND_SCANNER=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot-native/usr/bin/wayland-scanner OE_QMAKE_INCDIR_QT=/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot//usr/include/qt5
+| cd src/ && ( test -e Makefile || /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot-native/usr/bin/qt5/qmake /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/git/src/src.pro -o Makefile ) && make -f Makefile
+| make[1]: Entering directory '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/build/src'
+| cd declarative/ && ( test -e Makefile || /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/recipe-sysroot-native/usr/bin/qt5/qmake /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/git/src/declarative/declarative.pro -o Makefile ) && make -f Makefile
+| make[2]: Entering directory '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/build/src/declarative'
+| rm -f libQt5Declarative.so.5.6.3 libQt5Declarative.so libQt5Declarative.so.5 libQt5Declarative.so.5.6
+| linking ../../lib/libQt5Declarative.so.5.6.3
+| .obj/qdeclarativestateoperations.o: file not recognized: File truncated
+| collect2: error: ld returned 1 exit status
+| Makefile:810: recipe for target '../../lib/libQt5Declarative.so.5.6.3' failed
+| make[2]: *** [../../lib/libQt5Declarative.so.5.6.3] Error 1
+| make[2]: Leaving directory '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/build/src/declarative'
+| Makefile:44: recipe for target 'sub-declarative-make_first-ordered' failed
+| make[1]: *** [sub-declarative-make_first-ordered] Error 2
+| make[1]: Leaving directory '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/build/src'
+| Makefile:45: recipe for target 'sub-src-make_first' failed
+| make: *** [sub-src-make_first] Error 2
+| ERROR: oe_runmake failed
+| WARNING: exit code 1 from a shell command.
+| ERROR: Function failed: do_compile (log file is located at /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/aarch64-poky-linux/qtquick1/5.6.3+gitAUTOINC+b934c54583-r0/temp/log.do_compile.11043)
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: jenkins@nexell.co.kr
+Finished: FAILURE

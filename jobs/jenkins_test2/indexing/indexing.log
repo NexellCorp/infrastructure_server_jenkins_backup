@@ -1,0 +1,27 @@
+Started by user [8mha:////4Gd/kc4+MsECXS0hP6hslLQ3VTJwQaGdAYkfA212A3THAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgZ+/dLi1CL9vIqs1LzszLxiALXDLPvEAAAA[0mNexell Jenkins BlueOcean
+[Fri Nov 30 14:30:32 KST 2018] Starting branch indexing...
+[8mha:////4DSdE3MYqKz4GWN+YoNoWj8K/v7w44Ger6OOvr6isYlUAAAAhB+LCAAAAAAAAP9b85aBtbiIwSa/KF0vKzUvOzOvODlTryCnNB3I0kvPLMkoTYpPKkrMS86IL84vLUpO1XPPLPEoTXLOzyvOz0n1yy9JZYAARiYGRi8GzpLM3NTiksTcgooiBqmM0pTi/Dy9ZIhiPayaGCoKgHR6ssTdAwAVW22ejgAAAA==[0mConnecting to https://api.github.com using nxjenkins/****** (GitHub Access Token)
+Examining [8mha:////4ETzIxtsCTy+KBTPRdcsST1IK9Eq13SAe4dIS04je+WXAAAAqx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiQKGHQzigpKSi20tdPzyzJKE0C6srV90utSM3Jcc4vKtDPSs3Lzswrji9JLS4xAgAZkDgdsAAAAA==[0mNexellCorp/jenkins_test2
+
+  Checking branches...
+
+  Getting remote branches...
+
+    Checking branch [8mha:////4PigVHMlI3a2kVMY5vmuPAAD2KLFwFx13jnMBbWsDOsAAAAAsx+LCAAAAAAAAP9djLENwjAQRY8gMgAlYoZYogAJlCoNSFEaBkAGTrYTx7bOFxTWYA1oGIJx2IEgOl7zX/Pf4w2TSDDX3Tl6l528i95itr0GJGtcU3nGZX5/5rfwSiDZQWrRKdYljDuyDNOylhcprHRK7JmMU5ueYPaXK377jcGPUQLQh0FShpVmDnEthDKsu+PwakWFPVpbeAqiRtcYFw+MkReCCVG0MjLSBzgFCQK8AAAA[0mmaster
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: master (48b7b6c9fd04006df5f1bc38ac02d4072a660207 → 55deddaf76f1075d508f0e8fc0ff4d484746b978)
+Scheduled build for branch: master
+
+  1 branches were processed
+
+  Checking pull-requests...
+
+  Getting remote pull requests...
+
+  0 pull requests were processed
+
+Finished examining NexellCorp/jenkins_test2
+
+[Fri Nov 30 14:30:35 KST 2018] Finished branch indexing. Indexing took 3.2 sec
+Finished: SUCCESS

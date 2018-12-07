@@ -1,0 +1,78 @@
+Retriggered by user nxjenkins for Gerrit: https://review.gerrithub.io/435579
+Building in workspace /var/lib/jenkins/workspace/legacy_bl1_s5p4418
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins6246123640011947520.sh
+/var/lib/jenkins/workspace/legacy_bl1_s5p4418
+Current Project dir if Empty True
+#---------------- git Clone start --------------------#
+git clone -b nexell https://review.gerrithub.io/NexellCorp/bl1_s5p4418 ./
+Cloning into '.'...
+#----------------  git Clone End ---------------------#
+
+Already on 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Switched to a new branch 'jenkins-build'
+Branch jenkins-build set up to track remote branch nexell from origin.
+========================================
+4d1d203648d0be79c03aaeb9c8723f92ecc9eb36
+========================================
+_none_
+projectName : bl1_s5p4418
+commitID    : 4d1d203648d0be79c03aaeb9c8723f92ecc9eb36
+branchName  : nexell
+status      : open
+Host key verification failed.
+json parse start
+printInfo : ready
+===========================================================
+ Make CherryPick Info Running...
+===========================================================
+
+ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+gerritQuery cmd : ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+Traceback (most recent call last):
+  File "/var/lib/jenkins/scripts/gitJsonParse.py", line 220, in <module>
+    main(sys.argv[1:])
+  File "/var/lib/jenkins/scripts/gitJsonParse.py", line 204, in main
+    getInfo()
+  File "/var/lib/jenkins/scripts/gitJsonParse.py", line 106, in getInfo
+    output=subprocess.check_output(_gerritQuery,shell=True)
+  File "/usr/lib/python2.7/subprocess.py", line 574, in check_output
+    raise CalledProcessError(retcode, cmd, output=output)
+subprocess.CalledProcessError: Command 'ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets' returned non-zero exit status 255
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: jenkins@nexell.co.kr
+ERROR: Could not connect to SMTP host: localhost, port: 25
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 25;
+  nested exception is:
+	java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1934)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:171)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1844)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:286)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:231)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1900)
+	... 18 more
+Finished: FAILURE

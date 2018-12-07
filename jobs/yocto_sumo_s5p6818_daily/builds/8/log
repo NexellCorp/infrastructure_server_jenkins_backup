@@ -1,0 +1,487 @@
+Started by user [8mha:////4FlN9SIAIeL1DM3Dr7nZlucy63JsMJ0Nqr9nq9Wz+cKpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZ+/dLi1CL9vIqs1LzszLxiAKzzsnXEAAAA[0mNexell Jenkins
+Building in workspace /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily
+[yocto_sumo_s5p6818_daily] $ /bin/bash /tmp/jenkins7338056741120753160.sh
+***************************************
+   Jenkins - Yocto environment setup   
+***************************************
+************************************
+   Yocto Sumo s5p6818 qt            
+************************************
+HEAD is now at dcfcb58... qtbase: don't use thumb for armv[45]
+meta-qt5 branch changed!! to 5.6.x
+Can't do inplace edit: . is not a regular file.
+Can't do inplace edit: ./files is not a regular file.
+Can't do inplace edit: ./recipes-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qttools is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt5-creator is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebengine is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtdeclarative is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebkit is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwayland is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtquickcontrols is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt3d is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtimageformats is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtbase is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtmultimedia is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles/qt5-demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/packagegroups is not a regular file.
+Can't do inplace edit: ./recipes-qt/libconnman-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qsiv is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/qt5nmapper is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/cinematicexperience is not a regular file.
+Can't do inplace edit: ./recipes-qt/meta is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit/maliit-framework-qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/quazip is not a regular file.
+Can't do inplace edit: ./lib is not a regular file.
+Can't do inplace edit: ./lib/recipetool is not a regular file.
+Can't do inplace edit: ./.git is not a regular file.
+Can't do inplace edit: ./.git/rr-cache is not a regular file.
+Can't do inplace edit: ./.git/hooks is not a regular file.
+Can't do inplace edit: ./.git/info is not a regular file.
+Can't do inplace edit: ./.git/svn is not a regular file.
+Can't do inplace edit: ./.git/logs is not a regular file.
+Can't do inplace edit: ./.git/refs is not a regular file.
+Can't open ./.git/shallow: No such file or directory.
+Can't do inplace edit: ./.git/objects is not a regular file.
+Can't do inplace edit: ./recipes-devtools is not a regular file.
+Can't do inplace edit: ./recipes-devtools/gdb is not a regular file.
+Can't do inplace edit: ./classes is not a regular file.
+Can't do inplace edit: ./conf is not a regular file.
+Can't do inplace edit: ./licenses is not a regular file.
+[47;34m Select targets : s5p6818-avn-ref [0m
+[47;34m Select imageTypes : 5.6.x [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       .bbappend files generate                     [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/arm-trusted-firmware/arm-trusted-firmware_%.bbappend  ---> OK 
+arm-trusted-firmware_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p4418.bbappend  ---> OK 
+bl1-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p6818.bbappend  ---> OK 
+bl1-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/bl2/bl2-s5p4418.bbappend  ---> OK 
+bl2-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/armv7-dispatcher/dispatcher-s5p4418.bbappend  ---> OK 
+dispatcher-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-camera_%.bbappend  ---> OK 
+gst-plugins-camera_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_%.bbappend  ---> OK 
+gst-plugins-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_%.bbappend  ---> OK 
+gst-plugins-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_%.bbappend  ---> OK 
+gst-plugins-video-dec_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_%.bbappend  ---> OK 
+gst-plugins-video-sink_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/l-loader/l-loader_%.bbappend  ---> OK 
+l-loader_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/libdrm-nx_%.bbappend  ---> OK 
+libdrm-nx_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p4418.bbappend  ---> OK 
+linux-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p6818.bbappend  ---> OK 
+linux-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-drm-allocator_%.bbappend  ---> OK 
+nx-drm-allocator_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-gst-meta_%.bbappend  ---> OK 
+nx-gst-meta_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-renderer_%.bbappend  ---> OK 
+nx-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-scaler_%.bbappend  ---> OK 
+nx-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-v4l2_%.bbappend  ---> OK 
+nx-v4l2_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-video-api_%.bbappend  ---> OK 
+nx-video-api_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-build_%.bbappend  ---> OK 
+optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-client_%.bbappend  ---> OK 
+optee-client_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-linuxdriver_%.bbappend  ---> OK 
+optee-linuxdriver_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-os_%.bbappend  ---> OK 
+optee-os_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/optee/optee-test_%.bbappend  ---> OK 
+optee-test_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-multimedia/smart-voice-app/smart-voice-testapp.bbappend  ---> OK 
+smart-voice-testapp.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-application/testsuite/testsuite_%.bbappend  ---> OK 
+testsuite_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-bsp/u-boot/u-boot-nexell.bbappend  ---> OK 
+u-boot-nexell.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/tools/bbappend-files/recipes-graphics/xorg-driver/xf86-video-armsoc-nexell_%.bbappend  ---> OK 
+xf86-video-armsoc-nexell_%.bbappend
+[47;34m ------------------------ Generate Done ! ------------------------- [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+file name : ./Makefile
+dir name : ./kernel-4.4.x
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5 /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+Finally kernel dirname : ./kernel-4.4.x
+ROOT PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily
+Kernel PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x
+kernel Makefile exist
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bbappend
+Linux Kernel VERSION = 4.4.83
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       Bitbake Auto Running                         [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+local.conf override : MACHINE = "s5p6818-avn-ref"
+local.conf override : DL_DIR = "${TOPDIR}/../downloads"
+local.conf override : SSTATE_DIR = "${TOPDIR}/sstate-cache"
+local.conf override : PACKAGECONFIG_FB_pn-qtbase = "kms"
+local.conf override : PACKAGECONFIG_DISTRO_pn-qtbase = "accessibility linuxfb eglfs fontconfig alsa tslib gles2 glib examples tools openssl"
+local.conf override : DISTRO_FEATURES_append = " nexell-qt5.6"
+local.conf override : DISTRO_FEATURES_append = " nexell-mali-qt"
+local.conf override : DISTRO_FEATURES_append = " qt-default-platform-eglfs"
+local.conf override : BBMASK = " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.4.x "
+local.conf override : BBMASK += " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.10.x "
+local.conf override : DISTRO_FEATURES_append = " zeroconf"
+local.conf override : PACKAGECONFIG_append_pn-qtmultimedia  = " gstreamer"
+local.conf override : 
+local.conf override : DISTRO_FEATURES_remove = " x11"
+local.conf override : DISTRO_FEATURES_append = " systemd opengl"
+local.conf override : VIRTUAL-RUNTIME_init_manager = "systemd"
+local.conf override : VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+local.conf override : CORE_IMAGE_EXTRA_INSTALL += "wayland iputils"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_virtual/libgles1 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgles2 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/egl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libopencl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgl = "mesa"
+local.conf override : PREFERRED_PROVIDER_virtual/mesa = "mesa"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_libgbm = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_libgbm-dev = "nexell-drm-mali-qt"
+local.conf override : 
+local.conf override : LICENSE_FLAGS_WHITELIST = "commercial"
+local.conf override : GLIBC_GENERATE_LOCALES = "ko_KR.EUC-KR ko_KR.UTF-8 en_GB.UTF-8 en_US.UTF-8"
+local.conf override : IMAGE_LINGUAS = " ko-kr en-us en-gb"
+[0;33m                                                                    [0m
+[0;33m #########  Start bitbake pre operateion for optee & ATF ########## [0m
+[0;33m                                                                    [0m
+[0;33m #########  Already Done, optee & ATF pre-fetch & pre-unpack ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+[0;33m #########  Already same machine name built ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                          All Build                                 [0m
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                      Clean Build True                              [0m
+[47;34m ------------------------------------------------------------------ [0m
+
+ ------------------------------------------------------------------ 
+                        kernel clean                                
+ ------------------------------------------------------------------ 
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/kernel-4.4.x /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+  CLEAN   .
+  CLEAN   arch/arm64/kernel/vdso
+  CLEAN   arch/arm64/kernel
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   kernel/debug/kdb
+  CLEAN   kernel
+  CLEAN   lib
+  CLEAN   usr
+  CLEAN   arch/arm64/boot
+  CLEAN   arch/arm64/boot/dts/nexell
+  CLEAN   .tmp_versions
+  CLEAN   scripts/basic
+  CLEAN   scripts/dtc
+  CLEAN   scripts/kconfig
+  CLEAN   scripts/mod
+  CLEAN   scripts
+  CLEAN   include/config include/generated arch/arm64/include/generated
+  CLEAN   .config .config.old .version Module.symvers
+/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-qt5
+[47;34m CLEAN TARGET : optee-build optee-linuxdriver nexell-qt virtual/kernel u-boot-nexell bl1-s5p4418 [0m
+[47;34m CLEAN TARGET : libdrm-nx nx-drm-allocator nx-gst-meta nx-renderer nx-scaler nx-v4l2 nx-video-api nx-vidtex [0m
+[47;34m CLEAN TARGET : gst-plugins-camera gst-plugins-renderer gst-plugins-scaler gst-plugins-video-dec gst-plugins-video-sink [0m
+WARNING: Layer nexell should set LAYERSERIES_COMPAT_nexell in its conf/layer.conf file to list the core layer names it is compatible with.
+NOTE: Your conf/bblayers.conf has been automatically updated.
+WARNING: Layer nexell should set LAYERSERIES_COMPAT_nexell in its conf/layer.conf file to list the core layer names it is compatible with.
+Loading cache...done.
+Loaded 3541 entries from dependency cache.
+Parsing recipes...done.
+Parsing of 2463 .bb files complete (2373 cached, 90 parsed). 3561 targets, 452 skipped, 27 masked, 0 errors.
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.38.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "aarch64-poky-linux"
+MACHINE              = "s5p6818-avn-ref"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.5.1"
+TUNE_FEATURES        = "aarch64"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "HEAD:3b8dc3a88e28546100a6b0b2f2cc37f44e619371"
+meta-nexell-distro   = "HEAD:6b9beb27e8b970dab65aa9152c276797a1809846"
+meta-qt5             = "HEAD:dcfcb581ec65ef1b96f4840a81ea9d9f2297b394"
+meta-multimedia      
+meta-oe              = "HEAD:2bb21ef27c4b0c9d52d30b3b2c5a0160fd02b966"
+meta                 = "HEAD:361c40d4bea101875747eac9c8cc46e92ced173f"
+
+Initialising tasks...done.
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 1 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-linuxdriver_git.bb:do_buildclean)
+NOTE: Running task 2 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_git.bb:do_buildclean)
+NOTE: Running task 3 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/bl1/bl1-s5p4418.bb:do_buildclean)
+NOTE: Running task 4 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bb:do_buildclean)
+NOTE: Running task 5 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/u-boot/u-boot-nexell.bb:do_buildclean)
+NOTE: Running task 6 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-vidtex.bb:do_clean)
+NOTE: Running task 7 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-gst-meta_git.bb:do_clean)
+NOTE: Running task 8 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-v4l2_git.bb:do_clean)
+NOTE: Running task 9 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-drm-allocator_git.bb:do_clean)
+NOTE: Running task 10 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-camera_git.bb:do_clean)
+NOTE: Running task 11 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_git.bb:do_clean)
+NOTE: Running task 12 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-core/images/nexell-qt.bb:do_clean)
+NOTE: Running task 13 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_git.bb:do_clean)
+NOTE: Running task 14 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-video-api_git.bb:do_clean)
+NOTE: Running task 15 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-scaler_git.bb:do_clean)
+NOTE: Running task 16 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-renderer_git.bb:do_clean)
+NOTE: Running task 17 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/libdrm-nx_git.bb:do_clean)
+NOTE: Running task 18 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_git.bb:do_clean)
+NOTE: Running task 19 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_git.bb:do_clean)
+NOTE: recipe nx-vidtex-1-0.1: task do_clean: Started
+NOTE: recipe nx-gst-meta-1-0.1: task do_clean: Started
+NOTE: recipe nx-drm-allocator-1-0.1: task do_clean: Started
+NOTE: recipe nx-scaler-1-0.1: task do_clean: Started
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_clean: Started
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_clean: Started
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_clean: Started
+NOTE: recipe nx-renderer-1-0.1: task do_clean: Started
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_clean: Started
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_buildclean: Started
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_buildclean: Started
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_buildclean: Started
+NOTE: recipe optee-build-NEXELL-0.1: task do_buildclean: Started
+NOTE: recipe nx-vidtex-1-0.1: task do_clean: Succeeded
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_clean: Started
+NOTE: Running task 20 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-vidtex.bb:do_cleansstate)
+NOTE: recipe nx-v4l2-1-0.1: task do_clean: Started
+NOTE: recipe gst-plugins-camera-1-0.1: task do_clean: Started
+NOTE: recipe nx-video-api-1-0.1: task do_clean: Started
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_buildclean: Succeeded
+NOTE: Running task 21 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-linuxdriver_git.bb:do_clean)
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_buildclean: Succeeded
+NOTE: recipe nexell-qt-1.0-r0: task do_clean: Started
+NOTE: recipe nx-vidtex-1-0.1: task do_cleansstate: Started
+NOTE: Running task 22 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/bl1/bl1-s5p4418.bb:do_clean)
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_buildclean: Started
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_clean: Started
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_clean: Started
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_clean: Succeeded
+NOTE: Running task 23 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/bl1/bl1-s5p4418.bb:do_cleansstate)
+NOTE: recipe nx-vidtex-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 24 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-vidtex.bb:do_cleanall)
+NOTE: recipe nx-drm-allocator-1-0.1: task do_clean: Succeeded
+NOTE: Running task 25 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-drm-allocator_git.bb:do_cleansstate)
+NOTE: recipe nx-vidtex-1-0.1: task do_cleanall: Started
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe nx-drm-allocator-1-0.1: task do_cleansstate: Started
+NOTE: recipe optee-build-NEXELL-0.1: task do_buildclean: Succeeded
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_clean: Succeeded
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_clean: Succeeded
+NOTE: Running task 26 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_git.bb:do_clean)
+NOTE: recipe nx-vidtex-1-0.1: task do_cleanall: Succeeded
+NOTE: Running task 27 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_git.bb:do_cleansstate)
+NOTE: Running task 28 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_git.bb:do_cleansstate)
+NOTE: recipe nx-v4l2-1-0.1: task do_clean: Succeeded
+NOTE: Running task 29 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-v4l2_git.bb:do_cleansstate)
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_clean: Succeeded
+NOTE: Running task 30 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_git.bb:do_cleansstate)
+NOTE: recipe nexell-qt-1.0-r0: task do_clean: Succeeded
+NOTE: Running task 31 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-core/images/nexell-qt.bb:do_cleansstate)
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe optee-build-NEXELL-0.1: task do_clean: Started
+NOTE: recipe nx-v4l2-1-0.1: task do_cleansstate: Started
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_cleansstate: Started
+NOTE: recipe nx-drm-allocator-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 32 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-drm-allocator_git.bb:do_cleanall)
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 33 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/bl1/bl1-s5p4418.bb:do_cleanall)
+NOTE: recipe nx-scaler-1-0.1: task do_clean: Succeeded
+NOTE: Running task 34 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-scaler_git.bb:do_cleansstate)
+NOTE: recipe nx-gst-meta-1-0.1: task do_clean: Succeeded
+NOTE: Running task 35 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-gst-meta_git.bb:do_cleansstate)
+NOTE: recipe gst-plugins-camera-1-0.1: task do_clean: Succeeded
+NOTE: Running task 36 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-camera_git.bb:do_cleansstate)
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_clean: Succeeded
+NOTE: Running task 37 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_git.bb:do_cleansstate)
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_clean: Succeeded
+NOTE: Running task 38 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/libdrm-nx_git.bb:do_cleansstate)
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_clean: Succeeded
+NOTE: Running task 39 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-linuxdriver_git.bb:do_cleansstate)
+NOTE: recipe nx-renderer-1-0.1: task do_clean: Succeeded
+NOTE: Running task 40 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-renderer_git.bb:do_cleansstate)
+NOTE: recipe nx-video-api-1-0.1: task do_clean: Succeeded
+NOTE: Running task 41 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-video-api_git.bb:do_cleansstate)
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: recipe nx-video-api-1-0.1: task do_cleansstate: Started
+NOTE: recipe nx-drm-allocator-1-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-camera-1-0.1: task do_cleansstate: Started
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_cleansstate: Started
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe nx-gst-meta-1-0.1: task do_cleansstate: Started
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe nx-renderer-1-0.1: task do_cleansstate: Started
+NOTE: recipe nexell-qt-1.0-r0: task do_cleansstate: Started
+NOTE: Running task 42 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_git.bb:do_cleanall)
+NOTE: recipe nx-scaler-1-0.1: task do_cleansstate: Started
+NOTE: Running task 43 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_git.bb:do_cleanall)
+NOTE: recipe nx-drm-allocator-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe bl1-s5p4418-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_buildclean: Succeeded
+NOTE: Running task 44 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/u-boot/u-boot-nexell.bb:do_clean)
+NOTE: recipe nx-v4l2-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 45 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-v4l2_git.bb:do_cleanall)
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 46 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_git.bb:do_cleanall)
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-video-dec-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe gst-plugins-video-sink-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe gst-plugins-camera-1-0.1: task do_cleansstate: Succeeded
+NOTE: recipe nx-scaler-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 47 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-camera_git.bb:do_cleanall)
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 48 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-scaler_git.bb:do_cleanall)
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_cleansstate: Succeeded
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 49 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-linuxdriver_git.bb:do_cleanall)
+NOTE: Running task 50 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/libdrm-nx_git.bb:do_cleanall)
+NOTE: Running task 51 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_git.bb:do_cleanall)
+NOTE: recipe nx-renderer-1-0.1: task do_cleansstate: Succeeded
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_clean: Started
+NOTE: recipe nx-video-api-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 52 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-video-api_git.bb:do_cleanall)
+NOTE: Running task 53 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-renderer_git.bb:do_cleanall)
+NOTE: recipe nx-v4l2-1-0.1: task do_cleanall: Started
+NOTE: recipe nx-gst-meta-1-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 54 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-nexell-libs/nx-libs/nx-gst-meta_git.bb:do_cleanall)
+NOTE: recipe nx-v4l2-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-renderer-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe nexell-qt-1.0-r0: task do_cleansstate: Succeeded
+NOTE: Running task 55 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-core/images/nexell-qt.bb:do_cleanall)
+NOTE: recipe nx-scaler-1-0.1: task do_cleanall: Started
+NOTE: recipe nx-scaler-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe gst-plugins-camera-1-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-camera-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe nx-gst-meta-1-0.1: task do_cleanall: Started
+NOTE: recipe gst-plugins-scaler-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe nx-renderer-1-0.1: task do_cleanall: Started
+NOTE: recipe nx-gst-meta-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe optee-build-NEXELL-0.1: task do_clean: Succeeded
+NOTE: recipe libdrm-nx-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe nx-renderer-1-0.1: task do_cleanall: Succeeded
+NOTE: Running task 56 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_git.bb:do_cleansstate)
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe nx-video-api-1-0.1: task do_cleanall: Started
+NOTE: recipe optee-linuxdriver-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe nx-video-api-1-0.1: task do_cleanall: Succeeded
+NOTE: recipe nexell-qt-1.0-r0: task do_cleanall: Started
+NOTE: recipe nexell-qt-1.0-r0: task do_cleanall: Succeeded
+NOTE: recipe optee-build-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe optee-build-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 57 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_git.bb:do_cleanall)
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_clean: Succeeded
+NOTE: Running task 58 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/u-boot/u-boot-nexell.bb:do_cleansstate)
+NOTE: recipe optee-build-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe optee-build-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_cleansstate: Started
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_cleansstate: Succeeded
+NOTE: Running task 59 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/u-boot/u-boot-nexell.bb:do_cleanall)
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_cleanall: Started
+NOTE: recipe u-boot-nexell-NEXELL-0.1: task do_cleanall: Succeeded
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_buildclean: Succeeded
+NOTE: Running task 60 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bb:do_clean)
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_clean: Started
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_clean: Succeeded
+NOTE: Running task 61 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bb:do_cleansstate)
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_cleansstate: Started
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_cleansstate: Succeeded
+NOTE: Running task 62 of 62 (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p6818.bb:do_cleanall)
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_cleanall: Started
+NOTE: recipe linux-s5p6818-1_4.4.83-r0: task do_cleanall: Succeeded
+NOTE: Tasks Summary: Attempted 62 tasks of which 0 didn't need to be rerun and all succeeded.
+
+Summary: There were 2 WARNING messages shown.
+WARNING: Layer nexell should set LAYERSERIES_COMPAT_nexell in its conf/layer.conf file to list the core layer names it is compatible with.
+Loading cache...done.
+Parsing recipes...done.
+Initialising tasks...WARNING: Unable to get checksum for arm-trusted-firmware SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/arm-trusted-firmware/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-video-sink SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-video-sink/.git/shallow'
+WARNING: Unable to get checksum for linux-s5p6818 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x/.git/shallow'
+WARNING: Unable to get checksum for linux-s5p6818 SRC_URI entry vmlinux: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/kernel/./kernel-4.4.x/arch/arm64/boot/vmlinux'
+WARNING: Unable to get checksum for gst-plugins-video-dec SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-video-dec/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-scaler SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-scaler/.git/shallow'
+WARNING: Unable to get checksum for libdrm-nx SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/libdrm/.git/shallow'
+WARNING: Unable to get checksum for nx-drm-allocator SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-drm-allocator/.git/shallow'
+WARNING: Unable to get checksum for optee-client SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_client/.git/shallow'
+WARNING: Unable to get checksum for nx-scaler SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-scaler/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-renderer SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-renderer/.git/shallow'
+WARNING: Unable to get checksum for gst-plugins-camera SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/gst-plugins-camera/.git/shallow'
+WARNING: Unable to get checksum for l-loader SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/l-loader/.git/shallow'
+WARNING: Unable to get checksum for u-boot-nexell SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/u-boot/u-boot-2016.01/.git/shallow'
+WARNING: Unable to get checksum for bl1-s5p6818 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/bl1/bl1-s5p6818/.git/shallow'
+WARNING: Unable to get checksum for nx-gst-meta SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-gst-meta/.git/shallow'
+WARNING: Unable to get checksum for nx-v4l2 SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-v4l2/.git/shallow'
+WARNING: Unable to get checksum for testsuite SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/apps/testsuite/.git/shallow'
+WARNING: Unable to get checksum for nx-renderer SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-renderer/.git/shallow'
+WARNING: Unable to get checksum for optee-os SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_os/.git/shallow'
+WARNING: Unable to get checksum for optee-test SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_test/.git/shallow'
+WARNING: Unable to get checksum for optee-linuxdriver SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_linuxdriver/.git/shallow'
+WARNING: Unable to get checksum for optee-build SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/secure/optee/optee_build/.git/shallow'
+WARNING: Unable to get checksum for nx-video-api SRC_URI entry shallow: [Errno 2] No such file or directory: '/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/library/nx-video-api/.git/shallow'
+done.
+WARNING: optee-build-NEXELL-0.1 do_package: optee-build-dev-NEXELL was registered as shlib provider for libteec.so.1.0, changing it to optee-build-NEXELL because it was built later
+ERROR: optee-linuxdriver-NEXELL-0.1 do_configure: Function failed: do_configure (log file is located at /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/s5p6818_avn_ref-poky-linux/optee-linuxdriver/NEXELL-0.1/temp/log.do_configure.171936)
+ERROR: Logfile of failure stored in: /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/s5p6818_avn_ref-poky-linux/optee-linuxdriver/NEXELL-0.1/temp/log.do_configure.171936
+ERROR: Task (/var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-linuxdriver_git.bb:do_configure) failed with exit code '1'
+Log data follows:
+| DEBUG: Executing python function externalsrc_configure_prefunc
+| DEBUG: Python function externalsrc_configure_prefunc finished
+| DEBUG: Executing shell function do_configure
+| /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/s5p6818_avn_ref-poky-linux/optee-linuxdriver/NEXELL-0.1/temp/run.do_configure.171936: 112: cd: can't cd to /home/suker/buildYocto/sumoYocto/secure/optee/optee_linuxdriver
+| WARNING: exit code 2 from a shell command.
+| ERROR: Function failed: do_configure (log file is located at /var/lib/jenkins/workspace/yocto_sumo_s5p6818_daily/yocto/build/build-s5p6818-avn-ref-qt/tmp/work/s5p6818_avn_ref-poky-linux/optee-linuxdriver/NEXELL-0.1/temp/log.do_configure.171936)
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: jenkins@nexell.co.kr
+Finished: FAILURE

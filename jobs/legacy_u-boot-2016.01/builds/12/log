@@ -1,0 +1,593 @@
+Triggered by Gerrit: https://review.gerrithub.io/436238
+Building in workspace /var/lib/jenkins/workspace/legacy_u-boot-2016.01
+[legacy_u-boot-2016.01] $ /bin/sh /tmp/jenkins8081509198409638001.sh
+/var/lib/jenkins/workspace/legacy_u-boot-2016.01
+Current Project dir if Empty False
+Dir make Time : 1544062044
+Now Time is : 1544062045
+Diff Time is : 1
+#---------------- git pull start --------------------#
+Your branch is up-to-date with 'origin/nexell'.
+From https://review.gerrithub.io/NexellCorp/u-boot-2016.01
+ * branch            nexell     -> FETCH_HEAD
+Already up-to-date.
+#---------------- git pull End ----------------------#
+
+Already on 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Switched to a new branch 'jenkins-build'
+Branch jenkins-build set up to track remote branch nexell from origin.
+========================================
+8fc201c745867c144d47199740c11af28644cf61
+========================================
+_none_
+projectName : NexellCorp/u-boot-2016.01
+commitID    : 8fc201c745867c144d47199740c11af28644cf61
+branchName  : nexell
+status      : open
+json parse start
+printInfo : ready
+===========================================================
+ Make CherryPick Info Running...
+===========================================================
+
+ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:NexellCorp/u-boot-2016.01 --patch-sets
+gerritQuery cmd : ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:NexellCorp/u-boot-2016.01 --patch-sets
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"Ic0d25906410a362c596af08361aca67040d341c4","number":436238,"subject":"s5p4418: u-boot: Fix Quickboot feature","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436238","commitMessage":"s5p4418: u-boot: Fix Quickboot feature\n\nThis patch enable to init mmc in usb boot mode (quickboot).\n\nChange-Id: Ic0d25906410a362c596af08361aca67040d341c4\nSigned-off-by: sukhwan.lee \u003ctusukanii@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544062049,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"8fc201c745867c144d47199740c11af28644cf61","parents":["66438e9f2a43162fc0a0388be2a7272393759642"],"ref":"refs/changes/38/436238/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"name":"sukhwan.lee","email":"tusukanii@nexell.co.kr","username":""},"kind":"REWORK","sizeInsertions":3,"sizeDeletions":-3}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I51682cdece20cbc52836ec96da70db90dbe381c2","number":436237,"subject":"dts: s5p4418: daudio_ref: Change fb address","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436237","commitMessage":"dts: s5p4418: daudio_ref: Change fb address\n\nLogo clear issue when fastboot downloads\n\nThis patch changes fb address 0x50000000 to 0x7a000000\n\nChange-Id: I51682cdece20cbc52836ec96da70db90dbe381c2\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544062047,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"66438e9f2a43162fc0a0388be2a7272393759642","parents":["70822a69b558ed79e34a134c6fcd591f61059468"],"ref":"refs/changes/37/436237/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":1,"sizeDeletions":-1}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I1d1bc29de217729d6365c967f6ca780966e3a737","number":436236,"subject":"s5p4418: convergence_svmc : Add burning feature","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436236","commitMessage":"s5p4418: convergence_svmc : Add burning feature\n\nThis patch added burning feature.\n\nChange-Id: I1d1bc29de217729d6365c967f6ca780966e3a737\nSigned-off-by: Jonghsin Park \u003cpjsin865@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544062010,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"70822a69b558ed79e34a134c6fcd591f61059468","parents":["af8866d505631d25fcd8eaaa348a81a3a0e1f873"],"ref":"refs/changes/36/436236/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"name":"Eric.park","email":"pjsin865@nexell.co.kr","username":"pjsin"},"kind":"REWORK","sizeInsertions":11,"sizeDeletions":0}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I37860709c758be1d91c306ac246427e74fb3edae","number":436235,"subject":"s5p4418: con_svma : Add burning feature","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436235","commitMessage":"s5p4418: con_svma : Add burning feature\n\nThis patch added burning feature.\n\nChange-Id: I37860709c758be1d91c306ac246427e74fb3edae\nSigned-off-by: Jonghsin Park \u003cpjsin865@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061976,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"af8866d505631d25fcd8eaaa348a81a3a0e1f873","parents":["5ec3d01b71ad10f2e60bae5d45692ee31483004c"],"ref":"refs/changes/35/436235/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"name":"Eric.park","email":"pjsin865@nexell.co.kr","username":"pjsin"},"kind":"REWORK","sizeInsertions":11,"sizeDeletions":0}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"Ic15817599fa72fa46e491c32dfb4453ded108c47","number":436234,"subject":"s5p4418: con_svma: Add Micom(STM32) Fusing Command","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436234","commitMessage":"s5p4418: con_svma: Add Micom(STM32) Fusing Command\n\nThis patch enable Micom(STM32) Fusing command.\n\nChange-Id: Ic15817599fa72fa46e491c32dfb4453ded108c47\nSigned-off-by: sukhwan.lee \u003ctusukanii@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061945,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"5ec3d01b71ad10f2e60bae5d45692ee31483004c","parents":["d0b94de903be323da82f0a444b8572e6be625210"],"ref":"refs/changes/34/436234/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"name":"sukhwan.lee","email":"tusukanii@nexell.co.kr","username":""},"kind":"REWORK","sizeInsertions":1505,"sizeDeletions":-16}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"If42068038f4a4ff39ffbd5a42d3a67c84fe35194","number":436233,"subject":"s5p4418: convergence board: modify display layer","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436233","commitMessage":"s5p4418: convergence board: modify display layer\n\nThis patch modify display layer 0 to 1.\n\nChange-Id: If42068038f4a4ff39ffbd5a42d3a67c84fe35194\nSigned-off-by: Min GyoungBo \u003cmingyoungbo@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061915,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"d0b94de903be323da82f0a444b8572e6be625210","parents":["1d8db5a2f7d9f9fe8f87e8f111854286a3f771d2"],"ref":"refs/changes/33/436233/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"mingyoungbo@nexell.co.kr","username":"mingyoungbo"},"kind":"REWORK","sizeInsertions":2,"sizeDeletions":-2}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"Iec4c340694f8b308a97a3682dec8e2fc3e2846cb","number":436245,"subject":"s5p4418: configs: Update config header","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436245","commitMessage":"s5p4418: configs: Update config header\n\ndaudio_ref, navi_ref\nThis patch reverts to bootanimation disabled.\n\nChange-Id: Iec4c340694f8b308a97a3682dec8e2fc3e2846cb\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"878a4ebdd0dc6dd51d378e08fbce9bd987b2f048","parents":["b0f26697d8c80c9da69a95a2dd3f91b3a0f6ed28"],"ref":"refs/changes/45/436245/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":2,"sizeDeletions":-10}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I305c7aff28ecf374b9b7855288484de8d7f60a27","number":436244,"subject":"s5o4418: navi_ref: Fix flicker issue","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436244","commitMessage":"s5o4418: navi_ref: Fix flicker issue\n\nThis patch fixes issue where flicker phenomenon occurs\nwhen there is no boot logo.\n\nChange-Id: I305c7aff28ecf374b9b7855288484de8d7f60a27\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"b0f26697d8c80c9da69a95a2dd3f91b3a0f6ed28","parents":["fe3312381ee4cd4a766552a98693e593cc949892"],"ref":"refs/changes/44/436244/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":4,"sizeDeletions":0}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"Id4c5042cf850ea258c83e81747f5ea26d74cc2a6","number":436243,"subject":"s5p4418: daudio_ref: Update daudio_ref","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436243","commitMessage":"s5p4418: daudio_ref: Update daudio_ref\n\nThis patch adds nx_rearcam quickboot\nThis patch adds nx_rearcam related configs.\nThis patch fixes issue where flicker phenomenon occurs\nwhen there is no boot logo.\n\nChange-Id: Id4c5042cf850ea258c83e81747f5ea26d74cc2a6\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"fe3312381ee4cd4a766552a98693e593cc949892","parents":["47696607a455486f595061a8f31c4e8b5281aff5"],"ref":"refs/changes/43/436243/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":136,"sizeDeletions":-9}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"Ife125dfa5bbe2fbd9628e143926d11835381649b","number":436242,"subject":"s5p4418: navi_ref: Update quickboot features","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436242","commitMessage":"s5p4418: navi_ref: Update quickboot features\n\nThis patch adds quickboot features.\n\nChange-Id: Ife125dfa5bbe2fbd9628e143926d11835381649b\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"47696607a455486f595061a8f31c4e8b5281aff5","parents":["175e1de6c227c3b14b79873dabc4b0a4c48387f9"],"ref":"refs/changes/42/436242/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":37,"sizeDeletions":-9}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I0054bd1215aea2e3ae1fd49bd770eaa9d222303e","number":436241,"subject":"s5p4418: navi_ref: Update config header","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436241","commitMessage":"s5p4418: navi_ref: Update config header\n\nLine alignment.\nThis patch sets env values correctly.\n\nChange-Id: I0054bd1215aea2e3ae1fd49bd770eaa9d222303e\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"175e1de6c227c3b14b79873dabc4b0a4c48387f9","parents":["e21766e25e8914a2d730230cbcdd1c15bc835e72"],"ref":"refs/changes/41/436241/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":52,"sizeDeletions":-51}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I4ff570a99e659727f766bab321108e9eb8681304","number":436240,"subject":"s5p4418: daudio_ref: Update config header","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436240","commitMessage":"s5p4418: daudio_ref: Update config header\n\nLine alignment.\n\nChange-Id: I4ff570a99e659727f766bab321108e9eb8681304\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"e21766e25e8914a2d730230cbcdd1c15bc835e72","parents":["dcc7d2b7235b7a8292dac50ee90456acc4c17a78"],"ref":"refs/changes/40/436240/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":37,"sizeDeletions":-37}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I6df0e086aeb7a4352d583d86df6be1810b6c6447","number":436239,"subject":"dts: s5p4418: navi_ref: Change fb address","owner":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"url":"https://review.gerrithub.io/436239","commitMessage":"dts: s5p4418: navi_ref: Change fb address\n\nLogo clear issue when fastboot downloads\nThis patch changes fb address 0x50000000 to 0x7a000000\n\nChange-Id: I6df0e086aeb7a4352d583d86df6be1810b6c6447\nSigned-off-by: Lee Geunjeong \u003ckjlee@nexell.co.kr\u003e\n","createdOn":1544061865,"lastUpdated":1544061865,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"dcc7d2b7235b7a8292dac50ee90456acc4c17a78","parents":["8fc201c745867c144d47199740c11af28644cf61"],"ref":"refs/changes/39/436239/1","uploader":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"createdOn":1544061865,"author":{"email":"kjlee@nexell.co.kr","username":"kjlee81"},"kind":"REWORK","sizeInsertions":1,"sizeDeletions":-1}]}
+{"project":"NexellCorp/u-boot-2016.01","branch":"nexell","id":"I71983dac437ddb95a6063f43eaa6aa87f29f18e8","number":435955,"subject":"Jenkinsfile update","owner":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"url":"https://review.gerrithub.io/435955","commitMessage":"Jenkinsfile update\n\nChange-Id: I71983dac437ddb95a6063f43eaa6aa87f29f18e8\nSigned-off-by: suker \u003csuker@nexell.co.kr\u003e\n","createdOn":1543889766,"lastUpdated":1543893800,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"abc7545c5ec0f1ecb53a8abea5bf3fadcd15f3ae","parents":["1d8db5a2f7d9f9fe8f87e8f111854286a3f771d2"],"ref":"refs/changes/55/435955/1","uploader":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"createdOn":1543889766,"author":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"kind":"REWORK","sizeInsertions":16,"sizeDeletions":0}]}
+{"type":"stats","rowCount":14,"runTimeMilliseconds":26,"moreChanges":false}
+
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+search revision ...
+ --> 8fc201c745867c144d47199740c11af28644cf61  --> parent : 66438e9f2a43162fc0a0388be2a7272393759642
+search revision ...
+ --> 66438e9f2a43162fc0a0388be2a7272393759642  --> parent : 70822a69b558ed79e34a134c6fcd591f61059468
+search revision ...
+ --> 70822a69b558ed79e34a134c6fcd591f61059468  --> parent : af8866d505631d25fcd8eaaa348a81a3a0e1f873
+search revision ...
+ --> af8866d505631d25fcd8eaaa348a81a3a0e1f873  --> parent : 5ec3d01b71ad10f2e60bae5d45692ee31483004c
+search revision ...
+ --> 5ec3d01b71ad10f2e60bae5d45692ee31483004c  --> parent : d0b94de903be323da82f0a444b8572e6be625210
+search revision ...
+ --> d0b94de903be323da82f0a444b8572e6be625210  --> parent : 1d8db5a2f7d9f9fe8f87e8f111854286a3f771d2
+search revision ...
+There is no exist revision infomation!
+make done cherrypick
+refs/changes/38/436238/1
+make done cherrypick
+refs/changes/37/436237/1
+make done cherrypick
+refs/changes/36/436236/1
+make done cherrypick
+refs/changes/35/436235/1
+make done cherrypick
+refs/changes/34/436234/1
+make done cherrypick
+refs/changes/33/436233/1
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/cFrom ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/33/436233/1 -> FETCH_HEAD
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <jenkins@8b83502c5787.(none)>) not allowed
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/34/436234/1 -> FETCH_HEAD
+error: Your local changes would be overwritten by cherry-pick.
+hint: Commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/35/436235/1 -> FETCH_HEAD
+error: Your local changes would be overwritten by cherry-pick.
+hint: Commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/36/436236/1 -> FETCH_HEAD
+error: Your local changes would be overwritten by cherry-pick.
+hint: Commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/37/436237/1 -> FETCH_HEAD
+error: Your local changes would be overwritten by cherry-pick.
+hint: Commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+Total 64 (delta 51), reused 62 (delta 51)
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * branch            refs/changes/38/436238/1 -> FETCH_HEAD
+error: Your local changes would be overwritten by cherry-pick.
+hint: Commit your changes or stash them to proceed.
+fatal: cherry-pick failed
+hanges/38/436238/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/changes/37/436237/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/changes/36/436236/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/changes/35/436235/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/changes/34/436234/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/u-boot-2016.01 refs/changes/33/436233/1 && git cherry-pick FETCH_HEAD
+printInfo : cherrypick
+===========================================================
+ Apply CherryPick ...
+===========================================================
+
+printInfo : end
+===========================================================
+ Success CherryPick...
+===========================================================
+
+[legacy_u-boot-2016.01] $ /bin/sh /tmp/jenkins974808823311940294.sh
+##################################################################################
+s5p4418-navi-ref uboot build start !
+##################################################################################
+  CLEAN   dts/../arch/arm/dts
+  CLEAN   dts
+  CLEAN   examples/standalone
+  CLEAN   tools/nexell
+  CLEAN   tools
+  CLEAN   tools/lib tools/common
+  CLEAN   include/bmp_logo.h include/bmp_logo_data.h u-boot.lds u-boot.srec u-boot.map u-boot.cfg u-boot.bin u-boot System.map
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config.h
+  GEN     include/autoconf.mk
+  GEN     include/autoconf.mk.dep
+  CHK     include/config/uboot.release
+  CHK     include/generated/timestamp_autogenerated.h
+  UPD     include/generated/timestamp_autogenerated.h
+  CFG     u-boot.cfg
+  CHK     include/generated/version_autogenerated.h
+  CC      lib/asm-offsets.s
+  CC      arch/arm/lib/asm-offsets.s
+  CHK     include/generated/generic-asm-offsets.h
+  CHK     include/generated/asm-offsets.h
+  HOSTCC  tools/img2srec
+  HOSTCC  tools/bmp_logo
+  HOSTCC  tools/mkenvimage.o
+  HOSTCC  tools/nexell/SECURE_BINGEN.o
+  HOSTCC  tools/nexell/BOOT_BINGEN.o
+  HOSTCC  tools/os_support.o
+  HOSTLD  tools/nexell/SECURE_BINGEN
+  WRAP    tools/lib/crc32.c
+  HOSTCC  tools/aisimage.o
+  HOSTCC  tools/atmelimage.o
+  WRAP    tools/common/bootm.c
+  HOSTCC  tools/default_image.o
+  HOSTLD  tools/nexell/BOOT_BINGEN
+  WRAP    tools/lib/fdtdec_common.c
+  WRAP    tools/lib/fdtdec.c
+  HOSTCC  tools/fit_common.o
+  HOSTCC  tools/fit_image.o
+  LDS     u-boot.lds
+  HOSTCC  tools/gpimage.o
+  HOSTCC  tools/gpimage-common.o
+  WRAP    tools/common/image-fit.c
+  HOSTCC  tools/image-host.o
+  WRAP    tools/common/image.c
+  HOSTCC  tools/imagetool.o
+  HOSTCC  tools/imximage.o
+  HOSTCC  tools/kwbimage.o
+  WRAP    tools/lib/md5.c
+  HOSTCC  tools/lpc32xximage.o
+  HOSTCC  tools/mxsimage.o
+  HOSTCC  tools/omapimage.o
+  HOSTCC  tools/pblimage.o
+  HOSTCC  tools/pbl_crc32.o
+  WRAP    tools/lib/rc4.c
+  HOSTCC  tools/rkcommon.o
+  HOSTCC  tools/rkimage.o
+  HOSTCC  tools/rksd.o
+  HOSTCC  tools/rkspi.o
+  HOSTCC  tools/socfpgaimage.o
+  WRAP    tools/lib/sha1.c
+  WRAP    tools/lib/sha256.c
+  WRAP    tools/common/hash.c
+  HOSTCC  tools/ublimage.o
+  HOSTCC  tools/zynqimage.o
+  WRAP    tools/lib/libfdt/fdt.c
+  WRAP    tools/lib/libfdt/fdt_ro.c
+  WRAP    tools/lib/libfdt/fdt_rw.c
+  WRAP    tools/lib/libfdt/fdt_strerror.c
+  WRAP    tools/lib/libfdt/fdt_wip.c
+  WRAP    tools/lib/libfdt/fdt_region.c
+  HOSTCC  tools/dumpimage.o
+  HOSTCC  tools/mkimage.o
+  HOSTCC  tools/proftool
+  HOSTCC  tools/fdtgrep.o
+tools/bmp_logo --gen-info ./tools/logos/denx.bmp > include/bmp_logo.h
+tools/bmp_logo --gen-data ./tools/logos/denx.bmp > include/bmp_logo_data.h
+  HOSTCC  tools/lib/crc32.o
+  HOSTCC  tools/common/bootm.o
+  HOSTCC  tools/lib/fdtdec_common.o
+  HOSTCC  tools/lib/fdtdec.o
+  HOSTCC  tools/common/image-fit.o
+  HOSTCC  tools/common/image.o
+  HOSTCC  tools/lib/md5.o
+  HOSTCC  tools/lib/rc4.o
+  HOSTCC  tools/lib/sha1.o
+  HOSTCC  tools/lib/sha256.o
+  HOSTCC  tools/common/hash.o
+  HOSTCC  tools/lib/libfdt/fdt.o
+  HOSTCC  tools/lib/libfdt/fdt_ro.o
+  HOSTCC  tools/lib/libfdt/fdt_rw.o
+  HOSTCC  tools/lib/libfdt/fdt_strerror.o
+  HOSTCC  tools/lib/libfdt/fdt_wip.o
+  HOSTCC  tools/lib/libfdt/fdt_region.o
+  HOSTLD  tools/mkenvimage
+  HOSTLD  tools/dumpimage
+  HOSTLD  tools/mkimage
+  HOSTLD  tools/fdtgrep
+  LD      arch/arm/cpu/built-in.o
+  CC      arch/arm/cpu/armv7/cache_v7.o
+  LD      board/nexell/common/built-in.o
+  CC      arch/arm/mach-nexell/clock.o
+  AS      arch/arm/lib/vectors.o
+  CC      board/nexell/s5p4418/navi_ref/board.o
+  AS      arch/arm/lib/crt0.o
+  AS      arch/arm/lib/relocate.o
+  CC      arch/arm/lib/bootm-fdt.o
+  CC      arch/arm/cpu/armv7/cpu.o
+  LD      board/nexell/s5p4418/navi_ref/built-in.o
+  LD      board/nexell/s5p4418/built-in.o
+  CC      arch/arm/cpu/armv7/cp15.o
+  CC      arch/arm/lib/bootm.o
+  CC      arch/arm/cpu/armv7/syslib.o
+  CC      arch/arm/mach-nexell/timer.o
+  AS      arch/arm/cpu/armv7/lowlevel_init.o
+  CC      arch/arm/cpu/armv7/s5p4418/cpu.o
+  CC      arch/arm/lib/sections.o
+  CC      arch/arm/mach-nexell/reset.o
+  CC      arch/arm/lib/stack.o
+  LD      arch/arm/cpu/armv7/s5p4418/built-in.o
+  AS      arch/arm/cpu/armv7/start.o
+  LD      arch/arm/cpu/armv7/built-in.o
+  CC      common/init/board_init.o
+  CC      arch/arm/lib/interrupts.o
+  CC      arch/arm/mach-nexell/nx_gpio.o
+  CC      disk/part.o
+  LD      common/init/built-in.o
+  CC      common/main.o
+  CC      arch/arm/lib/reset.o
+  CC      arch/arm/mach-nexell/tieoff.o
+  CC      common/exports.o
+  CC      disk/part_dos.o
+  CC      arch/arm/lib/cache.o
+  AS      arch/arm/mach-nexell/reg-call.o
+  CC      arch/arm/mach-nexell/nx_sec_reg.o
+  CC      common/hash.o
+  CC      arch/arm/lib/cache-cp15.o
+  CC      arch/arm/mach-nexell/cmd_boot_linux.o
+  CC      disk/part_efi.o
+  AR      arch/arm/lib/lib.a
+  CC      arch/arm/lib/eabi_compat.o
+  CC      arch/arm/mach-nexell/usbid.o
+  LD      arch/arm/lib/built-in.o
+  CC      common/cli_hush.o
+  LD      arch/arm/mach-nexell/built-in.o
+  LD      drivers/adc/built-in.o
+  LD      drivers/block/built-in.o
+  CC      drivers/core/device.o
+  CC      drivers/crypto/fsl/sec.o
+  LD      drivers/crypto/fsl/built-in.o
+  LD      drivers/crypto/rsa_mod_exp/built-in.o
+  LD      drivers/crypto/built-in.o
+  LD      drivers/dfu/built-in.o
+  LD      drivers/hwmon/built-in.o
+  CC      drivers/input/input.o
+  LD      disk/built-in.o
+  LD      drivers/dma/built-in.o
+  CC      common/autoboot.o
+  CC      drivers/core/lists.o
+  CC      drivers/input/key_matrix.o
+  LD      drivers/memory/built-in.o
+  CC      drivers/core/root.o
+  CC      common/board_f.o
+  CC      drivers/core/uclass.o
+  LD      drivers/input/built-in.o
+  CC      drivers/core/util.o
+  CC      drivers/core/device-remove.o
+  CC      drivers/gpio/gpio-uclass.o
+  CC      drivers/core/simple-bus.o
+  CC      common/board_r.o
+  CC      drivers/i2c/i2c-uclass.o
+  CC      drivers/core/dump.o
+  CC      drivers/gpio/nx_gpio.o
+  CC      common/cmd_boot.o
+  LD      drivers/core/built-in.o
+  CC      drivers/misc/nx_i2c_gpio.o
+  CC      common/cmd_bootm.o
+  CC      drivers/i2c/i2c-gpio.o
+  LD      drivers/gpio/built-in.o
+  CC      drivers/i2c/nx_i2c.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/pcmcia/tqm8xx_pcmcia.o
+  LD      drivers/pcmcia/built-in.o
+  CC      drivers/pwm/pwm-nexell.o
+  CC      common/bootm.o
+  LD      drivers/reset/built-in.o
+  CC      drivers/rtc/date.o
+  LD      drivers/i2c/built-in.o
+  CC      drivers/mmc/dw_mmc.o
+  LD      drivers/pwm/built-in.o
+  LD      drivers/soc/built-in.o
+  LD      drivers/sound/built-in.o
+  LD      drivers/rtc/built-in.o
+  LD      drivers/thermal/built-in.o
+  CC      common/bootm_os.o
+  LD      drivers/timer/built-in.o
+  LD      drivers/tpm/built-in.o
+  LD      drivers/twserial/built-in.o
+  CC      drivers/video/dp-uclass.o
+  CC      drivers/video/cfb_console.o
+  CC      drivers/video/nexell_display.o
+  CC      common/cmd_help.o
+  CC      drivers/mmc/mmc.o
+  CC      common/cmd_version.o
+  CC      common/env_attr.o
+  CC      drivers/video/videomodes.o
+  CC      common/env_callback.o
+  CC      common/env_flags.o
+  LD      drivers/mtd/built-in.o
+  LD      drivers/mtd/onenand/built-in.o
+  LD      drivers/mtd/spi/built-in.o
+  LD      drivers/net/built-in.o
+  LD      drivers/video/bridge/built-in.o
+  CC      common/env_mmc.o
+  LD      drivers/watchdog/built-in.o
+  CC      common/cmd_source.o
+  CC      drivers/video/nexell/s5pxx18_dp.o
+  CC      drivers/mmc/nexell_dw_mmc.o
+  CC      drivers/mmc/mmc_write.o
+  CC      common/cmd_bdinfo.o
+  CC      drivers/video/nexell/soc/s5pxx18_soc_dpc.o
+  CC      drivers/video/nexell/s5pxx18_dp_lvds.o
+  CC      common/cmd_bmp.o
+  LD      drivers/mmc/built-in.o
+  LD      drivers/net/phy/built-in.o
+  CC      drivers/video/nexell/soc/s5pxx18_soc_mlc.o
+  CC      drivers/video/nexell/soc/s5pxx18_soc_disptop.o
+  CC      common/cmd_console.o
+  CC      drivers/video/nexell/soc/s5pxx18_soc_disptop_clk.o
+  CC      common/cmd_echo.o
+  CC      common/cmd_elf.o
+  LD      drivers/pci/built-in.o
+  CC      drivers/video/nexell/soc/s5pxx18_soc_lvds.o
+  CC      common/cmd_exit.o
+  LD      drivers/power/built-in.o
+  CC      common/cmd_ext4.o
+  CC      common/cmd_fat.o
+  CC      common/cmd_fdt.o
+  LD      drivers/video/nexell/soc/built-in.o
+  LD      drivers/video/nexell/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  CC      common/fdt_support.o
+  LD      drivers/power/battery/built-in.o
+  CC      common/cmd_gpio.o
+  LD      drivers/power/charger/built-in.o
+  CC      common/cmd_i2c.o
+  CC      common/cmd_itest.o
+  CC      common/cmd_load.o
+  CC      common/cmd_mem.o
+  CC      common/cmd_misc.o
+  CC      common/cmd_mmc.o
+  LD      drivers/power/fuel_gauge/built-in.o
+  CC      common/cmd_mmc_fdisk.o
+  CC      common/cmd_ext4_img_write.o
+  CC      common/cmd_checkhw.o
+  CC      common/cmd_pcmcia.o
+  CC      common/cmd_setexpr.o
+  CC      common/cmd_test.o
+  CC      common/cmd_usb.o
+  LD      drivers/power/mfd/built-in.o
+  CC      common/usb.o
+  CC      drivers/power/pmic/pmic-uclass.o
+  CC      drivers/power/pmic/nxe2000.o
+  CC      common/usb_hub.o
+  CC      drivers/power/regulator/regulator-uclass.o
+  LD      drivers/power/pmic/built-in.o
+  CC      drivers/power/regulator/nxe2000.o
+  CC      common/usb_storage.o
+  CC      drivers/serial/serial.o
+  CC      drivers/spi/spi.o
+  LD      drivers/power/regulator/built-in.o
+  LD      drivers/usb/dwc3/built-in.o
+  CC      drivers/serial/serial_pl01x.o
+  LD      drivers/usb/emul/built-in.o
+  LD      drivers/usb/eth/built-in.o
+  CC      drivers/usb/gadget/epautoconf.o
+  LD      drivers/spi/built-in.o
+  CC      drivers/usb/gadget/config.o
+  LD      drivers/serial/built-in.o
+  CC      common/cmd_fastboot.o
+  CC      drivers/usb/gadget/usbstring.o
+  CC      drivers/usb/gadget/nexell_udc_otg_phy.o
+  CC      common/cmd_usbdown.o
+  CC      drivers/usb/gadget/dwc2_udc_otg.o
+  LD      drivers/usb/gadget/udc/built-in.o
+  CC      drivers/usb/gadget/g_dnl.o
+  CC      drivers/usb/host/usb-uclass.o
+  CC      common/cmd_ximg.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      common/flash.o
+  CC      drivers/usb/gadget/f_fastboot.o
+  CC      common/splash.o
+  CC      common/splash_source.o
+  CC      common/cmd_gpt.o
+  CC      drivers/usb/host/ehci-exynos.o
+  CC      common/cmd_pmic.o
+  CC      common/cmd_regulator.o
+  LD      drivers/usb/host/built-in.o
+  CC      common/cmd_nvedit.o
+  LD      drivers/usb/musb-new/built-in.o
+  CC      common/env_common.o
+  CC      common/bouncebuf.o
+  CC      common/console.o
+  CC      common/dlmalloc.o
+  LD      drivers/usb/musb/built-in.o
+  CC      common/malloc_simple.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/phy/built-in.o
+  CC      common/image.o
+  LD      drivers/usb/ulpi/built-in.o
+  CC      common/image-fdt.o
+  DTC     arch/arm/dts/s5p4418-drone.dtb
+  DTC     arch/arm/dts/s5p4418-artik530-raptor.dtb
+  DTC     arch/arm/dts/s5p4418-avn-ref.dtb
+  DTC     arch/arm/dts/s5p4418-navi-ref.dtb
+  DTC     arch/arm/dts/s5p4418-daudio-ref.dtb
+  DTC     arch/arm/dts/s5p4418-smart-voice.dtb
+  DTC     arch/arm/dts/s5p4418-zh-dragon.dtb
+  CC      fs/fs.o
+  DTC     arch/arm/dts/s5p4418-zh-blackdragon.dtb
+  DTC     arch/arm/dts/s5p4418-zh-hmdragon.dtb
+  DTC     arch/arm/dts/s5p4418-daudio-covi.dtb
+  DTC     arch/arm/dts/s5p4418-daudio-cona.dtb
+  DTC     arch/arm/dts/s5p4418-ff-voice.dtb
+  DTC     arch/arm/dts/s5p4418-clova.dtb
+  CC      common/image-fit.o
+  DTC     arch/arm/dts/s5p4418-svm-ref.dtb
+  DTC     arch/arm/dts/s5p4418-cluster-ref.dtb
+  CC      lib/libfdt/fdt.o
+  DTC     arch/arm/dts/s5p4418-allo-display.dtb
+  DTC     arch/arm/dts/s5p4418-convergence-svmc.dtb
+  DTC     arch/arm/dts/s5p4418-con-svma.dtb
+  DTC     arch/arm/dts/s5p4418-artik533-raptor.dtb
+  CC      lib/libfdt/fdt_ro.o
+  DTC     arch/arm/dts/s5p4418-artik305-raptor.dtb
+  SHIPPED dts/dt.dtb
+  DTB     dts/dt.dtb.S
+  AS      dts/dt.dtb.o
+  CC      fs/ext4/ext4fs.o
+  LD      dts/built-in.o
+  CC      fs/ext4/ext4_common.o
+  CC      net/checksum.o
+  CC      common/memsize.o
+  CC      lib/libfdt/fdt_rw.o
+  CC      common/stdio.o
+  LD      net/built-in.o
+  CC      common/image-sparse.o
+  CC      lib/libfdt/fdt_strerror.o
+  CC      lib/libfdt/fdt_sw.o
+  CC      fs/ext4/dev.o
+  LD      test/built-in.o
+  CC      common/fb_mmc.o
+  CC      fs/fat/fat_write.o
+  CC      lib/libfdt/fdt_wip.o
+  CC      fs/ext4/ext4_write.o
+  CC      lib/libfdt/fdt_empty_tree.o
+  CC      common/cli_simple.o
+  CC      lib/libfdt/fdt_addresses.o
+  CC      lib/libfdt/fdt_region.o
+  CC      common/cli.o
+  LD      lib/libfdt/built-in.o
+  CC      lib/zlib/zlib.o
+  CC      fs/ext4/ext4_journal.o
+  CC      common/cli_readline.o
+  CC      common/command.o
+  CC      fs/fat/file.o
+  CC      fs/ext4/crc16.o
+  LD      fs/ext4/built-in.o
+  CC      common/s_record.o
+  CC      test/dm/cmd_dm.o
+  LD      fs/fat/built-in.o
+  LD      fs/built-in.o
+  CC      lib/crc7.o
+  CC      lib/crc8.o
+  LD      test/dm/built-in.o
+  CC      lib/crc16.o
+  CC      common/xyzModem.o
+  CC      lib/errno_str.o
+  CC      lib/fdtdec_common.o
+  CC      common/cmd_disk.o
+  CC      lib/fdtdec.o
+  LD      lib/zlib/built-in.o
+  CC      lib/gunzip.o
+  CC      lib/initcall.o
+  CC      common/arm_serial_mcu.o
+common/arm_serial_mcu.c: In function 'mcu_serial_txs':
+common/arm_serial_mcu.c:62:3: warning: implicit declaration of function 'serial_mcu_putc' [-Wimplicit-function-declaration]
+common/arm_serial_mcu.c: In function 'read_uart_fifo':
+common/arm_serial_mcu.c:69:2: warning: implicit declaration of function 'serial_mcu_tstc' [-Wimplicit-function-declaration]
+common/arm_serial_mcu.c:70:3: warning: implicit declaration of function 'serial_mcu_getc' [-Wimplicit-function-declaration]
+  CC      lib/lmb.o
+  LD      common/built-in.o
+  CC      lib/ldiv.o
+  CC      lib/md5.o
+  CC      lib/net_utils.o
+  CC      lib/qsort.o
+  CC      lib/rc4.o
+  CC      lib/sha1.o
+  CC      lib/sha256.o
+  CC      lib/strmhz.o
+  CC      lib/list_sort.o
+  CC      lib/hashtable.o
+  CC      lib/errno.o
+  CC      lib/display_options.o
+  CC      lib/crc32.o
+  CC      lib/ctype.o
+  CC      lib/div64.o
+  CC      lib/hang.o
+  CC      lib/linux_compat.o
+  CC      lib/linux_string.o
+  CC      lib/membuff.o
+  CC      lib/string.o
+  CC      lib/time.o
+  CC      lib/uuid.o
+  CC      lib/rand.o
+  CC      lib/vsprintf.o
+  CC      lib/panic.o
+  CC      lib/strto.o
+  LD      lib/built-in.o
+  CC      examples/standalone/stubs.o
+  CC      examples/standalone/hello_world.o
+  LD      examples/standalone/libstubs.o
+  LD      examples/standalone/hello_world
+  OBJCOPY examples/standalone/hello_world.srec
+  OBJCOPY examples/standalone/hello_world.bin
+  LD      u-boot
+  OBJCOPY u-boot.srec
+  OBJCOPY u-boot.bin
+=====================================================================================
+[legacy_u-boot-2016.01] $ /bin/sh /tmp/jenkins9002007524618793365.sh
+Switched to branch 'nexell'
+M	arch/arm/dts/s5p4418-con-svma.dts
+M	arch/arm/dts/s5p4418-convergence-svmc.dts
+Your branch is up-to-date with 'origin/nexell'.
+Deleted branch jenkins-build (was 1d8db5a).
+Finished: SUCCESS

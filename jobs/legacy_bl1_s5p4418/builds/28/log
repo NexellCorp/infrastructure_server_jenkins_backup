@@ -1,0 +1,153 @@
+Retriggered by user nxjenkins for Gerrit: https://review.gerrithub.io/435579
+Building in workspace /var/lib/jenkins/workspace/legacy_bl1_s5p4418
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins3576354250307220329.sh
+/var/lib/jenkins/workspace/legacy_bl1_s5p4418
+Current Project dir if Empty False
+Dir make Time : 1543885549
+Now Time is : 1543885688
+Diff Time is : 139
+#---------------- git pull start --------------------#
+Removing obj/
+Removing out/
+Your branch is up-to-date with 'origin/nexell'.
+From https://review.gerrithub.io/NexellCorp/bl1_s5p4418
+ * branch            nexell     -> FETCH_HEAD
+Already up-to-date.
+#---------------- git pull End ----------------------#
+
+Switched to branch 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Switched to and reset branch 'jenkins-build'
+Branch jenkins-build set up to track remote branch nexell from origin.
+Your branch is up-to-date with 'origin/nexell'.
+========================================
+4d1d203648d0be79c03aaeb9c8723f92ecc9eb36
+========================================
+_none_
+projectName : bl1_s5p4418
+commitID    : 4d1d203648d0be79c03aaeb9c8723f92ecc9eb36
+branchName  : nexell
+status      : open
+Warning: Permanently added the ECDSA host key for IP address '[192.99.233.76]:29418' to the list of known hosts.
+json parse start
+printInfo : ready
+===========================================================
+ Make CherryPick Info Running...
+===========================================================
+
+ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+gerritQuery cmd : ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:bl1_s5p4418 --patch-sets
+{"type":"stats","rowCount":0,"runTimeMilliseconds":0,"moreChanges":false}
+
+search revision ...
+There is no exist revision infomation!
+printInfo : not_cherrypick
+===========================================================
+ Have not CherryPick Info...
+===========================================================
+
+printInfo : end
+===========================================================
+ Success CherryPick...
+===========================================================
+
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins7724187078419281732.sh
+========================================
+ environment setup 
+========================================
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins787018885351205045.sh
+========================================
+ nxp4330-navi-ref build start 
+========================================
+[compile....src/startup.S]
+[compile....src/armv7_libs.S]
+[compile....src/devices/clock.c]
+[compile....src/devices/clkpwr.c]
+[compile....src/main.c]
+[compile....src/subcpu.c]
+[compile....src/plat_pm.c]
+[compile....src/devices/ema.c]
+[compile....src/devices/resetcon.c]
+[compile....src/devices/gpio.c]
+[compile....src/devices/serial.c]
+[compile....src/libstd.c]
+[compile....src/devices/gic.c]
+[compile....src/devices/memory/ddr3/ddr3_sdram.c]
+[compile....src/devices/memory/memory.c]
+[compile....src/crc.c]
+[compile....src/build_info.c]
+[compile....src/printf.c]
+[compile....src/board/board_navi.c]
+[compile....src/nxp4330.c]
+[compile....src/plat_load.c]
+[compile....src/boot/iUSBBOOT.c]
+[compile....src/non_secure.c]
+[compile....src/devices/CRYPTO.c]
+[compile....src/devices/i2c_gpio.c]
+[compile....src/devices/pmic/pmic.c]
+[compile....src/devices/pmic/nxe1500.c]
+[compile....src/devices/pmic/nxe2000.c]
+[compile....src/devices/pmic/mp8845.c]
+[compile....src/devices/pmic/axp228.c]
+[compile....src/boot/iSDHCBOOT.c]
+[link.... out/bl1-navi.elf]
+[binary.... out/bl1-navi.bin]
+./tools/bingen -c NXP4330 -i out/bl1-navi.bin -o out/bl1-emmcboot.bin -l 0xFFFF0000 -e 0xFFFF0000 -d SDMMC -u 2 -a 0x10200
+----------------------------------------------------
+ NXP4330 2ndboot Binary file Information.        
+ SDMMC Binary Boot Mode 	 		
+ Input  Binary File : out/bl1-navi.bin		
+ Output Binary File : out/bl1-emmcboot.bin		
+ Input  Binary size : 24396 Byte (24KB)	
+ Output Binary size : 24396 Byte (24KB)   
+----------------------------------------------------
+ NSIH(Header) Information.             
+ SDMMC Binary Boot Mode 	
+  -> DevicePort :        2h		
+  -> DeviceAddr :    10200h			
+  -> DeviceType :        3h			
+  -> LoadSize	:     5F4Ch			
+  -> LoadAddr	: FFFF0000h			
+  -> LauchAddr	: FFFF0000h			
+  -> SigNature	: 4849534Eh			
+  -> CRC32	:  2CA0FB9h			
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins872712558082331856.sh
+Switched to branch 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Deleted branch jenkins-build (was 7c7e7d5).
+Sending e-mails to: jenkins@nexell.co.kr
+ERROR: Could not connect to SMTP host: localhost, port: 25
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 25;
+  nested exception is:
+	java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1934)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:171)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1844)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:286)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:231)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1900)
+	... 18 more
+Finished: SUCCESS

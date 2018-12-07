@@ -1,0 +1,261 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.GerritCause plugin="gerrit-trigger@2.27.7">
+            <tEvent class="com.sonyericsson.hudson.plugins.gerrit.gerritevents.dto.events.PatchsetCreated">
+              <account>
+                <email>kjlee@nexell.co.kr</email>
+                <username>kjlee81</username>
+              </account>
+              <provider>
+                <name>NexellCorpGerritHub</name>
+                <host>review.gerrithub.io</host>
+                <port>29418</port>
+                <scheme>ssh</scheme>
+                <url>https://review.gerrithub.io/</url>
+                <version>2.15.6-34-gd93736f81b</version>
+              </provider>
+              <receivedOn>1544061868989</receivedOn>
+              <eventCreatedOn>2018-12-06 02:04:29.0 UTC</eventCreatedOn>
+              <change>
+                <project>NexellCorp/u-boot-2016.01</project>
+                <branch>nexell</branch>
+                <id>I305c7aff28ecf374b9b7855288484de8d7f60a27</id>
+                <number>436244</number>
+                <subject>s5o4418: navi_ref: Fix flicker issue</subject>
+                <commitMessage>s5o4418: navi_ref: Fix flicker issue
+
+This patch fixes issue where flicker phenomenon occurs
+when there is no boot logo.
+
+Change-Id: I305c7aff28ecf374b9b7855288484de8d7f60a27
+Signed-off-by: Lee Geunjeong &lt;kjlee@nexell.co.kr&gt;
+</commitMessage>
+                <owner>
+                  <email>kjlee@nexell.co.kr</email>
+                  <username>kjlee81</username>
+                </owner>
+                <url>https://review.gerrithub.io/436244</url>
+                <createdOn>2018-12-06 02:04:25.0 UTC</createdOn>
+                <status>NEW</status>
+              </change>
+              <patchSet>
+                <number>1</number>
+                <revision>b0f26697d8c80c9da69a95a2dd3f91b3a0f6ed28</revision>
+                <ref>refs/changes/44/436244/1</ref>
+                <draft>false</draft>
+                <kind>REWORK</kind>
+                <uploader>
+                  <email>kjlee@nexell.co.kr</email>
+                  <username>kjlee81</username>
+                </uploader>
+                <author>
+                  <email>kjlee@nexell.co.kr</email>
+                  <username>kjlee81</username>
+                </author>
+                <parents>
+                  <string>fe3312381ee4cd4a766552a98693e593cc949892</string>
+                </parents>
+                <createdOn>2018-12-06 02:04:25.0 UTC</createdOn>
+              </patchSet>
+            </tEvent>
+            <silentMode>false</silentMode>
+            <context>
+              <event class="com.sonymobile.tools.gerrit.gerritevents.dto.events.PatchsetCreated" reference="../../tEvent"/>
+              <thisBuild>
+                <buildNumber>18</buildNumber>
+                <projectId>legacy_u-boot-2016.01</projectId>
+              </thisBuild>
+            </context>
+            <url>https://review.gerrithub.io/436244</url>
+          </com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.GerritCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.BadgeAction plugin="gerrit-trigger@2.27.7">
+      <tEvent class="com.sonyericsson.hudson.plugins.gerrit.gerritevents.dto.events.PatchsetCreated" reference="../../hudson.model.CauseAction/causeBag/entry/com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.GerritCause/tEvent"/>
+    </com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.BadgeAction>
+    <com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.actions.RetriggerAction plugin="gerrit-trigger@2.27.7">
+      <context reference="../../hudson.model.CauseAction/causeBag/entry/com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.GerritCause/context"/>
+    </com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.actions.RetriggerAction>
+    <com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.actions.RetriggerAllAction plugin="gerrit-trigger@2.27.7">
+      <context reference="../../hudson.model.CauseAction/causeBag/entry/com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.GerritCause/context"/>
+    </com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.actions.RetriggerAllAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set">
+        <string>GERRIT_BRANCH</string>
+        <string>GERRIT_CHANGE_ABANDONER</string>
+        <string>GERRIT_CHANGE_ABANDONER_EMAIL</string>
+        <string>GERRIT_CHANGE_ABANDONER_NAME</string>
+        <string>GERRIT_CHANGE_COMMIT_MESSAGE</string>
+        <string>GERRIT_CHANGE_ID</string>
+        <string>GERRIT_CHANGE_NUMBER</string>
+        <string>GERRIT_CHANGE_OWNER</string>
+        <string>GERRIT_CHANGE_OWNER_EMAIL</string>
+        <string>GERRIT_CHANGE_OWNER_NAME</string>
+        <string>GERRIT_CHANGE_RESTORER</string>
+        <string>GERRIT_CHANGE_RESTORER_EMAIL</string>
+        <string>GERRIT_CHANGE_RESTORER_NAME</string>
+        <string>GERRIT_CHANGE_SUBJECT</string>
+        <string>GERRIT_CHANGE_URL</string>
+        <string>GERRIT_EVENT_ACCOUNT</string>
+        <string>GERRIT_EVENT_ACCOUNT_EMAIL</string>
+        <string>GERRIT_EVENT_ACCOUNT_NAME</string>
+        <string>GERRIT_EVENT_COMMENT_TEXT</string>
+        <string>GERRIT_EVENT_HASH</string>
+        <string>GERRIT_EVENT_TYPE</string>
+        <string>GERRIT_HOST</string>
+        <string>GERRIT_NAME</string>
+        <string>GERRIT_NEWREV</string>
+        <string>GERRIT_OLDREV</string>
+        <string>GERRIT_OLD_TOPIC</string>
+        <string>GERRIT_PATCHSET_NUMBER</string>
+        <string>GERRIT_PATCHSET_REVISION</string>
+        <string>GERRIT_PATCHSET_UPLOADER</string>
+        <string>GERRIT_PATCHSET_UPLOADER_EMAIL</string>
+        <string>GERRIT_PATCHSET_UPLOADER_NAME</string>
+        <string>GERRIT_PORT</string>
+        <string>GERRIT_PROJECT</string>
+        <string>GERRIT_REFNAME</string>
+        <string>GERRIT_REFSPEC</string>
+        <string>GERRIT_SCHEME</string>
+        <string>GERRIT_SUBMITTER</string>
+        <string>GERRIT_SUBMITTER_EMAIL</string>
+        <string>GERRIT_SUBMITTER_NAME</string>
+        <string>GERRIT_TOPIC</string>
+        <string>GERRIT_TOPIC_CHANGER</string>
+        <string>GERRIT_TOPIC_CHANGER_EMAIL</string>
+        <string>GERRIT_TOPIC_CHANGER_NAME</string>
+        <string>GERRIT_VERSION</string>
+      </safeParameters>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_EVENT_TYPE</name>
+          <value>patchset-created</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_EVENT_HASH</name>
+          <value>-693886937</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_BRANCH</name>
+          <value>nexell</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_TOPIC</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_NUMBER</name>
+          <value>436244</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_ID</name>
+          <value>I305c7aff28ecf374b9b7855288484de8d7f60a27</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PATCHSET_NUMBER</name>
+          <value>1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PATCHSET_REVISION</name>
+          <value>b0f26697d8c80c9da69a95a2dd3f91b3a0f6ed28</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_REFSPEC</name>
+          <value>refs/changes/44/436244/1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PROJECT</name>
+          <value>NexellCorp/u-boot-2016.01</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_SUBJECT</name>
+          <value>s5o4418: navi_ref: Fix flicker issue</value>
+        </hudson.model.StringParameterValue>
+        <com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.parameters.Base64EncodedStringParameterValue plugin="gerrit-trigger@2.27.7">
+          <name>GERRIT_CHANGE_COMMIT_MESSAGE</name>
+          <value>czVvNDQxODogbmF2aV9yZWY6IEZpeCBmbGlja2VyIGlzc3VlCgpUaGlzIHBhdGNoIGZpeGVzIGlzc3VlIHdoZXJlIGZsaWNrZXIgcGhlbm9tZW5vbiBvY2N1cnMKd2hlbiB0aGVyZSBpcyBubyBib290IGxvZ28uCgpDaGFuZ2UtSWQ6IEkzMDVjN2FmZjI4ZWNmMzc0YjliNzg1NTI4ODQ4NGRlOGQ3ZjYwYTI3ClNpZ25lZC1vZmYtYnk6IExlZSBHZXVuamVvbmcgPGtqbGVlQG5leGVsbC5jby5rcj4K</value>
+        </com.sonyericsson.hudson.plugins.gerrit.trigger.hudsontrigger.parameters.Base64EncodedStringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_URL</name>
+          <value>https://review.gerrithub.io/436244</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_OWNER</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_OWNER_NAME</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_CHANGE_OWNER_EMAIL</name>
+          <value>kjlee@nexell.co.kr</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PATCHSET_UPLOADER</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PATCHSET_UPLOADER_NAME</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PATCHSET_UPLOADER_EMAIL</name>
+          <value>kjlee@nexell.co.kr</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_EVENT_ACCOUNT</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_EVENT_ACCOUNT_NAME</name>
+          <value></value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_EVENT_ACCOUNT_EMAIL</name>
+          <value>kjlee@nexell.co.kr</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_NAME</name>
+          <value>NexellCorpGerritHub</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_HOST</name>
+          <value>review.gerrithub.io</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_PORT</name>
+          <value>29418</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_SCHEME</name>
+          <value>ssh</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>GERRIT_VERSION</name>
+          <value>2.15.6-34-gd93736f81b</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="empty-list"/>
+    </hudson.model.ParametersAction>
+  </actions>
+  <queueId>41</queueId>
+  <timestamp>1544062328008</timestamp>
+  <startTime>1544062328037</startTime>
+  <result>SUCCESS</result>
+  <duration>58547</duration>
+  <charset>US-ASCII</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/legacy_u-boot-2016.01</workspace>
+  <hudsonVersion>2.138.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

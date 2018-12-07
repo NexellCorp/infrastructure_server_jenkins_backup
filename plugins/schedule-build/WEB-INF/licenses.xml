@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='schedule-build' version='0.5.1'><l:dependency name='Schedule Build Plugin' groupId='org.jenkins-ci.plugins' artifactId='schedule-build' version='0.5.1' url='http://wiki.jenkins-ci.org/display/JENKINS/Schedule+Build+Plugin'><l:description>Adds capability to schedule a build for a later point in time</l:description><l:license name='MIT license' url=''/></l:dependency></l:dependencies>

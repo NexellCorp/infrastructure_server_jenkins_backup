@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.22">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@2.60">
+    <parentIds>
+      <string>9</string>
+    </parentIds>
+    <id>10</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.60">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GIT_AUTHOR_EMAIL=jenkins@nexell.co.kr</string>
+            <string>GIT_AUTHOR_NAME=nxJenkins</string>
+            <string>GIT_BRANCH=master</string>
+            <string>GIT_COMMIT=48b7b6c9fd04006df5f1bc38ac02d4072a660207</string>
+            <string>GIT_COMMITTER_EMAIL=jenkins@nexell.co.kr</string>
+            <string>GIT_COMMITTER_NAME=nxJenkins</string>
+            <string>GIT_LOCAL_BRANCH=master</string>
+            <string>GIT_URL=https://github.com/NexellCorp/jenkins_test2.git</string>
+          </list>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.33">
+      <startTime>1543554600419</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

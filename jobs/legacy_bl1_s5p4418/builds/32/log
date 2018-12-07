@@ -1,0 +1,124 @@
+Retriggered by user nxjenkins for Gerrit: https://review.gerrithub.io/435953
+Building in workspace /var/lib/jenkins/workspace/legacy_bl1_s5p4418
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins2945823108642898275.sh
+/var/lib/jenkins/workspace/legacy_bl1_s5p4418
+Current Project dir if Empty False
+Dir make Time : 1543893928
+Now Time is : 1543893988
+Diff Time is : 60
+#---------------- git pull start --------------------#
+Removing obj/
+Removing out/
+Your branch is up-to-date with 'origin/nexell'.
+From https://review.gerrithub.io/NexellCorp/bl1_s5p4418
+ * branch            nexell     -> FETCH_HEAD
+Already up-to-date.
+#---------------- git pull End ----------------------#
+
+Already on 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Switched to a new branch 'jenkins-build'
+Branch jenkins-build set up to track remote branch nexell from origin.
+========================================
+947f28a70419dac3761fb9eab396c4ed3f2c13ae
+========================================
+_none_
+projectName : NexellCorp/bl1_s5p4418
+commitID    : 947f28a70419dac3761fb9eab396c4ed3f2c13ae
+branchName  : nexell
+status      : open
+json parse start
+printInfo : ready
+===========================================================
+ Make CherryPick Info Running...
+===========================================================
+
+ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:NexellCorp/bl1_s5p4418 --patch-sets
+gerritQuery cmd : ssh -p 29418 nxJenkins@review.gerrithub.io gerrit query --format JSON status:open NOT status:DRAFT branch:nexell project:NexellCorp/bl1_s5p4418 --patch-sets
+{"project":"NexellCorp/bl1_s5p4418","branch":"nexell","id":"Iecb00af30cd815fd3ac31c24590b48813f8bec86","number":435429,"subject":"clean2","owner":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"url":"https://review.gerrithub.io/435429","commitMessage":"clean2\n\nChange-Id: Iecb00af30cd815fd3ac31c24590b48813f8bec86\nSigned-off-by: suker \u003csuker@nexell.co.kr\u003e\n","createdOn":1543478653,"lastUpdated":1543478660,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"3e0be9cb07c6014da8e35e3681a20df259e583a6","parents":["c661d1cdf274035c5d02edc660e3ef890ae07954"],"ref":"refs/changes/29/435429/1","uploader":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"createdOn":1543478653,"author":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"kind":"REWORK","sizeInsertions":0,"sizeDeletions":0}]}
+{"project":"NexellCorp/bl1_s5p4418","branch":"nexell","id":"Ia9a49638a298411e58e6b83a4319ac4148bca38f","number":435428,"subject":"clean","owner":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"url":"https://review.gerrithub.io/435428","commitMessage":"clean\n\nChange-Id: Ia9a49638a298411e58e6b83a4319ac4148bca38f\nSigned-off-by: suker \u003csuker@nexell.co.kr\u003e\n","createdOn":1543478129,"lastUpdated":1543478140,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"c661d1cdf274035c5d02edc660e3ef890ae07954","parents":["367f5233c40376baefc889db521657be733c11e7"],"ref":"refs/changes/28/435428/1","uploader":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"createdOn":1543478129,"author":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"kind":"REWORK","sizeInsertions":0,"sizeDeletions":0}]}
+{"project":"NexellCorp/bl1_s5p4418","branch":"nexell","id":"Ife6a68aad74e698be2761f01136a0e773b55d84b","number":435399,"subject":"jenkinst test","owner":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"url":"https://review.gerrithub.io/435399","commitMessage":"jenkinst test\n\nChange-Id: Ife6a68aad74e698be2761f01136a0e773b55d84b\nSigned-off-by: suker \u003csuker@nexell.co.kr\u003e\n","createdOn":1543461219,"lastUpdated":1543468556,"open":true,"status":"NEW","patchSets":[{"number":1,"revision":"367f5233c40376baefc889db521657be733c11e7","parents":["7781a88523922d3017fd37d83534e71e584054b8"],"ref":"refs/changes/99/435399/1","uploader":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"createdOn":1543461219,"author":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"kind":"REWORK","sizeInsertions":1,"sizeDeletions":-1}]}
+{"project":"NexellCorp/bl1_s5p4418","branch":"nexell","id":"I01bf746ba3f71b0f2542cd0159ac106e5b829ddb","number":434913,"subject":"jenkins_test 7","owner":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"url":"https://review.gerrithub.io/434913","commitMessage":"jenkins_test 7\n\nChange-Id: I01bf746ba3f71b0f2542cd0159ac106e5b829ddb\nSigned-off-by: suker \u003csuker@nexell.co.kr\u003e\n","createdOn":1543295106,"lastUpdated":1543295465,"open":true,"status":"NEW","wip":true,"patchSets":[{"number":1,"revision":"7781a88523922d3017fd37d83534e71e584054b8","parents":["19f585564ed119cc9425e1cf1b39cea7873bc809"],"ref":"refs/changes/13/434913/1","uploader":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"createdOn":1543295106,"author":{"name":"Choonghyun Jeon","email":"suker@nexell.co.kr","username":"kchhero"},"kind":"REWORK","sizeInsertions":0,"sizeDeletions":0}]}
+{"type":"stats","rowCount":4,"runTimeMilliseconds":20,"moreChanges":false}
+
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+patchset select index = 0, patchsets count = 1, patchset number = 1
+search revision ...
+There is no exist revision infomation!
+printInfo : not_cherrypick
+===========================================================
+ Have not CherryPick Info...
+===========================================================
+
+printInfo : end
+===========================================================
+ Success CherryPick...
+===========================================================
+
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins5223514676339705771.sh
+========================================
+ environment setup 
+========================================
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins8907498409927449327.sh
+========================================
+ nxp4330-navi-ref build start 
+========================================
+[compile....src/startup.S]
+[compile....src/armv7_libs.S]
+[compile....src/devices/clock.c]
+[compile....src/devices/clkpwr.c]
+[compile....src/main.c]
+[compile....src/subcpu.c]
+[compile....src/plat_pm.c]
+[compile....src/devices/ema.c]
+[compile....src/devices/resetcon.c]
+[compile....src/devices/gpio.c]
+[compile....src/devices/serial.c]
+[compile....src/libstd.c]
+[compile....src/devices/gic.c]
+[compile....src/devices/memory/ddr3/ddr3_sdram.c]
+[compile....src/devices/memory/memory.c]
+[compile....src/crc.c]
+[compile....src/build_info.c]
+[compile....src/printf.c]
+[compile....src/board/board_navi.c]
+[compile....src/nxp4330.c]
+[compile....src/plat_load.c]
+[compile....src/boot/iUSBBOOT.c]
+[compile....src/non_secure.c]
+[compile....src/devices/CRYPTO.c]
+[compile....src/devices/i2c_gpio.c]
+[compile....src/devices/pmic/pmic.c]
+[compile....src/devices/pmic/nxe1500.c]
+[compile....src/devices/pmic/nxe2000.c]
+[compile....src/devices/pmic/mp8845.c]
+[compile....src/devices/pmic/axp228.c]
+[compile....src/boot/iSDHCBOOT.c]
+[link.... out/bl1-navi.elf]
+[binary.... out/bl1-navi.bin]
+./tools/bingen -c NXP4330 -i out/bl1-navi.bin -o out/bl1-emmcboot.bin -l 0xFFFF0000 -e 0xFFFF0000 -d SDMMC -u 2 -a 0x10200
+----------------------------------------------------
+ NXP4330 2ndboot Binary file Information.        
+ SDMMC Binary Boot Mode 	 		
+ Input  Binary File : out/bl1-navi.bin		
+ Output Binary File : out/bl1-emmcboot.bin		
+ Input  Binary size : 24396 Byte (24KB)	
+ Output Binary size : 24396 Byte (24KB)   
+----------------------------------------------------
+ NSIH(Header) Information.             
+ SDMMC Binary Boot Mode 	
+  -> DevicePort :        2h		
+  -> DeviceAddr :    10200h			
+  -> DeviceType :        3h			
+  -> LoadSize	:     5F4Ch			
+  -> LoadAddr	: FFFF0000h			
+  -> LauchAddr	: FFFF0000h			
+  -> SigNature	: 4849534Eh			
+  -> CRC32	:   C32731h			
+[legacy_bl1_s5p4418] $ /bin/sh /tmp/jenkins950093792415096643.sh
+Switched to branch 'nexell'
+Your branch is up-to-date with 'origin/nexell'.
+Deleted branch jenkins-build (was 7c7e7d5).
+Finished: SUCCESS

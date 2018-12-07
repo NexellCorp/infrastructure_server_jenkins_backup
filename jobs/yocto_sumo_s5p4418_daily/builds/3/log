@@ -1,0 +1,394 @@
+Started by user [8mha:////4FlN9SIAIeL1DM3Dr7nZlucy63JsMJ0Nqr9nq9Wz+cKpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZ+/dLi1CL9vIqs1LzszLxiAKzzsnXEAAAA[0mNexell Jenkins
+Building in workspace /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily
+[yocto_sumo_s5p4418_daily] $ /bin/bash /tmp/jenkins3761128369252252533.sh
+************************************
+   Yocto Sumo s5p4418 build start   
+************************************
+************************************
+   Yocto Sumo s5p4418 tiny          
+************************************
+HEAD is now at dcfcb58... qtbase: don't use thumb for armv[45]
+meta-qt5 branch changed!! to 5.6.x
+Can't do inplace edit: . is not a regular file.
+Can't do inplace edit: ./files is not a regular file.
+Can't do inplace edit: ./recipes-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qttools is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt5-creator is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebengine is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtdeclarative is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebkit is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwayland is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtquickcontrols is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt3d is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtimageformats is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtbase is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtmultimedia is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles/qt5-demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/packagegroups is not a regular file.
+Can't do inplace edit: ./recipes-qt/libconnman-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qsiv is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/qt5nmapper is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/cinematicexperience is not a regular file.
+Can't do inplace edit: ./recipes-qt/meta is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit/maliit-framework-qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/quazip is not a regular file.
+Can't do inplace edit: ./lib is not a regular file.
+Can't do inplace edit: ./lib/recipetool is not a regular file.
+Can't do inplace edit: ./.git is not a regular file.
+Can't do inplace edit: ./.git/rr-cache is not a regular file.
+Can't do inplace edit: ./.git/hooks is not a regular file.
+Can't do inplace edit: ./.git/info is not a regular file.
+Can't do inplace edit: ./.git/svn is not a regular file.
+Can't do inplace edit: ./.git/logs is not a regular file.
+Can't do inplace edit: ./.git/refs is not a regular file.
+Can't open ./.git/shallow: No such file or directory.
+Can't do inplace edit: ./.git/objects is not a regular file.
+Can't do inplace edit: ./recipes-devtools is not a regular file.
+Can't do inplace edit: ./recipes-devtools/gdb is not a regular file.
+Can't do inplace edit: ./classes is not a regular file.
+Can't do inplace edit: ./conf is not a regular file.
+Can't do inplace edit: ./licenses is not a regular file.
+[47;34m Select targets : s5p4418-navi-ref [0m
+[47;34m Select imageTypes : tiny [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       .bbappend files generate                     [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/arm-trusted-firmware/arm-trusted-firmware_%.bbappend  ---> OK 
+arm-trusted-firmware_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p4418.bbappend  ---> OK 
+bl1-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p6818.bbappend  ---> OK 
+bl1-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl2/bl2-s5p4418.bbappend  ---> OK 
+bl2-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/armv7-dispatcher/dispatcher-s5p4418.bbappend  ---> OK 
+dispatcher-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-camera_%.bbappend  ---> OK 
+gst-plugins-camera_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_%.bbappend  ---> OK 
+gst-plugins-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_%.bbappend  ---> OK 
+gst-plugins-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_%.bbappend  ---> OK 
+gst-plugins-video-dec_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_%.bbappend  ---> OK 
+gst-plugins-video-sink_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/l-loader/l-loader_%.bbappend  ---> OK 
+l-loader_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/libdrm-nx_%.bbappend  ---> OK 
+libdrm-nx_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p4418.bbappend  ---> OK 
+linux-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p6818.bbappend  ---> OK 
+linux-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-drm-allocator_%.bbappend  ---> OK 
+nx-drm-allocator_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-gst-meta_%.bbappend  ---> OK 
+nx-gst-meta_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-renderer_%.bbappend  ---> OK 
+nx-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-scaler_%.bbappend  ---> OK 
+nx-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-v4l2_%.bbappend  ---> OK 
+nx-v4l2_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-video-api_%.bbappend  ---> OK 
+nx-video-api_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-build_%.bbappend  ---> OK 
+optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-client_%.bbappend  ---> OK 
+optee-client_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-linuxdriver_%.bbappend  ---> OK 
+optee-linuxdriver_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-os_%.bbappend  ---> OK 
+optee-os_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-test_%.bbappend  ---> OK 
+optee-test_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-multimedia/smart-voice-app/smart-voice-testapp.bbappend  ---> OK 
+smart-voice-testapp.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-application/testsuite/testsuite_%.bbappend  ---> OK 
+testsuite_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/u-boot/u-boot-nexell.bbappend  ---> OK 
+u-boot-nexell.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-graphics/xorg-driver/xf86-video-armsoc-nexell_%.bbappend  ---> OK 
+xf86-video-armsoc-nexell_%.bbappend
+[47;34m ------------------------ Generate Done ! ------------------------- [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+file name : ./Makefile
+dir name : ./kernel-4.4.x
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5 /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+Finally kernel dirname : ./kernel-4.4.x
+ROOT PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily
+Kernel PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel/./kernel-4.4.x
+kernel Makefile exist
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p4418.bbappend
+Linux Kernel VERSION = 4.4.83
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       Bitbake Auto Running                         [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+local.conf override : MACHINE = "s5p4418-navi-ref"
+local.conf override : DL_DIR = "${TOPDIR}/../downloads"
+local.conf override : SSTATE_DIR = "${TOPDIR}/sstate-cache"
+local.conf override : DISTRO_FEATURES_append = " nexell-navi-ref support-ffmpeg"
+local.conf override : USE_VT="1"
+local.conf override : VIRTUAL-RUNTIME_init_manager = "systemd"
+local.conf override : VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+local.conf override : DISTRO_FEATURES_append = " systemd"
+local.conf override : SERIAL_CONSOLE = "115200 ttyAMA3"
+[0;33m                                                                    [0m
+[0;33m #########  Start bitbake pre operateion for optee & ATF ########## [0m
+[0;33m                                                                    [0m
+[0;33m #########  Already Done, optee & ATF pre-fetch & pre-unpack ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+[0;33m #########  You tried other machine build ########## [0m
+[0;33m #########  Need Clean BUILD ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                          All Build                                 [0m
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                      Clean Build True                              [0m
+[47;34m ------------------------------------------------------------------ [0m
+
+ ------------------------------------------------------------------ 
+                        kernel clean                                
+ ------------------------------------------------------------------ 
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel/kernel-4.4.x /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/build/build-s5p4418-navi-ref-tiny /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/build/build-s5p4418-navi-ref-tiny /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+[47;34m CLEAN TARGET : nexell-tiny virtual/kernel u-boot-nexell bl1-s5p4418 [0m
+[47;34m CLEAN TARGET : libdrm-nx nx-drm-allocator nx-gst-meta nx-renderer nx-scaler nx-v4l2 nx-video-api nx-vidtex [0m
+[47;34m CLEAN TARGET : gst-plugins-camera gst-plugins-renderer gst-plugins-scaler gst-plugins-video-dec gst-plugins-video-sink [0m
+Please use a locale setting which supports UTF-8 (such as LANG=en_US.UTF-8).
+Python can't change the filesystem locale after loading so we need a UTF-8 when Python starts or things won't work.
+************************************
+   Yocto Sumo s5p4418 qt            
+************************************
+HEAD is now at dcfcb58... qtbase: don't use thumb for armv[45]
+meta-qt5 branch changed!! to 5.6.x
+Can't do inplace edit: . is not a regular file.
+Can't do inplace edit: ./files is not a regular file.
+Can't do inplace edit: ./recipes-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qttools is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt5-creator is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebengine is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtdeclarative is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwebkit is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtwayland is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtquickcontrols is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qt3d is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtimageformats is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtbase is not a regular file.
+Can't do inplace edit: ./recipes-qt/qt5/qtmultimedia is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/demo-extrafiles/qt5-demo-extrafiles is not a regular file.
+Can't do inplace edit: ./recipes-qt/packagegroups is not a regular file.
+Can't do inplace edit: ./recipes-qt/libconnman-qt is not a regular file.
+Can't do inplace edit: ./recipes-qt/qsiv is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/tufao/tufao is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/qt5nmapper is not a regular file.
+Can't do inplace edit: ./recipes-qt/examples/cinematicexperience is not a regular file.
+Can't do inplace edit: ./recipes-qt/meta is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit is not a regular file.
+Can't do inplace edit: ./recipes-qt/maliit/maliit-framework-qt5 is not a regular file.
+Can't do inplace edit: ./recipes-qt/quazip is not a regular file.
+Can't do inplace edit: ./lib is not a regular file.
+Can't do inplace edit: ./lib/recipetool is not a regular file.
+Can't do inplace edit: ./.git is not a regular file.
+Can't do inplace edit: ./.git/rr-cache is not a regular file.
+Can't do inplace edit: ./.git/hooks is not a regular file.
+Can't do inplace edit: ./.git/info is not a regular file.
+Can't do inplace edit: ./.git/svn is not a regular file.
+Can't do inplace edit: ./.git/logs is not a regular file.
+Can't do inplace edit: ./.git/refs is not a regular file.
+Can't open ./.git/shallow: No such file or directory.
+Can't do inplace edit: ./.git/objects is not a regular file.
+Can't do inplace edit: ./recipes-devtools is not a regular file.
+Can't do inplace edit: ./recipes-devtools/gdb is not a regular file.
+Can't do inplace edit: ./classes is not a regular file.
+Can't do inplace edit: ./conf is not a regular file.
+Can't do inplace edit: ./licenses is not a regular file.
+[47;34m Select targets : s5p4418-navi-ref [0m
+[47;34m Select imageTypes : 5.6.x [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       .bbappend files generate                     [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/arm-trusted-firmware/arm-trusted-firmware_%.bbappend  ---> OK 
+arm-trusted-firmware_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p4418.bbappend  ---> OK 
+bl1-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl1/bl1-s5p6818.bbappend  ---> OK 
+bl1-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/bl2/bl2-s5p4418.bbappend  ---> OK 
+bl2-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/armv7-dispatcher/dispatcher-s5p4418.bbappend  ---> OK 
+dispatcher-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-camera_%.bbappend  ---> OK 
+gst-plugins-camera_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-renderer_%.bbappend  ---> OK 
+gst-plugins-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-scaler_%.bbappend  ---> OK 
+gst-plugins-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-dec_%.bbappend  ---> OK 
+gst-plugins-video-dec_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/gst-plugins/gst-plugins-video-sink_%.bbappend  ---> OK 
+gst-plugins-video-sink_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/l-loader/l-loader_%.bbappend  ---> OK 
+l-loader_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/libdrm-nx_%.bbappend  ---> OK 
+libdrm-nx_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p4418.bbappend  ---> OK 
+linux-s5p4418.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-kernel/linux/linux-s5p6818.bbappend  ---> OK 
+linux-s5p6818.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-drm-allocator_%.bbappend  ---> OK 
+nx-drm-allocator_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-gst-meta_%.bbappend  ---> OK 
+nx-gst-meta_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-renderer_%.bbappend  ---> OK 
+nx-renderer_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-scaler_%.bbappend  ---> OK 
+nx-scaler_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-v4l2_%.bbappend  ---> OK 
+nx-v4l2_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-nexell-libs/nx-libs/nx-video-api_%.bbappend  ---> OK 
+nx-video-api_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-build_%.bbappend  ---> OK 
+optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-client_%.bbappend  ---> OK 
+optee-client_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-linuxdriver_%.bbappend  ---> OK 
+optee-linuxdriver_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-os_%.bbappend  ---> OK 
+optee-os_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/optee/optee-test_%.bbappend  ---> OK 
+optee-test_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-multimedia/smart-voice-app/smart-voice-testapp.bbappend  ---> OK 
+smart-voice-testapp.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-application/testsuite/testsuite_%.bbappend  ---> OK 
+testsuite_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-bsp/u-boot/u-boot-nexell.bbappend  ---> OK 
+u-boot-nexell.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/tools/bbappend-files/recipes-graphics/xorg-driver/xf86-video-armsoc-nexell_%.bbappend  ---> OK 
+xf86-video-armsoc-nexell_%.bbappend
+[47;34m ------------------------ Generate Done ! ------------------------- [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+file name : ./Makefile
+dir name : ./kernel-4.4.x
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5 /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+Finally kernel dirname : ./kernel-4.4.x
+ROOT PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily
+Kernel PATH : /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel/./kernel-4.4.x
+kernel Makefile exist
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-nexell/meta-nexell-distro/recipes-kernel/linux/linux-s5p4418.bbappend
+Linux Kernel VERSION = 4.4.83
+exist /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-nexell/meta-nexell-distro/recipes-bsp/optee/optee-build_%.bbappend
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                       Bitbake Auto Running                         [0m
+[47;34m ------------------------------------------------------------------ [0m
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+
+### Shell environment set up for builds. ###
+
+You can now run 'bitbake <target>'
+
+Common targets are:
+    core-image-minimal
+    core-image-sato
+    meta-toolchain
+    meta-ide-support
+
+You can also run generated qemu images with a command like 'runqemu qemux86'
+local.conf override : MACHINE = "s5p4418-navi-ref"
+local.conf override : DL_DIR = "${TOPDIR}/../downloads"
+local.conf override : SSTATE_DIR = "${TOPDIR}/sstate-cache"
+local.conf override : DISTRO_FEATURES_append = " nexell-navi-ref support-ffmpeg"
+local.conf override : PACKAGECONFIG_FB_pn-qtbase = "kms"
+local.conf override : PACKAGECONFIG_DISTRO_pn-qtbase = "accessibility linuxfb eglfs fontconfig alsa tslib gles2 glib examples tools openssl"
+local.conf override : DISTRO_FEATURES_append = " nexell-qt5.6"
+local.conf override : DISTRO_FEATURES_append = " nexell-mali-qt"
+local.conf override : DISTRO_FEATURES_append = " qt-default-platform-eglfs"
+local.conf override : BBMASK = " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.4.x "
+local.conf override : BBMASK += " /meta-nexell/meta-nexell-distro/recipes-qt/qt5_5.10.x "
+local.conf override : DISTRO_FEATURES_append = " zeroconf"
+local.conf override : PACKAGECONFIG_append_pn-qtmultimedia  = " gstreamer"
+local.conf override : 
+local.conf override : DISTRO_FEATURES_remove = " x11"
+local.conf override : DISTRO_FEATURES_append = " systemd opengl"
+local.conf override : VIRTUAL-RUNTIME_init_manager = "systemd"
+local.conf override : VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
+local.conf override : CORE_IMAGE_EXTRA_INSTALL += "wayland iputils"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_virtual/libgles1 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgles2 = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/egl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libopencl = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_virtual/libgl = "mesa"
+local.conf override : PREFERRED_PROVIDER_virtual/mesa = "mesa"
+local.conf override : 
+local.conf override : PREFERRED_PROVIDER_libgbm = "nexell-drm-mali-qt"
+local.conf override : PREFERRED_PROVIDER_libgbm-dev = "nexell-drm-mali-qt"
+local.conf override : 
+local.conf override : LICENSE_FLAGS_WHITELIST = "commercial"
+local.conf override : GLIBC_GENERATE_LOCALES = "ko_KR.EUC-KR ko_KR.UTF-8 en_GB.UTF-8 en_US.UTF-8"
+local.conf override : IMAGE_LINGUAS = " ko-kr en-us en-gb"
+[0;33m                                                                    [0m
+[0;33m #########  Start bitbake pre operateion for optee & ATF ########## [0m
+[0;33m                                                                    [0m
+[0;33m #########  Already Done, optee & ATF pre-fetch & pre-unpack ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+[0;33m #########  You tried other machine build ########## [0m
+[0;33m #########  Need Clean BUILD ########## [0m
+[0;34m ------------------------------------------------------------------ [0m
+
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                          All Build                                 [0m
+[47;34m ------------------------------------------------------------------ [0m
+[47;34m                      Clean Build True                              [0m
+[47;34m ------------------------------------------------------------------ [0m
+
+ ------------------------------------------------------------------ 
+                        kernel clean                                
+ ------------------------------------------------------------------ 
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/kernel/kernel-4.4.x /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/build/build-s5p4418-navi-ref-qt /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+/var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/build/build-s5p4418-navi-ref-qt /var/lib/jenkins/workspace/yocto_sumo_s5p4418_daily/yocto/meta-qt5
+[47;34m CLEAN TARGET : nexell-qt virtual/kernel u-boot-nexell bl1-s5p4418 [0m
+[47;34m CLEAN TARGET : libdrm-nx nx-drm-allocator nx-gst-meta nx-renderer nx-scaler nx-v4l2 nx-video-api nx-vidtex [0m
+[47;34m CLEAN TARGET : gst-plugins-camera gst-plugins-renderer gst-plugins-scaler gst-plugins-video-dec gst-plugins-video-sink [0m
+Please use a locale setting which supports UTF-8 (such as LANG=en_US.UTF-8).
+Python can't change the filesystem locale after loading so we need a UTF-8 when Python starts or things won't work.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

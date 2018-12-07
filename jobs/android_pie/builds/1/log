@@ -1,0 +1,9 @@
+Started by timer
+Building in workspace /var/lib/jenkins/workspace/android_pie
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[android_pie] $ /bin/bash /tmp/jenkins766778361349962060.sh
+*******************
+Android Build start
+*******************
+Finished: SUCCESS

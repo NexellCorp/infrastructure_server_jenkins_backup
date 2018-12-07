@@ -1,0 +1,57 @@
+Started by user [8mha:////4FlN9SIAIeL1DM3Dr7nZlucy63JsMJ0Nqr9nq9Wz+cKpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZ+/dLi1CL9vIqs1LzszLxiAKzzsnXEAAAA[0mNexell Jenkins
+Building in workspace /var/lib/jenkins/workspace/yocto_sumo_source_setup
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[yocto_sumo_source_setup] $ /bin/bash /tmp/jenkins8646514880035674008.sh
+************************************
+   Yocto Sumo Source CleanUp        
+************************************
+************************************
+   Yocto Sumo Source Download       
+************************************
+Get https://gerrit.googlesource.com/git-repo/clone.bundle
+Get https://gerrit.googlesource.com/git-repo
+
+... A new repo command ( 1.23) is available.
+... You should upgrade soon:
+
+    cp /var/lib/jenkins/workspace/yocto_sumo_source_setup/.repo/repo/repo /usr/bin/repo
+
+Get ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/yocto_manifest
+Total 174 (delta 58), reused 171 (delta 58)
+From ssh://review.gerrithub.io:29418/NexellCorp/yocto_manifest
+ * [new branch]      bitminer   -> origin/bitminer
+ * [new branch]      master     -> origin/master
+ * [new branch]      yocto-20170418 -> origin/yocto-20170418
+ * [new branch]      yocto-20170721 -> origin/yocto-20170721
+ * [new branch]      yocto-20180103 -> origin/yocto-20180103
+ * [new branch]      yocto-pyro -> origin/yocto-pyro
+ * [new branch]      yocto-sumo -> origin/yocto-sumo
+
+repo has been initialized in /var/lib/jenkins/workspace/yocto_sumo_source_setup
+
+... A new repo command ( 1.23) is available.
+... You should upgrade soon:
+
+    cp /var/lib/jenkins/workspace/yocto_sumo_source_setup/.repo/repo/repo /usr/bin/repo
+
+Permission denied (publickey).
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+error: Cannot fetch yocto_meta-qt5
+
+error: Exited sync due to fetch errors
+Fetching project yocto_meta-qt5
+**********************************************
+   Yocto Sumo Source copy to other projects   
+**********************************************
+Finished: SUCCESS

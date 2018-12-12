@@ -1,0 +1,1891 @@
+Started by user [8mha:////4FlN9SIAIeL1DM3Dr7nZlucy63JsMJ0Nqr9nq9Wz+cKpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZ+/dLi1CL9vIqs1LzszLxiAKzzsnXEAAAA[0mNexell Jenkins
+Building in workspace /var/lib/jenkins/workspace/android_nougat_weekly_source_setup
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[android_nougat_weekly_source_setup] $ /bin/bash /tmp/jenkins3440509922762451995.sh
+************************************
+   Android Nougat Source CleanUp    
+************************************
+************************************
+   Android Nougat Source Download   
+************************************
+gpg: keyring `/var/jenkins_home/.repoconfig/gnupg/secring.gpg' created
+gpg: keyring `/var/jenkins_home/.repoconfig/gnupg/pubring.gpg' created
+gpg: /var/jenkins_home/.repoconfig/gnupg/trustdb.gpg: trustdb created
+gpg: key 920F5C65: public key "Repo Maintainer <repo@android.kernel.org>" imported
+gpg: key 692B382C: public key "Conley Owens <cco3@android.com>" imported
+gpg: Total number processed: 2
+gpg:               imported: 2  (RSA: 1)
+Get https://gerrit.googlesource.com/git-repo/clone.bundle
+Get https://gerrit.googlesource.com/git-repo
+From https://gerrit.googlesource.com/git-repo
+   d26146d..6e53844  master     -> origin/master
+
+... A new repo command ( 1.23) is available.
+... You should upgrade soon:
+
+    cp /var/lib/jenkins/workspace/android_nougat_weekly_source_setup/.repo/repo/repo /usr/bin/repo
+
+Get ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/android_manifest
+Total 1274 (delta 649), reused 1259 (delta 649)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_manifest
+ * [new branch]      kitkat-4418-release -> origin/kitkat-4418-release
+ * [new branch]      kitkat-dev -> origin/kitkat-dev
+ * [new branch]      kitkat-mr1-pyrope-release -> origin/kitkat-mr1-pyrope-release
+ * [new branch]      lollipop-5.1.1_r6-avn-release -> origin/lollipop-5.1.1_r6-avn-release
+ * [new branch]      lollipop-5.1.1_r6-avn-release_2nd -> origin/lollipop-5.1.1_r6-avn-release_2nd
+ * [new branch]      lollipop-5.1.1_r6-avn-release_3rd -> origin/lollipop-5.1.1_r6-avn-release_3rd
+ * [new branch]      lollipop-5.1.1_r6-release -> origin/lollipop-5.1.1_r6-release
+ * [new branch]      lollipop-5.1.1_r6-release_2nd -> origin/lollipop-5.1.1_r6-release_2nd
+ * [new branch]      lollipop-5.1.1_r6-release_3rd -> origin/lollipop-5.1.1_r6-release_3rd
+ * [new branch]      lollipop-dev -> origin/lollipop-dev
+ * [new branch]      lollipop_vd_cinema -> origin/lollipop_vd_cinema
+ * [new branch]      nougat-20181106 -> origin/nougat-20181106
+ * [new branch]      nougat-artik -> origin/nougat-artik
+ * [new branch]      nougat-dev -> origin/nougat-dev
+ * [new branch]      pie-dev    -> origin/pie-dev
+
+repo has been initialized in /var/lib/jenkins/workspace/android_nougat_weekly_source_setup
+
+... A new repo command ( 1.23) is available.
+... You should upgrade soon:
+
+    cp /var/lib/jenkins/workspace/android_nougat_weekly_source_setup/.repo/repo/repo /usr/bin/repo
+
+Total 0 (delta 0), reused 0 (delta 0)
+Total 6 (delta 0), reused 6 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_library_librecovery
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/generic/common
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/bootctrl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/moto/shamu
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/telephony
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 51 (delta 13), reused 48 (delta 13)
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_library_nx-scaler
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/android-clat
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libunwind
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/EmergencyInfo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dbus
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/markdown
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/strace
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/QuickSearchBox
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/sfntly
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 398 (delta 75), reused 308 (delta 75)
+From https://android.googlesource.com/platform/platform_testing
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_optee_optee-test
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/hardware/intel/audio_media
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/SpeechRecorder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/zopfli
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libnl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/omx-components
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/build/soong
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 53 (delta 10), reused 42 (delta 10)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_ideviceinstaller
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/system/weaved
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/CallLogProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/xmlrpcpp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ceres-solver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8x27
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dng_sdk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1473 (delta 392), reused 622 (delta 392)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_wpa_supplicant_8
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/apache-xml
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/TV
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/libcore
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/bitmap
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/netcat
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/colorpicker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/compile/slang
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/accessory/arduino
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/c-ares
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/goldfish-opengl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/minikin
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gdb/linux-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/UserDictionaryProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/common
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/eclipse-basebuilder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/services/Telephony
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/ex
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/emoji
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/vulkan-validation-layers
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/sdk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1202 (delta 226), reused 1156 (delta 226)
+Total 57 (delta 24), reused 40 (delta 24)
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_apps_testsuite
+ * [new branch]      nexell     -> nexell/nexell
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_camera
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/zxing
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/rmi4utils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/elfutils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/gtest
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/autotest
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ImageMagick
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libhevc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/net/ethernet
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 121 (delta 17), reused 68 (delta 17)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_system_vold
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/system/update_engine
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/aac
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libogg
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/bzip2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libopus
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/universal-tween-engine
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/bsp/intel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/wilhelm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/inputmethods/LatinIME
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/lldb
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/broadcom/wlan
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/power
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/esd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/fonttools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/compatibility/cdd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/moto/shamu-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/slf4j
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dbus-binding-generator
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tinyxml
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/ApplicationsProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 54 (delta 17), reused 47 (delta 17)
+From https://android.googlesource.com/platform/frameworks/opt/net/ims
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_l-loader
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/mesa3d
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Fetching project android_library_librecovery
+Fetching project device/generic/common
+Fetching project device/moto/shamu
+Fetching project platform/frameworks/opt/telephony
+Fetching project platform/hardware/qcom/bootctrl
+Fetching project platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1
+Fetching project platform/external/android-clat
+Fetching project linux_library_nx-scaler
+Fetching project platform/external/libunwind
+Fetching project platform/packages/apps/EmergencyInfo
+Fetching project platform/external/dbus
+Fetching project platform/external/strace
+Fetching project secure_optee_optee-test
+Fetching project platform/external/markdown
+Fetching project platform/external/sfntly
+Fetching project platform/packages/apps/QuickSearchBox
+Fetching project platform/platform_testing
+Fetching project platform/hardware/intel/audio_media
+Fetching project platform/packages/apps/SpeechRecorder
+Fetching project platform/hardware/intel/common/omx-components
+Fetching project platform/external/zopfli
+Fetching project platform/build/soong
+Fetching project platform/external/libnl
+Fetching project android_solution_carlife_ideviceinstaller
+Fetching project platform/external/ceres-solver
+Fetching project platform/external/xmlrpcpp
+Fetching project platform/system/weaved
+Fetching project platform/packages/providers/CallLogProvider
+Fetching project platform/hardware/qcom/msm8x27
+Fetching project android_platform_external_wpa_supplicant_8
+Fetching project platform/external/dng_sdk
+Fetching project platform/libcore
+Fetching project platform/packages/apps/TV
+Fetching project platform/external/apache-xml
+Fetching project platform/frameworks/opt/bitmap
+Fetching project platform/external/netcat
+Fetching project platform/frameworks/opt/colorpicker
+Fetching project platform/external/eclipse-basebuilder
+Fetching project platform/frameworks/compile/slang
+Fetching project device/generic/goldfish-opengl
+Fetching project device/google/accessory/arduino
+Fetching project platform/external/c-ares
+Fetching project platform/prebuilts/gdb/linux-x86
+Fetching project platform/frameworks/minikin
+Fetching project linux_apps_testsuite
+Fetching project platform/packages/providers/UserDictionaryProvider
+Fetching project platform/packages/services/Telephony
+Fetching project device/common
+Fetching project platform/frameworks/ex
+Fetching project platform/frameworks/opt/emoji
+Fetching project platform/external/vulkan-validation-layers
+Fetching project platform/external/autotest
+Fetching project android_hal_camera
+Fetching project platform/sdk
+Fetching project platform/external/zxing
+Fetching project platform/external/rmi4utils
+Fetching project platform/external/elfutils
+Fetching project platform/external/gtest
+Fetching project platform/external/ImageMagick
+Fetching project platform/external/libhevc
+Fetching project platform/frameworks/opt/net/ethernet
+Fetching project platform/system/update_engine
+Fetching project platform/external/aac
+Fetching project android_platform_system_vold
+Fetching project platform/external/libogg
+Fetching project platform/external/libopus
+Fetching project platform/external/bzip2
+Fetching project platform/external/universal-tween-engine
+Fetching project platform/hardware/bsp/intel
+Fetching project platform/packages/inputmethods/LatinIME
+Fetching project platform/frameworks/wilhelm
+Fetching project platform/external/lldb
+Fetching project platform/hardware/broadcom/wlan
+Fetching project platform/compatibility/cdd
+Fetching project platform/external/fonttools
+Fetching project platform/external/esd
+Fetching project platform/hardware/qcom/power
+Fetching project android_realtek_hardware
+Fetching project device/moto/shamu-kernel
+Fetching project platform/external/slf4j
+Fetching project secure_l-loader
+Fetching project platform/external/dbus-binding-generator
+Fetching project platform/external/tinyxml
+Fetching project android_platform_frameworks_base
+Fetching project platform/packages/providers/ApplicationsProvider
+Fetching project platform/frameworks/opt/net/ims
+Fetching project platform/external/mesa3d
+Fetching project bl1_s5p6818
+Fetching project From https://android.googlesource.com/platform/test/vts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 329 (delta 46), reused 112 (delta 46)
+From ssh://review.gerrithub.io:29418/NexellCorp/bl1_s5p6818
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/sonivox
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/UnifiedEmail
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/devtools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1604 (delta 256), reused 931 (delta 256)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_e2fsprogs
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/prebuilts/python/linux-x86/2.7.5
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/DownloadProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/asus/fugu-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/parameter-framework
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 2010 (delta 1174), reused 1947 (delta 1174)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_realtek_hardware
+ * [new branch]      aosp-realtek-nougat -> nexell/aosp-realtek-nougat
+From https://android.googlesource.com/platform/external/antlr
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libnfc-nxp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 6 (delta 0), reused 6 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_memtrack
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/Email
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/timezonepicker-support
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libusb-compat
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/huawei/angler
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 247 (delta 63), reused 226 (delta 63)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_armv7-dispatcher
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/dagger2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1033 (delta 119), reused 578 (delta 119)
+From https://android.googlesource.com/platform/prebuilts/go/linux-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_system_bt
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/tinyalsa
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/naver-fonts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1002 (delta 196), reused 706 (delta 196)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_packages_apps_Launcher3
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/hardware/intel/bootstub
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 425 (delta 104), reused 264 (delta 104)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_hardware_libhardware
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Total 13 (delta 5), reused 13 (delta 5)
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_library_nx-csc
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/eyes-free
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/WallpaperPicker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/lld
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/iw
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/volley
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Stk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libchrome
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/regex-re2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 843 (delta 324), reused 637 (delta 324)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_packages_apps_Bluetooth
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/liblzf
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/clang/linux-x86/host/3.6
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/littlemock
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/toolchain/binutils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/inputmethodcommon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mockftpserver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/dalvik
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/qemu-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8996
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/developers/demos
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/goldfish
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/services/Mms
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/neven
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jsmn
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 2 (delta 0), reused 2 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_vendor_opengapps
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/robolectric
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Calendar
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ant-glob
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Browser2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jsr305
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mini-emulator-armv7-a-neon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libutf
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Protips
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jdiff
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/nvram
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Gallery2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/webview
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 885 (delta 132), reused 605 (delta 132)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_build
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/huawei/angler-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/clang/darwin-x86/host/3.6
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libevent
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/libmix
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gradle-plugin
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/vboot_reference
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/inputmethods/OpenWnn
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/wallpapers/LivePicker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/CarrierConfig
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/media
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ltrace
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libselinux
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/compile/mclinker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/xmp_toolkit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/libstagefrighthw
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ppp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/developers/samples/android
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/BasicSmsReceiver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+platform/test/vts
+Fetching project android_platform_external_e2fsprogs
+Fetching project platform/external/sonivox
+Fetching project platform/packages/apps/UnifiedEmail
+Fetching project platform/prebuilts/devtools
+Fetching project platform/prebuilts/python/linux-x86/2.7.5
+Fetching project platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9
+Fetching project platform/packages/providers/DownloadProvider
+Fetching project device/asus/fugu-kernel
+Fetching project platform/external/parameter-framework
+Fetching project platform/external/antlr
+Fetching project android_hal_memtrack
+Fetching project platform/external/libnfc-nxp
+Fetching project platform/packages/apps/Email
+Fetching project platform/prebuilts/go/linux-x86
+Fetching project platform/external/timezonepicker-support
+Fetching project platform/external/libusb-compat
+Fetching project device/huawei/angler
+Fetching project secure_armv7-dispatcher
+Fetching project android_platform_system_bt
+Fetching project platform/external/dagger2
+Fetching project android_platform_packages_apps_Launcher3
+Fetching project platform/external/tinyalsa
+Fetching project platform/external/naver-fonts
+Fetching project android_platform_hardware_libhardware
+Fetching project linux_library_nx-csc
+Fetching project platform/hardware/intel/bootstub
+Fetching project platform/prebuilts/qemu-kernel
+Fetching project platform/external/eyes-free
+Fetching project platform/packages/apps/WallpaperPicker
+Fetching project platform/external/lld
+Fetching project platform/external/iw
+Fetching project platform/frameworks/volley
+Fetching project platform/external/libchrome
+Fetching project platform/packages/apps/Stk
+Fetching project platform/external/regex-re2
+Fetching project platform/prebuilts/clang/linux-x86/host/3.6
+Fetching project android_platform_packages_apps_Bluetooth
+Fetching project platform/external/liblzf
+Fetching project toolchain/binutils
+Fetching project platform/external/littlemock
+Fetching project platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9
+Fetching project platform/frameworks/opt/inputmethodcommon
+Fetching project platform/external/mockftpserver
+Fetching project platform/dalvik
+Fetching project platform/hardware/qcom/msm8996
+Fetching project platform/developers/demos
+Fetching project platform/prebuilts/gradle-plugin
+Fetching project device/generic/goldfish
+Fetching project platform/external/robolectric
+Fetching project platform/packages/services/Mms
+Fetching project platform/external/neven
+Fetching project platform/external/jsmn
+Fetching project android_vendor_opengapps
+Fetching project platform/packages/apps/Calendar
+Fetching project platform/external/ant-glob
+Fetching project platform/packages/apps/Browser2
+Fetching project platform/external/jsr305
+Fetching project device/generic/mini-emulator-armv7-a-neon
+Fetching project platform/external/libutf
+Fetching project platform/packages/apps/Protips
+Fetching project android_build
+Fetching project platform/external/jdiff
+Fetching project platform/system/nvram
+Fetching project platform/packages/apps/Gallery2
+Fetching project platform/frameworks/webview
+Fetching project platform/prebuilts/clang/darwin-x86/host/3.6
+Fetching project device/huawei/angler-kernel
+Fetching project platform/external/libevent
+Fetching project platform/hardware/intel/common/libmix
+Fetching project platform/external/vboot_reference
+Fetching project platform/hardware/qcom/media
+Fetching project platform/packages/inputmethods/OpenWnn
+Fetching project platform/packages/wallpapers/LivePicker
+Fetching project platform/packages/apps/CarrierConfig
+Fetching project platform/developers/samples/android
+Fetching project platform/external/ltrace
+Fetching project platform/external/libselinux
+Fetching project platform/frameworks/compile/mclinker
+Fetching project platform/external/xmp_toolkit
+Fetching project platform/external/ppp
+Fetching project platform/hardware/intel/common/libstagefrighthw
+Fetching project platform/packages/apps/BasicSmsReceiver
+Fetching project platform/external/libpng
+Fetching project platform/docs/source.android.com
+Fetching project platform/exteFrom https://android.googlesource.com/platform/external/libpng
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/lzma
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libdivsufsort
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/docs/source.android.com
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/cmockery
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 242 (delta 38), reused 146 (delta 38)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_sepolicy
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/chromium-libpac
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/ca-certificates
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/sqlite
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/androidplot
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 72 (delta 47), reused 72 (delta 47)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_libzip
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/system/connectivity/dhcp_client
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8960
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/art
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/srtp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/valgrind
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/PackageInstaller
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libexif
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/fio
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jsr330
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/google/apf
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/easymock
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/connectivity/shill
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libcxx
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/BlockedNumberProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 124 (delta 23), reused 95 (delta 23)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_board_navi_ref
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/gptfdisk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/objenesis
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/PartnerBookmarksProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/deqp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jarjar
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 809 (delta 103), reused 429 (delta 103)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_arm-trusted-firmware
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/libvorbis
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/droiddriver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8994
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-tv-pairing-protocol
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/tools/test/connectivity
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mmc-utils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 79 (delta 16), reused 52 (delta 16)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_optee_optee-client
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/tcpdump
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mockito
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 12574 (delta 1084), reused 4159 (delta 1084)
+From ssh://review.gerrithub.io:29418/NexellCorp/u-boot-2016.01
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/prebuilts/python/darwin-x86/2.7.5
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/blktrace
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/CellBroadcastReceiver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/noto-fonts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/rootdev
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 772 (delta 62), reused 698 (delta 62)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_realtek_wpa_supplicant_8
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/fsck_msdos
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/xmlwriter
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 198 (delta 60), reused 159 (delta 60)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_system_netd
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/ExactCalculator
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/emma
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/akm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/chromium-trace
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/img/hwcomposer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/MusicFX
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/OneTimeInitializer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/scrypt
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/timezonepicker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/svox
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 103 (delta 40), reused 85 (delta 40)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_hardware_broadcom_libbt
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/Test/connectivity
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/hyphenation-patterns
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/libwsbm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mini-emulator-arm64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 83 (delta 19), reused 66 (delta 19)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_tslib
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/expat
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 236 (delta 132), reused 186 (delta 132)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_exfat
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/frameworks/opt/net/voip
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/ContactsCommon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 268 (delta 77), reused 199 (delta 77)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_libplist
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/system/webservd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/glide
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/tools/external/gradle
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/abi/cpp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/media
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/marvell/bt
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/SafetyRegulatoryInfo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/chromium-webview
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Terminal
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+rnal/lzma
+Fetching project platform/external/libdivsufsort
+Fetching project android_platform_external_sepolicy
+Fetching project platform/external/cmockery
+Fetching project platform/system/ca-certificates
+Fetching project platform/external/chromium-libpac
+Fetching project platform/external/sqlite
+Fetching project platform/external/androidplot
+Fetching project android_solution_carlife_libzip
+Fetching project platform/art
+Fetching project platform/system/connectivity/dhcp_client
+Fetching project platform/hardware/qcom/msm8960
+Fetching project platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9
+Fetching project platform/external/valgrind
+Fetching project platform/external/srtp
+Fetching project platform/packages/apps/PackageInstaller
+Fetching project platform/external/libexif
+Fetching project platform/external/fio
+Fetching project platform/external/jsr330
+Fetching project platform/hardware/google/apf
+Fetching project platform/external/easymock
+Fetching project android_board_navi_ref
+Fetching project platform/system/connectivity/shill
+Fetching project platform/external/libcxx
+Fetching project platform/packages/providers/BlockedNumberProvider
+Fetching project platform/external/deqp
+Fetching project platform/external/gptfdisk
+Fetching project platform/external/objenesis
+Fetching project platform/packages/providers/PartnerBookmarksProvider
+Fetching project platform/tools/external/gradle
+Fetching project secure_arm-trusted-firmware
+Fetching project platform/external/jarjar
+Fetching project u-boot-2016.01
+Fetching project platform/external/libvorbis
+Fetching project platform/external/droiddriver
+Fetching project platform/hardware/qcom/msm8994
+Fetching project platform/external/google-tv-pairing-protocol
+Fetching project platform/tools/test/connectivity
+Fetching project platform/external/mmc-utils
+Fetching project secure_optee_optee-client
+Fetching project platform/external/tcpdump
+Fetching project platform/external/mockito
+Fetching project platform/prebuilts/python/darwin-x86/2.7.5
+Fetching project platform/external/blktrace
+Fetching project platform/external/noto-fonts
+Fetching project platform/packages/apps/CellBroadcastReceiver
+Fetching project android_realtek_wpa_supplicant_8
+Fetching project platform/external/rootdev
+Fetching project android_platform_system_netd
+Fetching project platform/external/fsck_msdos
+Fetching project platform/external/xmlwriter
+Fetching project platform/packages/apps/ExactCalculator
+Fetching project platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+Fetching project platform/external/emma
+Fetching project platform/external/chromium-trace
+Fetching project platform/hardware/akm
+Fetching project platform/hardware/intel/img/hwcomposer
+Fetching project platform/packages/apps/MusicFX
+Fetching project platform/packages/apps/OneTimeInitializer
+Fetching project platform/external/scrypt
+Fetching project platform/external/svox
+Fetching project platform/frameworks/opt/timezonepicker
+Fetching project platform/external/chromium-webview
+Fetching project android_platform_hardware_broadcom_libbt
+Fetching project platform/packages/apps/Test/connectivity
+Fetching project platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+Fetching project platform/external/hyphenation-patterns
+Fetching project platform/hardware/intel/common/libwsbm
+Fetching project device/generic/mini-emulator-arm64
+Fetching project android_platform_external_tslib
+Fetching project platform/external/expat
+Fetching project android_platform_external_exfat
+Fetching project platform/frameworks/opt/net/voip
+Fetching project platform/packages/apps/ContactsCommon
+Fetching project android_solution_carlife_libplist
+Fetching project platform/system/webservd
+Fetching project platform/external/glide
+Fetching project platform/system/media
+Fetching project platform/abi/cpp
+Fetching project platform/hardware/marvell/bt
+Fetching project platform/prebuilts/eclipse
+Fetching project platform/packages/apps/SafetyRegulatoryInfo
+Fetching project platform/external/icu
+Fetching project platform/packages/apps/Terminal
+Fetching project platform/prebuilts/gFrom https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/owasp/sanitizer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jmdns
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/eclipse
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/icu
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/fdlibm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/shflags
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/iptables
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/apache-harmony
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/bionic
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Tag
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/connectivity/apmanager
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/testng
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/utils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/keymaster
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/apache-http
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-fonts/carrois-gothic-sc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ims
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/v8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 55 (delta 19), reused 47 (delta 19)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_optee_optee-build
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/prebuilts/go/darwin-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/pcre
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libcap-ng
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/DevCamera
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/StorageManager
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/ndk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libbrillo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/guice
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/nanohttpd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/f2fs-tools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/ti/omap3
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libweave
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/TelephonyProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/javassist
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1366 (delta 122), reused 603 (delta 122)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_system_core
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/hardware/intel/common/wrs_omxil_core
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/archive-patcher
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/screensavers/PhotoTable
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-breakpad
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/multidex
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/cros/system_api
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libedit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/contexthub
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 93 (delta 32), reused 70 (delta 32)
+From ssh://review.gerrithub.io:29418/NexellCorp/bl2_s5p4418
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/libjpeg-turbo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/ti/omap4-aah
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/vixl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/intel/edison
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/hamcrest
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/bsdiff
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/SpareParts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jemalloc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libphonenumber
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/webrtc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 57 (delta 22), reused 32 (delta 22)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_hwc
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/libunwind_llvm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/caliper
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libmtp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libdrm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/wlan
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/lz4
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 212 (delta 41), reused 76 (delta 41)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_libimobiledevice
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/jmonkeyengine
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/llvm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/doclava
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/webp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/openfst
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libyuv
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libgsm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/security
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/ml
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mini-emulator-mips64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8x26
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/pdk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/marlin-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/harfbuzz_ng
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jetty
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/services/Telecomm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ipsec-tools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 125 (delta 27), reused 91 (delta 27)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_board_avn_ref
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/oauth
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jsilver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/arm64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/lge/bullhead
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/skia
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dexmaker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/data-binding
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+cc/darwin-x86/arm/arm-eabi-4.8
+Fetching project platform/external/owasp/sanitizer
+Fetching project platform/external/jmdns
+Fetching project platform/external/fdlibm
+Fetching project platform/bionic
+Fetching project platform/external/iptables
+Fetching project platform/external/shflags
+Fetching project platform/external/apache-harmony
+Fetching project platform/packages/apps/Tag
+Fetching project platform/external/testng
+Fetching project platform/system/connectivity/apmanager
+Fetching project platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+Fetching project linux_kernel-4.4.x
+Fetching project platform/hardware/intel/common/utils
+Fetching project platform/system/keymaster
+Fetching project platform/external/apache-http
+Fetching project platform/external/v8
+Fetching project platform/external/google-fonts/carrois-gothic-sc
+Fetching project platform/external/ims
+Fetching project platform/prebuilts/go/darwin-x86
+Fetching project secure_optee_optee-build
+Fetching project platform/external/pcre
+Fetching project platform/external/libcap-ng
+Fetching project platform/packages/apps/DevCamera
+Fetching project platform/ndk
+Fetching project platform/packages/apps/StorageManager
+Fetching project platform/external/guice
+Fetching project platform/external/libbrillo
+Fetching project platform/external/nanohttpd
+Fetching project platform/hardware/ti/omap3
+Fetching project platform/external/f2fs-tools
+Fetching project platform/external/libweave
+Fetching project android_platform_system_core
+Fetching project platform/packages/providers/TelephonyProvider
+Fetching project platform/external/javassist
+Fetching project platform/hardware/intel/common/wrs_omxil_core
+Fetching project platform/external/archive-patcher
+Fetching project bl2_s5p4418
+Fetching project platform/packages/screensavers/PhotoTable
+Fetching project platform/external/google-breakpad
+Fetching project platform/frameworks/multidex
+Fetching project platform/external/cros/system_api
+Fetching project platform/external/libedit
+Fetching project device/google/contexthub
+Fetching project platform/external/libjpeg-turbo
+Fetching project platform/external/vixl
+Fetching project platform/hardware/ti/omap4-aah
+Fetching project device/intel/edison
+Fetching project platform/external/hamcrest
+Fetching project platform/external/bsdiff
+Fetching project platform/packages/apps/SpareParts
+Fetching project platform/external/jemalloc
+Fetching project platform/external/libphonenumber
+Fetching project platform/external/webrtc
+Fetching project android_hal_hwc
+Fetching project platform/external/libunwind_llvm
+Fetching project platform/external/caliper
+Fetching project platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8
+Fetching project platform/external/libmtp
+Fetching project platform/external/libdrm
+Fetching project platform/hardware/qcom/wlan
+Fetching project platform/external/lz4
+Fetching project android_solution_carlife_libimobiledevice
+Fetching project platform/external/llvm
+Fetching project platform/external/jmonkeyengine
+Fetching project platform/external/doclava
+Fetching project platform/external/webp
+Fetching project platform/external/openfst
+Fetching project platform/external/libyuv
+Fetching project platform/external/libgsm
+Fetching project platform/system/security
+Fetching project platform/frameworks/ml
+Fetching project device/generic/mini-emulator-mips64
+Fetching project platform/hardware/qcom/msm8x26
+Fetching project device/google/marlin-kernel
+Fetching project platform/pdk
+Fetching project platform/external/harfbuzz_ng
+Fetching project android_board_avn_ref
+Fetching project platform/external/jetty
+Fetching project platform/packages/services/Telecomm
+Fetching project platform/external/ipsec-tools
+Fetching project platform/external/oauth
+Fetching project platform/external/jsilver
+Fetching project device/generic/arm64
+Fetching project device/lge/bullhead
+Fetching project platform/external/skia
+Fetching project platform/external/dexmaker
+Fetching project platform/frameworks/data-binding
+Fetching project platform/external/tinyxml2
+Fetching project platform/prebuilts/android-emuFrom https://android.googlesource.com/platform/external/tinyxml2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/speex
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/pdfium
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libmpeg2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dnsmasq
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mksh
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mdnsresponder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/android-emulator
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/guava
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jsoncpp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libcap
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/junit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/clang
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/RetailDemo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1380 (delta 241), reused 788 (delta 241)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_frameworks_native
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/bouncycastle
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 57169 (delta 2151), reused 21004 (delta 2151)
+Total 197 (delta 30), reused 172 (delta 30)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_board_con_svma
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_kernel-4.4.x
+ * [new branch]      nexell     -> nexell/nexell
+Total 40 (delta 20), reused 27 (delta 20)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_gralloc
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/PhoneCommon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/snakeyaml
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 141 (delta 38), reused 92 (delta 38)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_hardware_libhardware_legacy
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/frameworks/rs
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 73 (delta 15), reused 53 (delta 15)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_libusbmuxd
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/hardware/intel/img/psb_video
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/gmock
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/piex
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Contacts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 108 (delta 23), reused 65 (delta 23)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_optee_optee-linuxdriver
+ * [new branch]      nexell     -> nexell/nexell
+Total 8 (delta 0), reused 8 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_library_libnxjpeg
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/modp_b64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/nfacct
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/screensavers/Basic
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Dialer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mtpd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/ContactsProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/SoundRecorder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libavc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/marisa-trie
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/compile/libbcc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 9 (delta 1), reused 5 (delta 1)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_lights
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/protobuf
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/tools/aidl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/eigen
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libmicrohttpd
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/calendar
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 2338 (delta 269), reused 1778 (delta 269)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_packages_app_Camera2
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/freetype
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libusb
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gdb/darwin-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Provision
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/deqp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mips
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/iputils
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/img/psb_headers
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/fec
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/tools/external/fat32lib
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/display
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/sensors
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libvpx
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-benchmark
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tagsoup
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/selinux
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/armv7-a-neon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/drm_gralloc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/crcalc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tinycompress
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Nfc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/sonic
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Calculator
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mini-emulator-mips
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jcommander
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/dhcpcd-6.8.2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/marlin
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/netperf
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/CalendarProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/bluetooth
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libdaemon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/bt
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/ninja/linux-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/smali
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/BookmarkProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libvterm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/gps
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/zlib
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Messaging
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+lator
+Fetching project platform/external/speex
+Fetching project platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8
+Fetching project platform/external/pdfium
+Fetching project platform/external/libmpeg2
+Fetching project platform/external/dnsmasq
+Fetching project platform/external/mksh
+Fetching project platform/external/mdnsresponder
+Fetching project platform/external/clang
+Fetching project platform/external/guava
+Fetching project platform/external/jsoncpp
+Fetching project platform/external/libcap
+Fetching project platform/external/junit
+Fetching project platform/packages/apps/RetailDemo
+Fetching project android_platform_frameworks_native
+Fetching project android_board_con_svma
+Fetching project platform/external/bouncycastle
+Fetching project android_hal_gralloc
+Fetching project platform/packages/apps/PhoneCommon
+Fetching project platform/external/snakeyaml
+Fetching project android_platform_hardware_libhardware_legacy
+Fetching project android_solution_carlife_libusbmuxd
+Fetching project platform/frameworks/rs
+Fetching project platform/hardware/intel/img/psb_video
+Fetching project platform/external/gmock
+Fetching project secure_optee_optee-linuxdriver
+Fetching project android_library_libnxjpeg
+Fetching project platform/external/piex
+Fetching project platform/packages/apps/Contacts
+Fetching project android_nexell_tools
+Fetching project platform/external/modp_b64
+Fetching project platform/external/nfacct
+Fetching project platform/packages/apps/Dialer
+Fetching project platform/packages/screensavers/Basic
+Fetching project platform/external/mtpd
+Fetching project platform/packages/providers/ContactsProvider
+Fetching project platform/external/libavc
+Fetching project platform/packages/apps/SoundRecorder
+Fetching project platform/external/marisa-trie
+Fetching project android_platform_packages_app_Camera2
+Fetching project platform/frameworks/compile/libbcc
+Fetching project android_hal_lights
+Fetching project platform/external/protobuf
+Fetching project platform/system/tools/aidl
+Fetching project platform/external/eigen
+Fetching project platform/external/libmicrohttpd
+Fetching project platform/frameworks/opt/calendar
+Fetching project platform/external/freetype
+Fetching project platform/external/libusb
+Fetching project platform/prebuilts/deqp
+Fetching project platform/prebuilts/gdb/darwin-x86
+Fetching project platform/packages/apps/Provision
+Fetching project platform/external/iputils
+Fetching project device/generic/mips
+Fetching project platform/external/fec
+Fetching project platform/hardware/intel/img/psb_headers
+Fetching project platform/tools/external/fat32lib
+Fetching project platform/hardware/qcom/display
+Fetching project platform/external/libvpx
+Fetching project platform/hardware/intel/sensors
+Fetching project platform/external/google-benchmark
+Fetching project platform/external/tagsoup
+Fetching project platform/external/selinux
+Fetching project device/generic/armv7-a-neon
+Fetching project platform/external/crcalc
+Fetching project platform/external/drm_gralloc
+Fetching project platform/packages/apps/Nfc
+Fetching project platform/external/tinycompress
+Fetching project platform/external/sonic
+Fetching project android_platform_prebuilts_sdk
+Fetching project platform/packages/apps/Calculator
+Fetching project device/generic/mini-emulator-mips
+Fetching project platform/external/jcommander
+Fetching project platform/external/dhcpcd-6.8.2
+Fetching project device/google/marlin
+Fetching project platform/external/netperf
+Fetching project platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9
+Fetching project platform/packages/providers/CalendarProvider
+Fetching project platform/frameworks/opt/bluetooth
+Fetching project platform/external/libdaemon
+Fetching project platform/hardware/qcom/bt
+Fetching project platform/prebuilts/ninja/linux-x86
+Fetching project platform/external/smali
+Fetching project platform/packages/providers/BookmarkProvider
+Fetching project platform/external/libvterm
+Fetching project platform/hardware/qcom/gps
+Fetching project platform/external/zlib
+Fetching project platform/packages/apps/Messaging
+FetcFrom https://android.googlesource.com/platform/external/nanopb-c
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/CertInstaller
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 2 (delta 0), reused 2 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_keystore
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/ManagedProvisioning
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/bison
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/lge/bullhead-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/ksoap2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/openssh
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/experimental
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/invensense
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Phone
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/toybox
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/misc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/clang/host/darwin-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/atv
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/ril
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/sample
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/firewalld
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 70 (delta 25), reused 53 (delta 25)
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_library_nx-video-api
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/apache-commons-math
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-fonts/cutive-mono
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/build/kati
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/sl4a
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/DeskClock
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/camera
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/opencv
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libxml2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/linaro/hikey-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/extras
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/msm8x84
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/minijail
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/development
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/TvProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 251 (delta 46), reused 104 (delta 46)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_libusb
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/device/google/dragon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 47 (delta 19), reused 41 (delta 19)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_patch_quickboot_nougat
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/mp4parser
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/accessory/demokit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/providers/MediaProvider
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/vogar
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/iproute2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 37544 (delta 8821), reused 30564 (delta 8821)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_frameworks_base
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/libpcap
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/javasqlite
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/services/Car
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/messageformat
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libvncserver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/ti/omap4xxx
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/conscrypt
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/jacoco
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/photoviewer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/x86_64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mips64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/chips
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/eclipse-windowbuilder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/vcard
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/support
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/developers/build
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/bd_prov
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 428 (delta 203), reused 417 (delta 203)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_ntfs-3g
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Total 2190 (delta 818), reused 2190 (delta 818)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_prebuilts_sdk
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/screensavers/WebView
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/mini-emulator-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/intel/common/libva
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/okhttp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/safe-iop
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/cblas
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/gemmlowp
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/mockwebserver
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/generic/qemu
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1647 (delta 547), reused 1265 (delta 547)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_openssl
+ * [new branch]      nexell     -> nexell/nexell
+Total 59 (delta 7), reused 59 (delta 7)
+From https://android.googlesource.com/platform/external/libnfc-nci
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From ssh://review.gerrithub.io:29418/NexellCorp/android_vendor_google
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/generic/x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/asus/fugu
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/google/dragon-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/nativepower
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1545 (delta 161), reused 1408 (delta 161)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_bootable_recovery
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/prebuilts/ndk
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/embunit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 1363 (delta 534), reused 914 (delta 534)
+From ssh://review.gerrithub.io:29418/NexellCorp/secure_optee_optee-os
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/external/proguard
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/libs/libedit
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/setupwizard
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-fonts/dancing-script
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+hing project platform/external/nanopb-c
+Fetching project platform/packages/apps/CertInstaller
+Fetching project android_hal_keystore
+Fetching project platform/packages/apps/ManagedProvisioning
+Fetching project platform/external/bison
+Fetching project device/lge/bullhead-kernel
+Fetching project platform/external/ksoap2
+Fetching project platform/external/openssh
+Fetching project platform/packages/experimental
+Fetching project platform/hardware/invensense
+Fetching project platform/packages/apps/Phone
+Fetching project platform/external/toybox
+Fetching project platform/prebuilts/misc
+Fetching project platform/prebuilts/clang/host/darwin-x86
+Fetching project device/google/atv
+Fetching project platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9
+Fetching project platform/hardware/ril
+Fetching project device/sample
+Fetching project platform/system/firewalld
+Fetching project linux_library_nx-video-api
+Fetching project platform/external/apache-commons-math
+Fetching project platform/external/google-fonts/cutive-mono
+Fetching project platform/build/kati
+Fetching project platform/external/sl4a
+Fetching project platform/packages/apps/DeskClock
+Fetching project platform/hardware/qcom/camera
+Fetching project platform/external/opencv
+Fetching project platform/external/libxml2
+Fetching project device/linaro/hikey-kernel
+Fetching project platform/system/extras
+Fetching project platform/hardware/qcom/msm8x84
+Fetching project platform/external/minijail
+Fetching project platform/development
+Fetching project platform/packages/providers/TvProvider
+Fetching project android_solution_carlife_libusb
+Fetching project device/google/dragon
+Fetching project android_patch_quickboot_nougat
+Fetching project platform/external/mp4parser
+Fetching project device/google/accessory/demokit
+Fetching project platform/packages/providers/MediaProvider
+Fetching project platform/external/vogar
+Fetching project platform/external/iproute2
+Fetching project platform/external/libpcap
+Fetching project android_test
+Fetching project platform/external/javasqlite
+Fetching project platform/packages/services/Car
+Fetching project platform/external/messageformat
+Fetching project platform/external/libvncserver
+Fetching project platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9
+Fetching project platform/hardware/ti/omap4xxx
+Fetching project platform/external/conscrypt
+Fetching project platform/external/jacoco
+Fetching project platform/frameworks/opt/photoviewer
+Fetching project device/generic/x86_64
+Fetching project device/generic/mips64
+Fetching project platform/frameworks/opt/chips
+Fetching project platform/external/eclipse-windowbuilder
+Fetching project platform/prebuilts/clang/host/linux-x86
+Fetching project platform/frameworks/opt/vcard
+Fetching project platform/frameworks/support
+Fetching project platform/developers/build
+Fetching project platform/hardware/intel/common/bd_prov
+Fetching project android_platform_external_ntfs-3g
+Fetching project android_vendor_google
+Fetching project platform/packages/screensavers/WebView
+Fetching project device/generic/mini-emulator-x86
+Fetching project platform/hardware/intel/common/libva
+Fetching project platform/external/okhttp
+Fetching project platform/external/safe-iop
+Fetching project platform/external/cblas
+Fetching project platform/external/gemmlowp
+Fetching project platform/external/mockwebserver
+Fetching project device/generic/qemu
+Fetching project android_solution_carlife_openssl
+Fetching project platform/external/libnfc-nci
+Fetching project device/generic/x86
+Fetching project android_platform_bootable_recovery
+Fetching project device/asus/fugu
+Fetching project device/google/dragon-kernel
+Fetching project platform/system/nativepower
+Fetching project platform/prebuilts/ndk
+Fetching project secure_optee_optee-os
+Fetching project platform/external/embunit
+Fetching project platform/external/proguard
+Fetching project platform/prebuilts/libs/libedit
+Fetching project platform/frameworks/opt/setupwizard
+Fetching project platform/external/google-fonts/dancing-script
+Fetching project platform/external/drm_hwcomposer
+FetchiFrom https://android.googlesource.com/platform/external/drm_hwcomposer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 51 (delta 16), reused 46 (delta 16)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_patch_nougat
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/generic/mini-emulator-x86_64
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 37 (delta 15), reused 31 (delta 15)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_audio
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/prebuilts/ninja/darwin-x86
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/avahi
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/HTMLViewer
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 251 (delta 58), reused 216 (delta 58)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_omx
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Total 39 (delta 2), reused 39 (delta 2)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_test
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Total 661 (delta 201), reused 533 (delta 201)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_packages_apps_Music
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/htc/flounder
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tlsdate
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/TvSettings
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/tpm
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 421 (delta 53), reused 308 (delta 53)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_frameworks_opt_net_wifi
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/device/linaro/hikey
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tpm2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/device/htc/flounder-kernel
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/android-mock
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/audio
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/squashfs-tools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/nist-sip
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/google-fonts/coming-soon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 5 (delta 0), reused 4 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/linux_library_include
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/packages/apps/LegacyCamera
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/system/gatekeeper
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/nist-pkits
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 79 (delta 13), reused 76 (delta 13)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_hal_mali
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/giflib
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/unicode
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/libcxxabi
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Launcher2
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/curl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/inputconnectioncommon
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/libnativehelper
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/compiler-rt
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/roboto-fonts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/frameworks/opt/datetimepicker
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/maven_repo/android
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/replicaisland
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 76 (delta 19), reused 52 (delta 19)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_solution_carlife_usbmuxd
+ * [new branch]      nexell     -> nexell/nexell
+From https://android.googlesource.com/platform/prebuilts/tools
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/build/blueprint
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/kernel-headers
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/boringssl
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/cts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/hardware/qcom/keymaster
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 371 (delta 113), reused 274 (delta 113)
+Total 2533 (delta 430), reused 1539 (delta 430)
+From ssh://review.gerrithub.io:29418/NexellCorp/bl1_s5p4418
+ * [new branch]      nexell     -> nexell/nexell
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_packages_app_Settings
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/packages/apps/KeyChain
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/packages/apps/Gallery
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 226 (delta 82), reused 170 (delta 82)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_external_fuse
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+From https://android.googlesource.com/platform/external/dlmalloc
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/donuts
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/tremolo
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+From https://android.googlesource.com/platform/external/flac
+ * [new tag]         android-7.1.2_r36 -> android-7.1.2_r36
+Total 3123 (delta 599), reused 1270 (delta 599)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_platform_frameworks_av
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Total 40 (delta 0), reused 38 (delta 0)
+From ssh://review.gerrithub.io:29418/NexellCorp/android_nexell_tools
+ * [new branch]      nougat-dev -> nexell/nougat-dev
+Checking out files:  32% (3889/11891)   Checking out files:  33% (3925/11891)   Checking out files:  34% (4043/11891)   Checking out files:  35% (4162/11891)   Checking out files:  36% (4281/11891)   Checking out files:  37% (4400/11891)   Checking out files:  38% (4519/11891)   Checking out files:  39% (4638/11891)   Checking out files:  40% (4757/11891)   Checking out files:  41% (4876/11891)   Checking out files:  42% (4995/11891)   Checking out files:  43% (5114/11891)   Checking out files:  44% (5233/11891)   Checking out files:  45% (5351/11891)   Checking out files:  46% (5470/11891)   Checking out files:  47% (5589/11891)   Checking out files:  48% (5708/11891)   Checking out files:  49% (5827/11891)   Checking out files:  50% (5946/11891)   Checking out files:  51% (6065/11891)   Checking out files:  52% (6184/11891)   Checking out files:  53% (6303/11891)   Checking out files:  54% (6422/11891)   Checking out files:  55% (6541/11891)   Checking out files:  56% (6659/11891)   Checking out files:  57% (6778/11891)   Checking out files:  58% (6897/11891)   Checking out files:  59% (7016/11891)   Checking out files:  60% (7135/11891)   Checking out files:  61% (7254/11891)   Checking out files:  62% (7373/11891)   Checking out files:  63% (7492/11891)   Checking out files:  64% (7611/11891)   Checking out files:  65% (7730/11891)   Checking out files:  66% (7849/11891)   Checking out files:  67% (7967/11891)   Checking out files:  68% (8086/11891)   Checking out files:  69% (8205/11891)   Checking out files:  70% (8324/11891)   Checking out files:  71% (8443/11891)   Checking out files:  72% (8562/11891)   Checking out files:  73% (8681/11891)   Checking out files:  74% (8800/11891)   Checking out files:  74% (8812/11891)   Checking out files:  75% (8919/11891)   Checking out files:  76% (9038/11891)   Checking out files:  77% (9157/11891)   Checking out files:  78% (9275/11891)   Checking out files:  79% (9394/11891)   Checking out files:  80% (9513/11891)   Checking out files:  81% (9632/11891)   Checking out files:  82% (9751/11891)   Checking out files:  83% (9870/11891)   Checking out files:  84% (9989/11891)   Checking out files:  85% (10108/11891)   Checking out files:  86% (10227/11891)   Checking out files:  87% (10346/11891)   Checking out files:  88% (10465/11891)   Checking out files:  89% (10583/11891)   Checking out files:  90% (10702/11891)   Checking out files:  91% (10821/11891)   Checking out files:  92% (10940/11891)   Checking out files:  93% (11059/11891)   Checking out files:  94% (11178/11891)   Checking out files:  95% (11297/11891)   Checking out files:  96% (11416/11891)   Checking out files:  97% (11535/11891)   Checking out files:  98% (11654/11891)   Checking out files:  99% (11773/11891)   Checking out files: 100% (11891/11891)   Checking out files: 100% (11891/11891), done.
+Checking out files:  29% (3407/11736)   Checking out files:  30% (3521/11736)   Checking out files:  31% (3639/11736)   Checking out files:  32% (3756/11736)   Checking out files:  33% (3873/11736)   Checking out files:  34% (3991/11736)   Checking out files:  35% (4108/11736)   Checking out files:  36% (4225/11736)   Checking out files:  37% (4343/11736)   Checking out files:  38% (4460/11736)   Checking out files:  39% (4578/11736)   Checking out files:  40% (4695/11736)   Checking out files:  41% (4812/11736)   Checking out files:  42% (4930/11736)   Checking out files:  43% (5047/11736)   Checking out files:  44% (5164/11736)   Checking out files:  45% (5282/11736)   Checking out files:  46% (5399/11736)   Checking out files:  47% (5516/11736)   Checking out files:  48% (5634/11736)   Checking out files:  49% (5751/11736)   Checking out files:  50% (5868/11736)   Checking out files:  51% (5986/11736)   Checking out files:  52% (6103/11736)   Checking out files:  53% (6221/11736)   Checking out files:  54% (6338/11736)   Checking out files:  55% (6455/11736)   Checking out files:  56% (6573/11736)   Checking out files:  57% (6690/11736)   Checking out files:  58% (6807/11736)   Checking out files:  59% (6925/11736)   Checking out files:  60% (7042/11736)   Checking out files:  61% (7159/11736)   Checking out files:  62% (7277/11736)   Checking out files:  63% (7394/11736)   Checking out files:  64% (7512/11736)   Checking out files:  65% (7629/11736)   Checking out files:  66% (7746/11736)   Checking out files:  67% (7864/11736)   Checking out files:  68% (7981/11736)   Checking out files:  69% (8098/11736)   Checking out files:  70% (8216/11736)   Checking out files:  71% (8333/11736)   Checking out files:  72% (8450/11736)   Checking out files:  73% (8568/11736)   Checking out files:  74% (8685/11736)   Checking out files:  75% (8802/11736)   Checking out files:  76% (8920/11736)   Checking out files:  77% (9037/11736)   Checking out files:  78% (9155/11736)   Checking out files:  79% (9272/11736)   Checking out files:  80% (9389/11736)   Checking out files:  81% (9507/11736)   Checking out files:  82% (9624/11736)   Checking out files:  83% (9741/11736)   Checking out files:  84% (9859/11736)   Checking out files:  85% (9976/11736)   Checking out files:  86% (10093/11736)   Checking out files:  87% (10211/11736)   Checking out files:  88% (10328/11736)   Checking out files:  89% (10446/11736)   Checking out files:  90% (10563/11736)   Checking out files:  91% (10680/11736)   Checking out files:  92% (10798/11736)   Checking out files:  93% (10915/11736)   Checking out files:  93% (11016/11736)   Checking out files:  94% (11032/11736)   Checking out files:  95% (11150/11736)   Checking out files:  96% (11267/11736)   Checking out files:  97% (11384/11736)   Checking out files:  98% (11502/11736)   Checking out files:  99% (11619/11736)   Checking out files: 100% (11736/11736)   Checking out files: 100% (11736/11736), done.
+Checking out files:  23% (12547/53862)   Checking out files:  24% (12927/53862)   Checking out files:  25% (13466/53862)   Checking out files:  26% (14005/53862)   Checking out files:  27% (14543/53862)   Checking out files:  28% (15082/53862)   Checking out files:  29% (15620/53862)   Checking out files:  30% (16159/53862)   Checking out files:  31% (16698/53862)   Checking out files:  32% (17236/53862)   Checking out files:  33% (17775/53862)   Checking out files:  34% (18314/53862)   Checking out files:  35% (18852/53862)   Checking out files:  36% (19391/53862)   Checking out files:  37% (19929/53862)   Checking out files:  38% (20468/53862)   Checking out files:  39% (21007/53862)   Checking out files:  40% (21545/53862)   Checking out files:  41% (22084/53862)   Checking out files:  42% (22623/53862)   Checking out files:  42% (22676/53862)   Checking out files:  43% (23161/53862)   Checking out files:  44% (23700/53862)   Checking out files:  45% (24238/53862)   Checking out files:  46% (24777/53862)   Checking out files:  47% (25316/53862)   Checking out files:  48% (25854/53862)   Checking out files:  49% (26393/53862)   Checking out files:  50% (26931/53862)   Checking out files:  51% (27470/53862)   Checking out files:  52% (28009/53862)   Checking out files:  53% (28547/53862)   Checking out files:  54% (29086/53862)   Checking out files:  54% (29169/53862)   Checking out files:  55% (29625/53862)   Checking out files:  56% (30163/53862)   Checking out files:  57% (30702/53862)   Checking out files:  58% (31240/53862)   Checking out files:  59% (31779/53862)   Checking out files:  60% (32318/53862)   Checking out files:  61% (32856/53862)   Checking out files:  62% (33395/53862)   Checking out files:  63% (33934/53862)   Checking out files:  64% (34472/53862)   Checking out files:  65% (35011/53862)   Checking out files:  66% (35549/53862)   Checking out files:  66% (36040/53862)   Checking out files:  67% (36088/53862)   Checking out files:  68% (36627/53862)   Checking out files:  69% (37165/53862)   Checking out files:  70% (37704/53862)   Checking out files:  71% (38243/53862)   Checking out files:  72% (38781/53862)   Checking out files:  73% (39320/53862)   Checking out files:  74% (39858/53862)   Checking out files:  75% (40397/53862)   Checking out files:  76% (40936/53862)   Checking out files:  77% (41474/53862)   Checking out files:  78% (42013/53862)   Checking out files:  79% (42551/53862)   Checking out files:  80% (43090/53862)   Checking out files:  81% (43629/53862)   Checking out files:  82% (44167/53862)   Checking out files:  83% (44706/53862)   Checking out files:  84% (45245/53862)   Checking out files:  85% (45783/53862)   Checking out files:  85% (46027/53862)   Checking out files:  86% (46322/53862)   Checking out files:  87% (46860/53862)   Checking out files:  88% (47399/53862)   Checking out files:  89% (47938/53862)   Checking out files:  90% (48476/53862)   Checking out files:  91% (49015/53862)   Checking out files:  92% (49554/53862)   Checking out files:  93% (50092/53862)   Checking out files:  94% (50631/53862)   Checking out files:  95% (51169/53862)   Checking out files:  96% (51708/53862)   Checking out files:  97% (52247/53862)   Checking out files:  98% (52785/53862)   Checking out files:  99% (53324/53862)   Checking out files: 100% (53862/53862)   Checking out files: 100% (53862/53862), done.
+Checking out files:  18% (1542/8423)   Checking out files:  19% (1601/8423)   Checking out files:  20% (1685/8423)   Checking out files:  21% (1769/8423)   Checking out files:  22% (1854/8423)   Checking out files:  23% (1938/8423)   Checking out files:  24% (2022/8423)   Checking out files:  25% (2106/8423)   Checking out files:  26% (2190/8423)   Checking out files:  27% (2275/8423)   Checking out files:  28% (2359/8423)   Checking out files:  29% (2443/8423)   Checking out files:  30% (2527/8423)   Checking out files:  31% (2612/8423)   Checking out files:  32% (2696/8423)   Checking out files:  33% (2780/8423)   Checking out files:  34% (2864/8423)   Checking out files:  35% (2949/8423)   Checking out files:  36% (3033/8423)   Checking out files:  37% (3117/8423)   Checking out files:  38% (3201/8423)   Checking out files:  39% (3285/8423)   Checking out files:  40% (3370/8423)   Checking out files:  41% (3454/8423)   Checking out files:  42% (3538/8423)   Checking out files:  43% (3622/8423)   Checking out files:  44% (3707/8423)   Checking out files:  45% (3791/8423)   Checking out files:  46% (3875/8423)   Checking out files:  47% (3959/8423)   Checking out files:  48% (4044/8423)   Checking out files:  49% (4128/8423)   Checking out files:  50% (4212/8423)   Checking out files:  51% (4296/8423)   Checking out files:  52% (4380/8423)   Checking out files:  53% (4465/8423)   Checking out files:  54% (4549/8423)   Checking out files:  55% (4633/8423)   Checking out files:  56% (4717/8423)   Checking out files:  57% (4802/8423)   Checking out files:  58% (4886/8423)   Checking out files:  59% (4970/8423)   Checking out files:  60% (5054/8423)   Checking out files:  61% (5139/8423)   Checking out files:  62% (5223/8423)   Checking out files:  63% (5307/8423)   Checking out files:  64% (5391/8423)   Checking out files:  65% (5475/8423)   Checking out files:  66% (5560/8423)   Checking out files:  67% (5644/8423)   Checking out files:  68% (5728/8423)   Checking out files:  69% (5812/8423)   Checking out files:  70% (5897/8423)   Checking out files:  71% (5981/8423)   Checking out files:  72% (6065/8423)   Checking out files:  73% (6149/8423)   Checking out files:  74% (6234/8423)   Checking out files:  75% (6318/8423)   Checking out files:  76% (6402/8423)   Checking out files:  77% (6486/8423)   Checking out files:  78% (6570/8423)   Checking out files:  79% (6655/8423)   Checking out files:  80% (6739/8423)   Checking out files:  81% (6823/8423)   Checking out files:  82% (6907/8423)   Checking out files:  83% (6992/8423)   Checking out files:  84% (7076/8423)   Checking out files:  85% (7160/8423)   Checking out files:  86% (7244/8423)   Checking out files:  87% (7329/8423)   Checking out files:  88% (7413/8423)   Checking out files:  89% (7497/8423)   Checking out files:  90% (7581/8423)   Checking out files:  91% (7665/8423)   Checking out files:  92% (7750/8423)   Checking out files:  93% (7834/8423)   Checking out files:  94% (7918/8423)   Checking out files:  95% (8002/8423)   Checking out files:  96% (8087/8423)   Checking out files:  97% (8171/8423)   Checking out files:  98% (8255/8423)   Checking out files:  99% (8339/8423)   Checking out files: 100% (8423/8423)   Checking out files: 100% (8423/8423), done.
+Checking out files:  10% (738/7379)   Checking out files:  11% (812/7379)   Checking out files:  12% (886/7379)   Checking out files:  13% (960/7379)   Checking out files:  14% (1034/7379)   Checking out files:  15% (1107/7379)   Checking out files:  16% (1181/7379)   Checking out files:  17% (1255/7379)   Checking out files:  18% (1329/7379)   Checking out files:  19% (1403/7379)   Checking out files:  20% (1476/7379)   Checking out files:  21% (1550/7379)   Checking out files:  22% (1624/7379)   Checking out files:  23% (1698/7379)   Checking out files:  24% (1771/7379)   Checking out files:  25% (1845/7379)   Checking out files:  26% (1919/7379)   Checking out files:  27% (1993/7379)   Checking out files:  28% (2067/7379)   Checking out files:  29% (2140/7379)   Checking out files:  30% (2214/7379)   Checking out files:  31% (2288/7379)   Checking out files:  32% (2362/7379)   Checking out files:  33% (2436/7379)   Checking out files:  34% (2509/7379)   Checking out files:  35% (2583/7379)   Checking out files:  36% (2657/7379)   Checking out files:  37% (2731/7379)   Checking out files:  38% (2805/7379)   Checking out files:  39% (2878/7379)   Checking out files:  40% (2952/7379)   Checking out files:  41% (3026/7379)   Checking out files:  42% (3100/7379)   Checking out files:  43% (3173/7379)   Checking out files:  44% (3247/7379)   Checking out files:  45% (3321/7379)   Checking out files:  46% (3395/7379)   Checking out files:  47% (3469/7379)   Checking out files:  48% (3542/7379)   Checking out files:  49% (3616/7379)   Checking out files:  50% (3690/7379)   Checking out files:  51% (3764/7379)   Checking out files:  52% (3838/7379)   Checking out files:  53% (3911/7379)   Checking out files:  54% (3985/7379)   Checking out files:  55% (4059/7379)   Checking out files:  56% (4133/7379)   Checking out files:  57% (4207/7379)   Checking out files:  58% (4280/7379)   Checking out files:  59% (4354/7379)   Checking out files:  60% (4428/7379)   Checking out files:  61% (4502/7379)   Checking out files:  62% (4575/7379)   Checking out files:  63% (4649/7379)   Checking out files:  64% (4723/7379)   Checking out files:  65% (4797/7379)   Checking out files:  66% (4871/7379)   Checking out files:  67% (4944/7379)   Checking out files:  68% (5018/7379)   Checking out files:  69% (5092/7379)   Checking out files:  70% (5166/7379)   Checking out files:  71% (5240/7379)   Checking out files:  72% (5313/7379)   Checking out files:  73% (5387/7379)   Checking out files:  74% (5461/7379)   Checking out files:  75% (5535/7379)   Checking out files:  76% (5609/7379)   Checking out files:  77% (5682/7379)   Checking out files:  78% (5756/7379)   Checking out files:  79% (5830/7379)   Checking out files:  80% (5904/7379)   Checking out files:  81% (5977/7379)   Checking out files:  81% (5987/7379)   Checking out files:  82% (6051/7379)   Checking out files:  83% (6125/7379)   Checking out files:  84% (6199/7379)   Checking out files:  85% (6273/7379)   Checking out files:  86% (6346/7379)   Checking out files:  87% (6420/7379)   Checking out files:  88% (6494/7379)   Checking out files:  89% (6568/7379)   Checking out files:  90% (6642/7379)   Checking out files:  91% (6715/7379)   Checking out files:  92% (6789/7379)   Checking out files:  93% (6863/7379)   Checking out files:  94% (6937/7379)   Checking out files:  95% (7011/7379)   Checking out files:  96% (7084/7379)   Checking out files:  97% (7158/7379)   Checking out files:  98% (7232/7379)   Checking out files:  99% (7306/7379)   Checking out files: 100% (7379/7379)   Checking out files: 100% (7379/7379), done.
+Checking out files:  10% (1151/11478)   Checking out files:  11% (1263/11478)   Checking out files:  12% (1378/11478)   Checking out files:  13% (1493/11478)   Checking out files:  14% (1607/11478)   Checking out files:  15% (1722/11478)   Checking out files:  16% (1837/11478)   Checking out files:  17% (1952/11478)   Checking out files:  18% (2067/11478)   Checking out files:  19% (2181/11478)   Checking out files:  20% (2296/11478)   Checking out files:  21% (2411/11478)   Checking out files:  22% (2526/11478)   Checking out files:  23% (2640/11478)   Checking out files:  24% (2755/11478)   Checking out files:  25% (2870/11478)   Checking out files:  26% (2985/11478)   Checking out files:  27% (3100/11478)   Checking out files:  28% (3214/11478)   Checking out files:  29% (3329/11478)   Checking out files:  30% (3444/11478)   Checking out files:  31% (3559/11478)   Checking out files:  32% (3673/11478)   Checking out files:  33% (3788/11478)   Checking out files:  34% (3903/11478)   Checking out files:  35% (4018/11478)   Checking out files:  36% (4133/11478)   Checking out files:  37% (4247/11478)   Checking out files:  38% (4362/11478)   Checking out files:  39% (4477/11478)   Checking out files:  40% (4592/11478)   Checking out files:  41% (4706/11478)   Checking out files:  42% (4821/11478)   Checking out files:  43% (4936/11478)   Checking out files:  44% (5051/11478)   Checking out files:  45% (5166/11478)   Checking out files:  46% (5280/11478)   Checking out files:  47% (5395/11478)   Checking out files:  48% (5510/11478)   Checking out files:  49% (5625/11478)   Checking out files:  50% (5739/11478)   Checking out files:  51% (5854/11478)   Checking out files:  52% (5969/11478)   Checking out files:  53% (6084/11478)   Checking out files:  54% (6199/11478)   Checking out files:  55% (6313/11478)   Checking out files:  56% (6428/11478)   Checking out files:  57% (6543/11478)   Checking out files:  58% (6658/11478)   Checking out files:  59% (6773/11478)   Checking out files:  60% (6887/11478)   Checking out files:  61% (7002/11478)   Checking out files:  62% (7117/11478)   Checking out files:  63% (7232/11478)   Checking out files:  64% (7346/11478)   Checking out files:  65% (7461/11478)   Checking out files:  66% (7576/11478)   Checking out files:  67% (7691/11478)   Checking out files:  68% (7806/11478)   Checking out files:  69% (7920/11478)   Checking out files:  70% (8035/11478)   Checking out files:  71% (8150/11478)   Checking out files:  72% (8265/11478)   Checking out files:  73% (8379/11478)   Checking out files:  74% (8494/11478)   Checking out files:  75% (8609/11478)   Checking out files:  76% (8724/11478)   Checking out files:  77% (8839/11478)   Checking out files:  78% (8953/11478)   Checking out files:  79% (9068/11478)   Checking out files:  80% (9183/11478)   Checking out files:  81% (9298/11478)   Checking out files:  82% (9412/11478)   Checking out files:  83% (9527/11478)   Checking out files:  84% (9642/11478)   Checking out files:  85% (9757/11478)   Checking out files:  86% (9872/11478)   Checking out files:  87% (9986/11478)   Checking out files:  88% (10101/11478)   Checking out files:  89% (10216/11478)   Checking out files:  90% (10331/11478)   Checking out files:  91% (10445/11478)   Checking out files:  92% (10560/11478)   Checking out files:  93% (10675/11478)   Checking out files:  94% (10790/11478)   Checking out files:  95% (10905/11478)   Checking out files:  96% (11019/11478)   Checking out files:  97% (11134/11478)   Checking out files:  98% (11249/11478)   Checking out files:  99% (11364/11478)   Checking out files: 100% (11478/11478)   Checking out files: 100% (11478/11478), done.
+Checking out files:  47% (9386/19766)   Checking out files:  48% (9488/19766)   Checking out files:  49% (9686/19766)   Checking out files:  50% (9883/19766)   Checking out files:  51% (10081/19766)   Checking out files:  52% (10279/19766)   Checking out files:  53% (10476/19766)   Checking out files:  54% (10674/19766)   Checking out files:  55% (10872/19766)   Checking out files:  56% (11069/19766)   Checking out files:  57% (11267/19766)   Checking out files:  58% (11465/19766)   Checking out files:  59% (11662/19766)   Checking out files:  60% (11860/19766)   Checking out files:  61% (12058/19766)   Checking out files:  62% (12255/19766)   Checking out files:  63% (12453/19766)   Checking out files:  64% (12651/19766)   Checking out files:  65% (12848/19766)   Checking out files:  66% (13046/19766)   Checking out files:  67% (13244/19766)   Checking out files:  68% (13441/19766)   Checking out files:  69% (13639/19766)   Checking out files:  70% (13837/19766)   Checking out files:  71% (14034/19766)   Checking out files:  72% (14232/19766)   Checking out files:  73% (14430/19766)   Checking out files:  74% (14627/19766)   Checking out files:  75% (14825/19766)   Checking out files:  76% (15023/19766)   Checking out files:  77% (15220/19766)   Checking out files:  78% (15418/19766)   Checking out files:  79% (15616/19766)   Checking out files:  80% (15813/19766)   Checking out files:  81% (16011/19766)   Checking out files:  82% (16209/19766)   Checking out files:  83% (16406/19766)   Checking out files:  84% (16604/19766)   Checking out files:  85% (16802/19766)   Checking out files:  86% (16999/19766)   Checking out files:  87% (17197/19766)   Checking out files:  88% (17395/19766)   Checking out files:  89% (17592/19766)   Checking out files:  90% (17790/19766)   Checking out files:  91% (17988/19766)   Checking out files:  92% (18185/19766)   Checking out files:  93% (18383/19766)   Checking out files:  94% (18581/19766)   Checking out files:  95% (18778/19766)   Checking out files:  96% (18976/19766)   Checking out files:  97% (19174/19766)   Checking out files:  98% (19371/19766)   Checking out files:  99% (19569/19766)   Checking out files: 100% (19766/19766)   Checking out files: 100% (19766/19766), done.
+Checking out files:  16% (32/191)   Checking out files:  17% (33/191)   Checking out files:  18% (35/191)   Checking out files:  19% (37/191)   Checking out files:  20% (39/191)   Checking out files:  21% (41/191)   Checking out files:  22% (43/191)   Checking out files:  23% (44/191)   Checking out files:  24% (46/191)   Checking out files:  25% (48/191)   Checking out files:  26% (50/191)   Checking out files:  27% (52/191)   Checking out files:  28% (54/191)   Checking out files:  29% (56/191)   Checking out files:  30% (58/191)   Checking out files:  31% (60/191)   Checking out files:  32% (62/191)   Checking out files:  33% (64/191)   Checking out files:  34% (65/191)   Checking out files:  35% (67/191)   Checking out files:  36% (69/191)   Checking out files:  37% (71/191)   Checking out files:  38% (73/191)   Checking out files:  39% (75/191)   Checking out files:  40% (77/191)   Checking out files:  41% (79/191)   Checking out files:  42% (81/191)   Checking out files:  43% (83/191)   Checking out files:  44% (85/191)   Checking out files:  45% (86/191)   Checking out files:  46% (88/191)   Checking out files:  47% (90/191)   Checking out files:  48% (92/191)   Checking out files:  49% (94/191)   Checking out files:  50% (96/191)   Checking out files:  51% (98/191)   Checking out files:  52% (100/191)   Checking out files:  53% (102/191)   Checking out files:  54% (104/191)   Checking out files:  55% (106/191)   Checking out files:  56% (107/191)   Checking out files:  57% (109/191)   Checking out files:  58% (111/191)   Checking out files:  59% (113/191)   Checking out files:  60% (115/191)   Checking out files:  61% (117/191)   Checking out files:  62% (119/191)   Checking out files:  63% (121/191)   Checking out files:  64% (123/191)   Checking out files:  65% (125/191)   Checking out files:  66% (127/191)   Checking out files:  67% (128/191)   Checking out files:  68% (130/191)   Checking out files:  69% (132/191)   Checking out files:  70% (134/191)   Checking out files:  71% (136/191)   Checking out files:  72% (138/191)   Checking out files:  73% (140/191)   Checking out files:  74% (142/191)   Checking out files:  75% (144/191)   Checking out files:  76% (146/191)   Checking out files:  77% (148/191)   Checking out files:  78% (149/191)   Checking out files:  79% (151/191)   Checking out files:  80% (153/191)   Checking out files:  81% (155/191)   Checking out files:  82% (157/191)   Checking out files:  83% (159/191)   Checking out files:  84% (161/191)   Checking out files:  85% (163/191)   Checking out files:  86% (165/191)   Checking out files:  87% (167/191)   Checking out files:  88% (169/191)   Checking out files:  89% (170/191)   Checking out files:  90% (172/191)   Checking out files:  91% (174/191)   Checking out files:  92% (176/191)   Checking out files:  93% (178/191)   Checking out files:  94% (180/191)   Checking out files:  95% (182/191)   Checking out files:  96% (184/191)   Checking out files:  97% (186/191)   Checking out files:  98% (188/191)   Checking out files:  99% (190/191)   Checking out files: 100% (191/191)   Checking out files: 100% (191/191), done.
+Checking out files:  31% (2839/9156)   Checking out files:  32% (2930/9156)   Checking out files:  33% (3022/9156)   Checking out files:  34% (3114/9156)   Checking out files:  35% (3205/9156)   Checking out files:  36% (3297/9156)   Checking out files:  37% (3388/9156)   Checking out files:  38% (3480/9156)   Checking out files:  39% (3571/9156)   Checking out files:  40% (3663/9156)   Checking out files:  41% (3754/9156)   Checking out files:  42% (3846/9156)   Checking out files:  43% (3938/9156)   Checking out files:  44% (4029/9156)   Checking out files:  45% (4121/9156)   Checking out files:  46% (4212/9156)   Checking out files:  47% (4304/9156)   Checking out files:  48% (4395/9156)   Checking out files:  49% (4487/9156)   Checking out files:  50% (4578/9156)   Checking out files:  51% (4670/9156)   Checking out files:  52% (4762/9156)   Checking out files:  53% (4853/9156)   Checking out files:  54% (4945/9156)   Checking out files:  55% (5036/9156)   Checking out files:  56% (5128/9156)   Checking out files:  57% (5219/9156)   Checking out files:  58% (5311/9156)   Checking out files:  59% (5403/9156)   Checking out files:  60% (5494/9156)   Checking out files:  61% (5586/9156)   Checking out files:  62% (5677/9156)   Checking out files:  63% (5769/9156)   Checking out files:  64% (5860/9156)   Checking out files:  65% (5952/9156)   Checking out files:  66% (6043/9156)   Checking out files:  67% (6135/9156)   Checking out files:  68% (6227/9156)   Checking out files:  69% (6318/9156)   Checking out files:  70% (6410/9156)   Checking out files:  71% (6501/9156)   Checking out files:  72% (6593/9156)   Checking out files:  73% (6684/9156)   Checking out files:  74% (6776/9156)   Checking out files:  75% (6867/9156)   Checking out files:  76% (6959/9156)   Checking out files:  77% (7051/9156)   Checking out files:  78% (7142/9156)   Checking out files:  78% (7209/9156)   Checking out files:  79% (7234/9156)   Checking out files:  80% (7325/9156)   Checking out files:  81% (7417/9156)   Checking out files:  82% (7508/9156)   Checking out files:  83% (7600/9156)   Checking out files:  84% (7692/9156)   Checking out files:  85% (7783/9156)   Checking out files:  86% (7875/9156)   Checking out files:  87% (7966/9156)   Checking out files:  88% (8058/9156)   Checking out files:  89% (8149/9156)   Checking out files:  90% (8241/9156)   Checking out files:  91% (8332/9156)   Checking out files:  92% (8424/9156)   Checking out files:  93% (8516/9156)   Checking out files:  94% (8607/9156)   Checking out files:  95% (8699/9156)   Checking out files:  96% (8790/9156)   Checking out files:  97% (8882/9156)   Checking out files:  98% (8973/9156)   Checking out files:  99% (9065/9156)   Checking out files: 100% (9156/9156)   Checking out files: 100% (9156/9156), done.
+Checking out files:  29% (9483/32226)   Checking out files:  30% (9668/32226)   Checking out files:  31% (9991/32226)   Checking out files:  32% (10313/32226)   Checking out files:  33% (10635/32226)   Checking out files:  34% (10957/32226)   Checking out files:  35% (11280/32226)   Checking out files:  36% (11602/32226)   Checking out files:  37% (11924/32226)   Checking out files:  38% (12246/32226)   Checking out files:  39% (12569/32226)   Checking out files:  40% (12891/32226)   Checking out files:  40% (13131/32226)   Checking out files:  41% (13213/32226)   Checking out files:  42% (13535/32226)   Checking out files:  42% (13559/32226)   Checking out files:  43% (13858/32226)   Checking out files:  44% (14180/32226)   Checking out files:  45% (14502/32226)   Checking out files:  46% (14824/32226)   Checking out files:  47% (15147/32226)   Checking out files:  48% (15469/32226)   Checking out files:  48% (15703/32226)   Checking out files:  49% (15791/32226)   Checking out files:  50% (16113/32226)   Checking out files:  51% (16436/32226)   Checking out files:  52% (16758/32226)   Checking out files:  53% (17080/32226)   Checking out files:  54% (17403/32226)   Checking out files:  55% (17725/32226)   Checking out files:  56% (18047/32226)   Checking out files:  57% (18369/32226)   Checking out files:  58% (18692/32226)   Checking out files:  59% (19014/32226)   Checking out files:  60% (19336/32226)   Checking out files:  61% (19658/32226)   Checking out files:  62% (19981/32226)   Checking out files:  63% (20303/32226)   Checking out files:  64% (20625/32226)   Checking out files:  65% (20947/32226)   Checking out files:  65% (21104/32226)   Checking out files:  66% (21270/32226)   Checking out files:  67% (21592/32226)   Checking out files:  68% (21914/32226)   Checking out files:  69% (22236/32226)   Checking out files:  70% (22559/32226)   Checking out files:  71% (22881/32226)   Checking out files:  72% (23203/32226)   Checking out files:  72% (23403/32226)   Checking out files:  72% (23431/32226)   Checking out files:  73% (23525/32226)   Checking out files:  74% (23848/32226)   Checking out files:  75% (24170/32226)   Checking out files:  76% (24492/32226)   Checking out files:  77% (24815/32226)   Checking out files:  78% (25137/32226)   Checking out files:  79% (25459/32226)   Checking out files:  80% (25781/32226)   Checking out files:  81% (26104/32226)   Checking out files:  82% (26426/32226)   Checking out files:  83% (26748/32226)   Checking out files:  84% (27070/32226)   Checking out files:  85% (27393/32226)   Checking out files:  86% (27715/32226)   Checking out files:  86% (27922/32226)   Checking out files:  87% (28037/32226)   Checking out files:  88% (28359/32226)   Checking out files:  89% (28682/32226)   Checking out files:  90% (29004/32226)   Checking out files:  91% (29326/32226)   Checking out files:  92% (29648/32226)   Checking out files:  93% (29971/32226)   Checking out files:  94% (30293/32226)   Checking out files:  95% (30615/32226)   Checking out files:  96% (30937/32226)   Checking out files:  97% (31260/32226)   Checking out files:  98% (31582/32226)   Checking out files:  99% (31904/32226)   Checking out files: 100% (32226/32226)   Checking out files: 100% (32226/32226), done.
+Checking out files:  41% (1787/4346)   Checking out files:  42% (1826/4346)   Checking out files:  43% (1869/4346)   Checking out files:  44% (1913/4346)   Checking out files:  45% (1956/4346)   Checking out files:  46% (2000/4346)   Checking out files:  47% (2043/4346)   Checking out files:  48% (2087/4346)   Checking out files:  49% (2130/4346)   Checking out files:  50% (2173/4346)   Checking out files:  51% (2217/4346)   Checking out files:  52% (2260/4346)   Checking out files:  53% (2304/4346)   Checking out files:  54% (2347/4346)   Checking out files:  55% (2391/4346)   Checking out files:  56% (2434/4346)   Checking out files:  57% (2478/4346)   Checking out files:  58% (2521/4346)   Checking out files:  59% (2565/4346)   Checking out files:  60% (2608/4346)   Checking out files:  61% (2652/4346)   Checking out files:  62% (2695/4346)   Checking out files:  63% (2738/4346)   Checking out files:  64% (2782/4346)   Checking out files:  65% (2825/4346)   Checking out files:  66% (2869/4346)   Checking out files:  67% (2912/4346)   Checking out files:  68% (2956/4346)   Checking out files:  69% (2999/4346)   Checking out files:  70% (3043/4346)   Checking out files:  71% (3086/4346)   Checking out files:  72% (3130/4346)   Checking out files:  73% (3173/4346)   Checking out files:  74% (3217/4346)   Checking out files:  75% (3260/4346)   Checking out files:  76% (3303/4346)   Checking out files:  77% (3347/4346)   Checking out files:  78% (3390/4346)   Checking out files:  79% (3434/4346)   Checking out files:  80% (3477/4346)   Checking out files:  81% (3521/4346)   Checking out files:  82% (3564/4346)   Checking out files:  83% (3608/4346)   Checking out files:  84% (3651/4346)   Checking out files:  85% (3695/4346)   Checking out files:  86% (3738/4346)   Checking out files:  87% (3782/4346)   Checking out files:  88% (3825/4346)   Checking out files:  89% (3868/4346)   Checking out files:  90% (3912/4346)   Checking out files:  91% (3955/4346)   Checking out files:  92% (3999/4346)   Checking out files:  93% (4042/4346)   Checking out files:  94% (4086/4346)   Checking out files:  95% (4129/4346)   Checking out files:  96% (4173/4346)   Checking out files:  97% (4216/4346)   Checking out files:  98% (4260/4346)   Checking out files:  99% (4303/4346)   Checking out files: 100% (4346/4346)   Checking out files: 100% (4346/4346), done.
+Checking out files:  35% (46/129)   Checking out files:  36% (47/129)   Checking out files:  37% (48/129)   Checking out files:  38% (50/129)   Checking out files:  39% (51/129)   Checking out files:  40% (52/129)   Checking out files:  41% (53/129)   Checking out files:  42% (55/129)   Checking out files:  43% (56/129)   Checking out files:  44% (57/129)   Checking out files:  45% (59/129)   Checking out files:  46% (60/129)   Checking out files:  47% (61/129)   Checking out files:  48% (62/129)   Checking out files:  49% (64/129)   Checking out files:  50% (65/129)   Checking out files:  51% (66/129)   Checking out files:  52% (68/129)   Checking out files:  53% (69/129)   Checking out files:  54% (70/129)   Checking out files:  55% (71/129)   Checking out files:  55% (72/129)   Checking out files:  56% (73/129)   Checking out files:  57% (74/129)   Checking out files:  58% (75/129)   Checking out files:  59% (77/129)   Checking out files:  60% (78/129)   Checking out files:  61% (79/129)   Checking out files:  62% (80/129)   Checking out files:  63% (82/129)   Checking out files:  64% (83/129)   Checking out files:  65% (84/129)   Checking out files:  66% (86/129)   Checking out files:  67% (87/129)   Checking out files:  68% (88/129)   Checking out files:  69% (90/129)   Checking out files:  70% (91/129)   Checking out files:  71% (92/129)   Checking out files:  72% (93/129)   Checking out files:  73% (95/129)   Checking out files:  74% (96/129)   Checking out files:  75% (97/129)   Checking out files:  76% (99/129)   Checking out files:  77% (100/129)   Checking out files:  78% (101/129)   Checking out files:  79% (102/129)   Checking out files:  80% (104/129)   Checking out files:  81% (105/129)   Checking out files:  82% (106/129)   Checking out files:  83% (108/129)   Checking out files:  84% (109/129)   Checking out files:  85% (110/129)   Checking out files:  86% (111/129)   Checking out files:  87% (113/129)   Checking out files:  88% (114/129)   Checking out files:  89% (115/129)   Checking out files:  90% (117/129)   Checking out files:  91% (118/129)   Checking out files:  92% (119/129)   Checking out files:  93% (120/129)   Checking out files:  94% (122/129)   Checking out files:  95% (123/129)   Checking out files:  96% (124/129)   Checking out files:  97% (126/129)   Checking out files:  98% (127/129)   Checking out files:  99% (128/129)   Checking out files: 100% (129/129)   Checking out files: 100% (129/129), done.
+Checking out files:  24% (132/550)   Checking out files:  25% (138/550)   Checking out files:  26% (143/550)   Checking out files:  27% (149/550)   Checking out files:  28% (154/550)   Checking out files:  29% (160/550)   Checking out files:  30% (165/550)   Checking out files:  31% (171/550)   Checking out files:  32% (176/550)   Checking out files:  33% (182/550)   Checking out files:  34% (187/550)   Checking out files:  35% (193/550)   Checking out files:  36% (198/550)   Checking out files:  37% (204/550)   Checking out files:  38% (209/550)   Checking out files:  39% (215/550)   Checking out files:  40% (220/550)   Checking out files:  41% (226/550)   Checking out files:  42% (231/550)   Checking out files:  43% (237/550)   Checking out files:  44% (242/550)   Checking out files:  45% (248/550)   Checking out files:  46% (253/550)   Checking out files:  47% (259/550)   Checking out files:  48% (264/550)   Checking out files:  49% (270/550)   Checking out files:  50% (275/550)   Checking out files:  50% (276/550)   Checking out files:  51% (281/550)   Checking out files:  52% (286/550)   Checking out files:  53% (292/550)   Checking out files:  54% (297/550)   Checking out files:  55% (303/550)   Checking out files:  56% (308/550)   Checking out files:  57% (314/550)   Checking out files:  58% (319/550)   Checking out files:  59% (325/550)   Checking out files:  60% (330/550)   Checking out files:  61% (336/550)   Checking out files:  62% (341/550)   Checking out files:  63% (347/550)   Checking out files:  64% (352/550)   Checking out files:  65% (358/550)   Checking out files:  66% (363/550)   Checking out files:  67% (369/550)   Checking out files:  68% (374/550)   Checking out files:  69% (380/550)   Checking out files:  70% (385/550)   Checking out files:  71% (391/550)   Checking out files:  72% (396/550)   Checking out files:  73% (402/550)   Checking out files:  74% (407/550)   Checking out files:  75% (413/550)   Checking out files:  76% (418/550)   Checking out files:  76% (422/550)   Checking out files:  77% (424/550)   Checking out files:  78% (429/550)   Checking out files:  79% (435/550)   Checking out files:  80% (440/550)   Checking out files:  81% (446/550)   Checking out files:  82% (451/550)   Checking out files:  83% (457/550)   Checking out files:  84% (462/550)   Checking out files:  85% (468/550)   Checking out files:  86% (473/550)   Checking out files:  87% (479/550)   Checking out files:  88% (484/550)   Checking out files:  89% (490/550)   Checking out files:  90% (495/550)   Checking out files:  91% (501/550)   Checking out files:  92% (506/550)   Checking out files:  93% (512/550)   Checking out files:  94% (517/550)   Checking out files:  95% (523/550)   Checking out files:  96% (528/550)   Checking out files:  97% (534/550)   Checking out files:  98% (539/550)   Checking out files:  99% (545/550)   Checking out files: 100% (550/550)   Checking out files: 100% (550/550), done.
+Checking out files:  27% (168/622)   Checking out files:  28% (175/622)   Checking out files:  29% (181/622)   Checking out files:  30% (187/622)   Checking out files:  31% (193/622)   Checking out files:  32% (200/622)   Checking out files:  33% (206/622)   Checking out files:  34% (212/622)   Checking out files:  35% (218/622)   Checking out files:  36% (224/622)   Checking out files:  37% (231/622)   Checking out files:  38% (237/622)   Checking out files:  39% (243/622)   Checking out files:  40% (249/622)   Checking out files:  41% (256/622)   Checking out files:  42% (262/622)   Checking out files:  43% (268/622)   Checking out files:  44% (274/622)   Checking out files:  45% (280/622)   Checking out files:  46% (287/622)   Checking out files:  47% (293/622)   Checking out files:  48% (299/622)   Checking out files:  49% (305/622)   Checking out files:  50% (311/622)   Checking out files:  51% (318/622)   Checking out files:  52% (324/622)   Checking out files:  52% (328/622)   Checking out files:  53% (330/622)   Checking out files:  54% (336/622)   Checking out files:  55% (343/622)   Checking out files:  56% (349/622)   Checking out files:  57% (355/622)   Checking out files:  58% (361/622)   Checking out files:  59% (367/622)   Checking out files:  60% (374/622)   Checking out files:  61% (380/622)   Checking out files:  62% (386/622)   Checking out files:  63% (392/622)   Checking out files:  64% (399/622)   Checking out files:  65% (405/622)   Checking out files:  66% (411/622)   Checking out files:  67% (417/622)   Checking out files:  68% (423/622)   Checking out files:  69% (430/622)   Checking out files:  70% (436/622)   Checking out files:  71% (442/622)   Checking out files:  72% (448/622)   Checking out files:  73% (455/622)   Checking out files:  74% (461/622)   Checking out files:  75% (467/622)   Checking out files:  76% (473/622)   Checking out files:  77% (479/622)   Checking out files:  77% (482/622)   Checking out files:  78% (486/622)   Checking out files:  79% (492/622)   Checking out files:  80% (498/622)   Checking out files:  81% (504/622)   Checking out files:  82% (511/622)   Checking out files:  83% (517/622)   Checking out files:  84% (523/622)   Checking out files:  85% (529/622)   Checking out files:  86% (535/622)   Checking out files:  87% (542/622)   Checking out files:  88% (548/622)   Checking out files:  89% (554/622)   Checking out files:  90% (560/622)   Checking out files:  91% (567/622)   Checking out files:  92% (573/622)   Checking out files:  93% (579/622)   Checking out files:  94% (585/622)   Checking out files:  95% (591/622)   Checking out files:  96% (598/622)   Checking out files:  97% (604/622)   Checking out files:  98% (610/622)   Checking out files:  99% (616/622)   Checking out files: 100% (622/622)   Checking out files: 100% (622/622), done.
+Checking out files:   0% (6/742)   Checking out files:   1% (8/742)   Checking out files:   2% (15/742)   Checking out files:   3% (23/742)   Checking out files:   4% (30/742)   Checking out files:   5% (38/742)   Checking out files:   6% (45/742)   Checking out files:   7% (52/742)   Checking out files:   8% (60/742)   Checking out files:   9% (67/742)   Checking out files:  10% (75/742)   Checking out files:  11% (82/742)   Checking out files:  12% (90/742)   Checking out files:  13% (97/742)   Checking out files:  14% (104/742)   Checking out files:  15% (112/742)   Checking out files:  16% (119/742)   Checking out files:  17% (127/742)   Checking out files:  18% (134/742)   Checking out files:  19% (141/742)   Checking out files:  20% (149/742)   Checking out files:  21% (156/742)   Checking out files:  22% (164/742)   Checking out files:  23% (171/742)   Checking out files:  24% (179/742)   Checking out files:  25% (186/742)   Checking out files:  26% (193/742)   Checking out files:  27% (201/742)   Checking out files:  28% (208/742)   Checking out files:  29% (216/742)   Checking out files:  30% (223/742)   Checking out files:  31% (231/742)   Checking out files:  32% (238/742)   Checking out files:  33% (245/742)   Checking out files:  34% (253/742)   Checking out files:  35% (260/742)   Checking out files:  36% (268/742)   Checking out files:  37% (275/742)   Checking out files:  38% (282/742)   Checking out files:  39% (290/742)   Checking out files:  40% (297/742)   Checking out files:  41% (305/742)   Checking out files:  42% (312/742)   Checking out files:  43% (320/742)   Checking out files:  44% (327/742)   Checking out files:  45% (334/742)   Checking out files:  46% (342/742)   Checking out files:  47% (349/742)   Checking out files:  48% (357/742)   Checking out files:  49% (364/742)   Checking out files:  50% (371/742)   Checking out files:  51% (379/742)   Checking out files:  52% (386/742)   Checking out files:  53% (394/742)   Checking out files:  54% (401/742)   Checking out files:  55% (409/742)   Checking out files:  56% (416/742)   Checking out files:  57% (423/742)   Checking out files:  58% (431/742)   Checking out files:  59% (438/742)   Checking out files:  60% (446/742)   Checking out files:  61% (453/742)   Checking out files:  62% (461/742)   Checking out files:  63% (468/742)   Checking out files:  64% (475/742)   Checking out files:  65% (483/742)   Checking out files:  66% (490/742)   Checking out files:  67% (498/742)   Checking out files:  68% (505/742)   Checking out files:  69% (512/742)   Checking out files:  70% (520/742)   Checking out files:  71% (527/742)   Checking out files:  72% (535/742)   Checking out files:  73% (542/742)   Checking out files:  74% (550/742)   Checking out files:  75% (557/742)   Checking out files:  76% (564/742)   Checking out files:  77% (572/742)   Checking out files:  78% (579/742)   Checking out files:  79% (587/742)   Checking out files:  80% (594/742)   Checking out files:  81% (602/742)   Checking out files:  82% (609/742)   Checking out files:  83% (616/742)   Checking out files:  84% (624/742)   Checking out files:  85% (631/742)   Checking out files:  86% (639/742)   Checking out files:  87% (646/742)   Checking out files:  88% (653/742)   Checking out files:  89% (661/742)   Checking out files:  90% (668/742)   Checking out files:  91% (676/742)   Checking out files:  92% (683/742)   Checking out files:  93% (691/742)   Checking out files:  94% (698/742)   Checking out files:  95% (705/742)   Checking out files:  96% (713/742)   Checking out files:  97% (720/742)   Checking out files:  98% (728/742)   Checking out files:  99% (735/742)   Checking out files: 100% (742/742)   Checking out files: 100% (742/742), done.
+Checking out files:  17% (953/5474)   Checking out files:  18% (986/5474)   Checking out files:  19% (1041/5474)   Checking out files:  20% (1095/5474)   Checking out files:  21% (1150/5474)   Checking out files:  22% (1205/5474)   Checking out files:  23% (1260/5474)   Checking out files:  24% (1314/5474)   Checking out files:  25% (1369/5474)   Checking out files:  26% (1424/5474)   Checking out files:  27% (1478/5474)   Checking out files:  28% (1533/5474)   Checking out files:  29% (1588/5474)   Checking out files:  30% (1643/5474)   Checking out files:  31% (1697/5474)   Checking out files:  32% (1752/5474)   Checking out files:  33% (1807/5474)   Checking out files:  34% (1862/5474)   Checking out files:  35% (1916/5474)   Checking out files:  36% (1971/5474)   Checking out files:  37% (2026/5474)   Checking out files:  38% (2081/5474)   Checking out files:  39% (2135/5474)   Checking out files:  40% (2190/5474)   Checking out files:  41% (2245/5474)   Checking out files:  42% (2300/5474)   Checking out files:  43% (2354/5474)   Checking out files:  44% (2409/5474)   Checking out files:  45% (2464/5474)   Checking out files:  46% (2519/5474)   Checking out files:  47% (2573/5474)   Checking out files:  48% (2628/5474)   Checking out files:  49% (2683/5474)   Checking out files:  50% (2737/5474)   Checking out files:  51% (2792/5474)   Checking out files:  52% (2847/5474)   Checking out files:  53% (2902/5474)   Checking out files:  54% (2956/5474)   Checking out files:  55% (3011/5474)   Checking out files:  56% (3066/5474)   Checking out files:  57% (3121/5474)   Checking out files:  58% (3175/5474)   Checking out files:  59% (3230/5474)   Checking out files:  60% (3285/5474)   Checking out files:  61% (3340/5474)   Checking out files:  62% (3394/5474)   Checking out files:  63% (3449/5474)   Checking out files:  64% (3504/5474)   Checking out files:  65% (3559/5474)   Checking out files:  66% (3613/5474)   Checking out files:  67% (3668/5474)   Checking out files:  68% (3723/5474)   Checking out files:  69% (3778/5474)   Checking out files:  70% (3832/5474)   Checking out files:  71% (3887/5474)   Checking out files:  72% (3942/5474)   Checking out files:  73% (3997/5474)   Checking out files:  74% (4051/5474)   Checking out files:  75% (4106/5474)   Checking out files:  76% (4161/5474)   Checking out files:  77% (4215/5474)   Checking out files:  78% (4270/5474)   Checking out files:  79% (4325/5474)   Checking out files:  80% (4380/5474)   Checking out files:  81% (4434/5474)   Checking out files:  82% (4489/5474)   Checking out files:  83% (4544/5474)   Checking out files:  84% (4599/5474)   Checking out files:  85% (4653/5474)   Checking out files:  86% (4708/5474)   Checking out files:  87% (4763/5474)   Checking out files:  88% (4818/5474)   Checking out files:  89% (4872/5474)   Checking out files:  90% (4927/5474)   Checking out files:  91% (4982/5474)   Checking out files:  92% (5037/5474)   Checking out files:  93% (5091/5474)   Checking out files:  94% (5146/5474)   Checking out files:  95% (5201/5474)   Checking out files:  96% (5256/5474)   Checking out files:  97% (5310/5474)   Checking out files:  98% (5365/5474)   Checking out files:  99% (5420/5474)   Checking out files: 100% (5474/5474)   Checking out files: 100% (5474/5474), done.
+Checking out files:  11% (647/5476)   Checking out files:  12% (658/5476)   Checking out files:  13% (712/5476)   Checking out files:  14% (767/5476)   Checking out files:  15% (822/5476)   Checking out files:  16% (877/5476)   Checking out files:  17% (931/5476)   Checking out files:  17% (954/5476)   Checking out files:  18% (986/5476)   Checking out files:  19% (1041/5476)   Checking out files:  20% (1096/5476)   Checking out files:  21% (1150/5476)   Checking out files:  22% (1205/5476)   Checking out files:  23% (1260/5476)   Checking out files:  24% (1315/5476)   Checking out files:  25% (1369/5476)   Checking out files:  26% (1424/5476)   Checking out files:  27% (1479/5476)   Checking out files:  28% (1534/5476)   Checking out files:  29% (1589/5476)   Checking out files:  30% (1643/5476)   Checking out files:  31% (1698/5476)   Checking out files:  32% (1753/5476)   Checking out files:  33% (1808/5476)   Checking out files:  34% (1862/5476)   Checking out files:  35% (1917/5476)   Checking out files:  36% (1972/5476)   Checking out files:  37% (2027/5476)   Checking out files:  38% (2081/5476)   Checking out files:  39% (2136/5476)   Checking out files:  40% (2191/5476)   Checking out files:  41% (2246/5476)   Checking out files:  42% (2300/5476)   Checking out files:  43% (2355/5476)   Checking out files:  44% (2410/5476)   Checking out files:  45% (2465/5476)   Checking out files:  46% (2519/5476)   Checking out files:  47% (2574/5476)   Checking out files:  48% (2629/5476)   Checking out files:  49% (2684/5476)   Checking out files:  50% (2738/5476)   Checking out files:  51% (2793/5476)   Checking out files:  52% (2848/5476)   Checking out files:  53% (2903/5476)   Checking out files:  54% (2958/5476)   Checking out files:  55% (3012/5476)   Checking out files:  56% (3067/5476)   Checking out files:  57% (3122/5476)   Checking out files:  58% (3177/5476)   Checking out files:  59% (3231/5476)   Checking out files:  60% (3286/5476)   Checking out files:  61% (3341/5476)   Checking out files:  62% (3396/5476)   Checking out files:  63% (3450/5476)   Checking out files:  64% (3505/5476)   Checking out files:  65% (3560/5476)   Checking out files:  66% (3615/5476)   Checking out files:  67% (3669/5476)   Checking out files:  68% (3724/5476)   Checking out files:  69% (3779/5476)   Checking out files:  70% (3834/5476)   Checking out files:  71% (3888/5476)   Checking out files:  72% (3943/5476)   Checking out files:  73% (3998/5476)   Checking out files:  74% (4053/5476)   Checking out files:  75% (4107/5476)   Checking out files:  76% (4162/5476)   Checking out files:  77% (4217/5476)   Checking out files:  78% (4272/5476)   Checking out files:  79% (4327/5476)   Checking out files:  80% (4381/5476)   Checking out files:  81% (4436/5476)   Checking out files:  82% (4491/5476)   Checking out files:  83% (4546/5476)   Checking out files:  84% (4600/5476)   Checking out files:  85% (4655/5476)   Checking out files:  86% (4710/5476)   Checking out files:  87% (4765/5476)   Checking out files:  88% (4819/5476)   Checking out files:  89% (4874/5476)   Checking out files:  90% (4929/5476)   Checking out files:  91% (4984/5476)   Checking out files:  92% (5038/5476)   Checking out files:  93% (5093/5476)   Checking out files:  94% (5148/5476)   Checking out files:  95% (5203/5476)   Checking out files:  96% (5257/5476)   Checking out files:  97% (5312/5476)   Checking out files:  98% (5367/5476)   Checking out files:  99% (5422/5476)   Checking out files: 100% (5476/5476)   Checking out files: 100% (5476/5476), done.
+Checking out files:   5% (1329/23180)   Checking out files:   6% (1391/23180)   Checking out files:   7% (1623/23180)   Checking out files:   8% (1855/23180)   Checking out files:   9% (2087/23180)   Checking out files:  10% (2318/23180)   Checking out files:  11% (2550/23180)   Checking out files:  12% (2782/23180)   Checking out files:  13% (3014/23180)   Checking out files:  14% (3246/23180)   Checking out files:  15% (3477/23180)   Checking out files:  16% (3709/23180)   Checking out files:  17% (3941/23180)   Checking out files:  18% (4173/23180)   Checking out files:  19% (4405/23180)   Checking out files:  20% (4636/23180)   Checking out files:  21% (4868/23180)   Checking out files:  22% (5100/23180)   Checking out files:  23% (5332/23180)   Checking out files:  24% (5564/23180)   Checking out files:  25% (5795/23180)   Checking out files:  26% (6027/23180)   Checking out files:  27% (6259/23180)   Checking out files:  28% (6491/23180)   Checking out files:  28% (6562/23180)   Checking out files:  29% (6723/23180)   Checking out files:  29% (6862/23180)   Checking out files:  30% (6954/23180)   Checking out files:  31% (7186/23180)   Checking out files:  32% (7418/23180)   Checking out files:  33% (7650/23180)   Checking out files:  34% (7882/23180)   Checking out files:  35% (8113/23180)   Checking out files:  36% (8345/23180)   Checking out files:  37% (8577/23180)   Checking out files:  38% (8809/23180)   Checking out files:  39% (9041/23180)   Checking out files:  40% (9272/23180)   Checking out files:  41% (9504/23180)   Checking out files:  42% (9736/23180)   Checking out files:  43% (9968/23180)   Checking out files:  44% (10200/23180)   Checking out files:  44% (10234/23180)   Checking out files:  45% (10431/23180)   Checking out files:  46% (10663/23180)   Checking out files:  47% (10895/23180)   Checking out files:  48% (11127/23180)   Checking out files:  49% (11359/23180)   Checking out files:  50% (11590/23180)   Checking out files:  51% (11822/23180)   Checking out files:  52% (12054/23180)   Checking out files:  53% (12286/23180)   Checking out files:  54% (12518/23180)   Checking out files:  55% (12749/23180)   Checking out files:  56% (12981/23180)   Checking out files:  57% (13213/23180)   Checking out files:  58% (13445/23180)   Checking out files:  58% (13484/23180)   Checking out files:  59% (13677/23180)   Checking out files:  60% (13908/23180)   Checking out files:  61% (14140/23180)   Checking out files:  62% (14372/23180)   Checking out files:  63% (14604/23180)   Checking out files:  64% (14836/23180)   Checking out files:  65% (15067/23180)   Checking out files:  66% (15299/23180)   Checking out files:  67% (15531/23180)   Checking out files:  67% (15700/23180)   Checking out files:  68% (15763/23180)   Checking out files:  69% (15995/23180)   Checking out files:  70% (16226/23180)   Checking out files:  71% (16458/23180)   Checking out files:  71% (16620/23180)   Checking out files:  71% (16679/23180)   Checking out files:  72% (16690/23180)   Checking out files:  73% (16922/23180)   Checking out files:  74% (17154/23180)   Checking out files:  75% (17385/23180)   Checking out files:  76% (17617/23180)   Checking out files:  77% (17849/23180)   Checking out files:  78% (18081/23180)   Checking out files:  79% (18313/23180)   Checking out files:  80% (18544/23180)   Checking out files:  80% (18629/23180)   Checking out files:  81% (18776/23180)   Checking out files:  82% (19008/23180)   Checking out files:  83% (19240/23180)   Checking out files:  84% (19472/23180)   Checking out files:  85% (19703/23180)   Checking out files:  86% (19935/23180)   Checking out files:  87% (20167/23180)   Checking out files:  88% (20399/23180)   Checking out files:  89% (20631/23180)   Checking out files:  90% (20862/23180)   Checking out files:  90% (21077/23180)   Checking out files:  91% (21094/23180)   Checking out files:  92% (21326/23180)   Checking out files:  93% (21558/23180)   Checking out files:  94% (21790/23180)   Checking out files:  95% (22021/23180)   Checking out files:  96% (22253/23180)   Checking out files:  97% (22485/23180)   Checking out files:  98% (22717/23180)   Checking out files:  99% (22949/23180)   Checking out files: 100% (23180/23180)   Checking out files: 100% (23180/23180), done.
+Checking out files:  15% (6675/44431)   Checking out files:  16% (7109/44431)   Checking out files:  17% (7554/44431)   Checking out files:  18% (7998/44431)   Checking out files:  19% (8442/44431)   Checking out files:  20% (8887/44431)   Checking out files:  21% (9331/44431)   Checking out files:  22% (9775/44431)   Checking out files:  23% (10220/44431)   Checking out files:  24% (10664/44431)   Checking out files:  25% (11108/44431)   Checking out files:  26% (11553/44431)   Checking out files:  26% (11752/44431)   Checking out files:  27% (11997/44431)   Checking out files:  28% (12441/44431)   Checking out files:  29% (12885/44431)   Checking out files:  30% (13330/44431)   Checking out files:  31% (13774/44431)   Checking out files:  32% (14218/44431)   Checking out files:  33% (14663/44431)   Checking out files:  34% (15107/44431)   Checking out files:  35% (15551/44431)   Checking out files:  36% (15996/44431)   Checking out files:  37% (16440/44431)   Checking out files:  38% (16884/44431)   Checking out files:  39% (17329/44431)   Checking out files:  40% (17773/44431)   Checking out files:  41% (18217/44431)   Checking out files:  42% (18662/44431)   Checking out files:  43% (19106/44431)   Checking out files:  43% (19360/44431)   Checking out files:  44% (19550/44431)   Checking out files:  45% (19994/44431)   Checking out files:  46% (20439/44431)   Checking out files:  47% (20883/44431)   Checking out files:  48% (21327/44431)   Checking out files:  49% (21772/44431)   Checking out files:  50% (22216/44431)   Checking out files:  51% (22660/44431)   Checking out files:  52% (23105/44431)   Checking out files:  53% (23549/44431)   Checking out files:  54% (23993/44431)   Checking out files:  55% (24438/44431)   Checking out files:  56% (24882/44431)   Checking out files:  57% (25326/44431)   Checking out files:  58% (25770/44431)   Checking out files:  58% (25915/44431)   Checking out files:  59% (26215/44431)   Checking out files:  60% (26659/44431)   Checking out files:  61% (27103/44431)   Checking out files:  62% (27548/44431)   Checking out files:  63% (27992/44431)   Checking out files:  64% (28436/44431)   Checking out files:  65% (28881/44431)   Checking out files:  65% (28967/44431)   Checking out files:  66% (29325/44431)   Checking out files:  67% (29769/44431)   Checking out files:  68% (30214/44431)   Checking out files:  69% (30658/44431)   Checking out files:  70% (31102/44431)   Checking out files:  70% (31130/44431)   Checking out files:  71% (31547/44431)   Checking out files:  71% (31650/44431)   Checking out files:  72% (31991/44431)   Checking out files:  73% (32435/44431)   Checking out files:  74% (32879/44431)   Checking out files:  75% (33324/44431)   Checking out files:  76% (33768/44431)   Checking out files:  77% (34212/44431)   Checking out files:  78% (34657/44431)   Checking out files:  79% (35101/44431)   Checking out files:  80% (35545/44431)   Checking out files:  81% (35990/44431)   Checking out files:  82% (36434/44431)   Checking out files:  82% (36805/44431)   Checking out files:  83% (36878/44431)   Checking out files:  84% (37323/44431)   Checking out files:  85% (37767/44431)   Checking out files:  86% (38211/44431)   Checking out files:  87% (38655/44431)   Checking out files:  87% (38938/44431)   Checking out files:  88% (39100/44431)   Checking out files:  89% (39544/44431)   Checking out files:  90% (39988/44431)   Checking out files:  91% (40433/44431)   Checking out files:  91% (40444/44431)   Checking out files:  92% (40877/44431)   Checking out files:  93% (41321/44431)   Checking out files:  94% (41766/44431)   Checking out files:  95% (42210/44431)   Checking out files:  96% (42654/44431)   Checking out files:  97% (43099/44431)   Checking out files:  98% (43543/44431)   Checking out files:  98% (43893/44431)   Checking out files:  99% (43987/44431)   Checking out files: 100% (44431/44431)   Checking out files: 100% (44431/44431), done.
+Checking out files:   1% (23/1756)   Checking out files:   2% (36/1756)   Checking out files:   2% (52/1756)   Checking out files:   3% (53/1756)   Checking out files:   4% (71/1756)   Checking out files:   5% (88/1756)   Checking out files:   6% (106/1756)   Checking out files:   7% (123/1756)   Checking out files:   8% (141/1756)   Checking out files:   9% (159/1756)   Checking out files:  10% (176/1756)   Checking out files:  11% (194/1756)   Checking out files:  12% (211/1756)   Checking out files:  13% (229/1756)   Checking out files:  14% (246/1756)   Checking out files:  15% (264/1756)   Checking out files:  16% (281/1756)   Checking out files:  17% (299/1756)   Checking out files:  18% (317/1756)   Checking out files:  19% (334/1756)   Checking out files:  20% (352/1756)   Checking out files:  21% (369/1756)   Checking out files:  22% (387/1756)   Checking out files:  23% (404/1756)   Checking out files:  24% (422/1756)   Checking out files:  25% (439/1756)   Checking out files:  26% (457/1756)   Checking out files:  27% (475/1756)   Checking out files:  28% (492/1756)   Checking out files:  29% (510/1756)   Checking out files:  30% (527/1756)   Checking out files:  31% (545/1756)   Checking out files:  32% (562/1756)   Checking out files:  33% (580/1756)   Checking out files:  34% (598/1756)   Checking out files:  35% (615/1756)   Checking out files:  36% (633/1756)   Checking out files:  37% (650/1756)   Checking out files:  38% (668/1756)   Checking out files:  39% (685/1756)   Checking out files:  40% (703/1756)   Checking out files:  41% (720/1756)   Checking out files:  42% (738/1756)   Checking out files:  43% (756/1756)   Checking out files:  44% (773/1756)   Checking out files:  45% (791/1756)   Checking out files:  46% (808/1756)   Checking out files:  47% (826/1756)   Checking out files:  48% (843/1756)   Checking out files:  49% (861/1756)   Checking out files:  50% (878/1756)   Checking out files:  51% (896/1756)   Checking out files:  52% (914/1756)   Checking out files:  53% (931/1756)   Checking out files:  54% (949/1756)   Checking out files:  55% (966/1756)   Checking out files:  56% (984/1756)   Checking out files:  57% (1001/1756)   Checking out files:  58% (1019/1756)   Checking out files:  59% (1037/1756)   Checking out files:  60% (1054/1756)   Checking out files:  61% (1072/1756)   Checking out files:  62% (1089/1756)   Checking out files:  63% (1107/1756)   Checking out files:  64% (1124/1756)   Checking out files:  65% (1142/1756)   Checking out files:  66% (1159/1756)   Checking out files:  67% (1177/1756)   Checking out files:  68% (1195/1756)   Checking out files:  69% (1212/1756)   Checking out files:  70% (1230/1756)   Checking out files:  71% (1247/1756)   Checking out files:  72% (1265/1756)   Checking out files:  73% (1282/1756)   Checking out files:  74% (1300/1756)   Checking out files:  75% (1317/1756)   Checking out files:  76% (1335/1756)   Checking out files:  77% (1353/1756)   Checking out files:  78% (1370/1756)   Checking out files:  79% (1388/1756)   Checking out files:  80% (1405/1756)   Checking out files:  81% (1423/1756)   Checking out files:  82% (1440/1756)   Checking out files:  83% (1458/1756)   Checking out files:  84% (1476/1756)   Checking out files:  85% (1493/1756)   Checking out files:  86% (1511/1756)   Checking out files:  87% (1528/1756)   Checking out files:  88% (1546/1756)   Checking out files:  89% (1563/1756)   Checking out files:  90% (1581/1756)   Checking out files:  91% (1598/1756)   Checking out files:  92% (1616/1756)   Checking out files:  93% (1634/1756)   Checking out files:  94% (1651/1756)   Checking out files:  95% (1669/1756)   Checking out files:  95% (1680/1756)   Checking out files:  96% (1686/1756)   Checking out files:  97% (1704/1756)   Checking out files:  98% (1721/1756)   Checking out files:  99% (1739/1756)   Checking out files:  99% (1743/1756)   Checking out files: 100% (1756/1756)   Checking out files: 100% (1756/1756), done.
+Checking out files:   7% (678/8484)   Checking out files:   8% (679/8484)   Checking out files:   9% (764/8484)   Checking out files:  10% (849/8484)   Checking out files:  11% (934/8484)   Checking out files:  12% (1019/8484)   Checking out files:  13% (1103/8484)   Checking out files:  14% (1188/8484)   Checking out files:  15% (1273/8484)   Checking out files:  16% (1358/8484)   Checking out files:  17% (1443/8484)   Checking out files:  17% (1527/8484)   Checking out files:  18% (1528/8484)   Checking out files:  19% (1612/8484)   Checking out files:  20% (1697/8484)   Checking out files:  21% (1782/8484)   Checking out files:  22% (1867/8484)   Checking out files:  23% (1952/8484)   Checking out files:  24% (2037/8484)   Checking out files:  25% (2121/8484)   Checking out files:  26% (2206/8484)   Checking out files:  27% (2291/8484)   Checking out files:  28% (2376/8484)   Checking out files:  29% (2461/8484)   Checking out files:  30% (2546/8484)   Checking out files:  31% (2631/8484)   Checking out files:  32% (2715/8484)   Checking out files:  33% (2800/8484)   Checking out files:  34% (2885/8484)   Checking out files:  35% (2970/8484)   Checking out files:  36% (3055/8484)   Checking out files:  37% (3140/8484)   Checking out files:  38% (3224/8484)   Checking out files:  39% (3309/8484)   Checking out files:  40% (3394/8484)   Checking out files:  41% (3479/8484)   Checking out files:  42% (3564/8484)   Checking out files:  43% (3649/8484)   Checking out files:  44% (3733/8484)   Checking out files:  45% (3818/8484)   Checking out files:  46% (3903/8484)   Checking out files:  47% (3988/8484)   Checking out files:  48% (4073/8484)   Checking out files:  49% (4158/8484)   Checking out files:  50% (4242/8484)   Checking out files:  51% (4327/8484)   Checking out files:  52% (4412/8484)   Checking out files:  53% (4497/8484)   Checking out files:  54% (4582/8484)   Checking out files:  55% (4667/8484)   Checking out files:  56% (4752/8484)   Checking out files:  57% (4836/8484)   Checking out files:  58% (4921/8484)   Checking out files:  59% (5006/8484)   Checking out files:  60% (5091/8484)   Checking out files:  61% (5176/8484)   Checking out files:  62% (5261/8484)   Checking out files:  63% (5345/8484)   Checking out files:  63% (5367/8484)   Checking out files:  64% (5430/8484)   Checking out files:  65% (5515/8484)   Checking out files:  66% (5600/8484)   Checking out files:  67% (5685/8484)   Checking out files:  68% (5770/8484)   Checking out files:  69% (5854/8484)   Checking out files:  70% (5939/8484)   Checking out files:  71% (6024/8484)   Checking out files:  72% (6109/8484)   Checking out files:  73% (6194/8484)   Checking out files:  74% (6279/8484)   Checking out files:  75% (6363/8484)   Checking out files:  75% (6409/8484)   Checking out files:  76% (6448/8484)   Checking out files:  77% (6533/8484)   Checking out files:  78% (6618/8484)   Checking out files:  79% (6703/8484)   Checking out files:  80% (6788/8484)   Checking out files:  81% (6873/8484)   Checking out files:  82% (6957/8484)   Checking out files:  83% (7042/8484)   Checking out files:  84% (7127/8484)   Checking out files:  85% (7212/8484)   Checking out files:  86% (7297/8484)   Checking out files:  87% (7382/8484)   Checking out files:  88% (7466/8484)   Checking out files:  89% (7551/8484)   Checking out files:  90% (7636/8484)   Checking out files:  91% (7721/8484)   Checking out files:  92% (7806/8484)   Checking out files:  93% (7891/8484)   Checking out files:  94% (7975/8484)   Checking out files:  95% (8060/8484)   Checking out files:  95% (8111/8484)   Checking out files:  96% (8145/8484)   Checking out files:  97% (8230/8484)   Checking out files:  97% (8304/8484)   Checking out files:  98% (8315/8484)   Checking out files:  99% (8400/8484)   Checking out files:  99% (8435/8484)   Checking out files: 100% (8484/8484)   Checking out files: 100% (8484/8484), done.
+Checking out files:  30% (4860/15774)   Checking out files:  31% (4890/15774)   Checking out files:  32% (5048/15774)   Checking out files:  33% (5206/15774)   Checking out files:  34% (5364/15774)   Checking out files:  35% (5521/15774)   Checking out files:  36% (5679/15774)   Checking out files:  37% (5837/15774)   Checking out files:  38% (5995/15774)   Checking out files:  39% (6152/15774)   Checking out files:  40% (6310/15774)   Checking out files:  41% (6468/15774)   Checking out files:  42% (6626/15774)   Checking out files:  43% (6783/15774)   Checking out files:  44% (6941/15774)   Checking out files:  45% (7099/15774)   Checking out files:  46% (7257/15774)   Checking out files:  47% (7414/15774)   Checking out files:  48% (7572/15774)   Checking out files:  49% (7730/15774)   Checking out files:  50% (7887/15774)   Checking out files:  51% (8045/15774)   Checking out files:  52% (8203/15774)   Checking out files:  53% (8361/15774)   Checking out files:  54% (8518/15774)   Checking out files:  55% (8676/15774)   Checking out files:  56% (8834/15774)   Checking out files:  57% (8992/15774)   Checking out files:  58% (9149/15774)   Checking out files:  59% (9307/15774)   Checking out files:  60% (9465/15774)   Checking out files:  61% (9623/15774)   Checking out files:  62% (9780/15774)   Checking out files:  63% (9938/15774)   Checking out files:  64% (10096/15774)   Checking out files:  65% (10254/15774)   Checking out files:  66% (10411/15774)   Checking out files:  67% (10569/15774)   Checking out files:  68% (10727/15774)   Checking out files:  69% (10885/15774)   Checking out files:  70% (11042/15774)   Checking out files:  71% (11200/15774)   Checking out files:  72% (11358/15774)   Checking out files:  73% (11516/15774)   Checking out files:  74% (11673/15774)   Checking out files:  74% (11774/15774)   Checking out files:  75% (11831/15774)   Checking out files:  76% (11989/15774)   Checking out files:  77% (12146/15774)   Checking out files:  78% (12304/15774)   Checking out files:  79% (12462/15774)   Checking out files:  80% (12620/15774)   Checking out files:  81% (12777/15774)   Checking out files:  82% (12935/15774)   Checking out files:  83% (13093/15774)   Checking out files:  84% (13251/15774)   Checking out files:  85% (13408/15774)   Checking out files:  86% (13566/15774)   Checking out files:  87% (13724/15774)   Checking out files:  88% (13882/15774)   Checking out files:  89% (14039/15774)   Checking out files:  90% (14197/15774)   Checking out files:  91% (14355/15774)   Checking out files:  92% (14513/15774)   Checking out files:  93% (14670/15774)   Checking out files:  94% (14828/15774)   Checking out files:  95% (14986/15774)   Checking out files:  96% (15144/15774)   Checking out files:  97% (15301/15774)   Checking out files:  98% (15459/15774)   Checking out files:  99% (15617/15774)   Checking out files: 100% (15774/15774)   Checking out files: 100% (15774/15774), done.
+
+ng project android_patch_nougat
+Fetching project device/generic/mini-emulator-x86_64
+Fetching project android_hal_audio
+Fetching project platform/prebuilts/ninja/darwin-x86
+Fetching project platform/external/avahi
+Fetching project android_hal_omx
+Fetching project platform/packages/apps/HTMLViewer
+Fetching project device/htc/flounder
+Fetching project android_platform_packages_apps_Music
+Fetching project platform/packages/apps/TvSettings
+Fetching project platform/system/tpm
+Fetching project platform/external/tlsdate
+Fetching project android_platform_frameworks_opt_net_wifi
+Fetching project device/linaro/hikey
+Fetching project platform/external/tpm2
+Fetching project device/htc/flounder-kernel
+Fetching project platform/prebuilts/tools
+Fetching project platform/hardware/qcom/audio
+Fetching project platform/external/android-mock
+Fetching project platform/external/nist-sip
+Fetching project platform/external/squashfs-tools
+Fetching project platform/external/google-fonts/coming-soon
+Fetching project linux_library_include
+Fetching project android_hal_mali
+Fetching project platform/packages/apps/LegacyCamera
+Fetching project platform/system/gatekeeper
+Fetching project platform/external/nist-pkits
+Fetching project platform/external/giflib
+Fetching project platform/external/libcxxabi
+Fetching project platform/external/unicode
+Fetching project platform/external/curl
+Fetching project platform/packages/apps/Launcher2
+Fetching project platform/libnativehelper
+Fetching project platform/frameworks/opt/inputconnectioncommon
+Fetching project platform/cts
+Fetching project platform/external/compiler-rt
+Fetching project platform/external/roboto-fonts
+Fetching project platform/frameworks/opt/datetimepicker
+Fetching project platform/prebuilts/maven_repo/android
+Fetching project platform/external/replicaisland
+Fetching project android_solution_carlife_usbmuxd
+Fetching project platform/build/blueprint
+Fetching project platform/external/kernel-headers
+Fetching project android_platform_packages_app_Settings
+Fetching project platform/external/boringssl
+Fetching project platform/hardware/qcom/keymaster
+Fetching project bl1_s5p4418
+Fetching project platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8
+Fetching project platform/packages/apps/KeyChain
+Fetching project android_platform_external_fuse
+Fetching project platform/packages/apps/Gallery
+Fetching project platform/external/dlmalloc
+Fetching project android_platform_frameworks_av
+Fetching project platform/external/donuts
+Fetching project platform/external/tremolo
+Fetching project platform/external/flac
+**************************************************
+   Android Nougat Source copy to other projects   
+**************************************************
+Triggering a new build of [8mha:////4Ej/EGW0gx5OllkHGseICY3j7/LYws/XagBHu09Uz399AAAAsR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZV/az8JP3EvJSi/MyU+ILM1Pjy1NTsnMr44vzSouTU+OLUktICfQAkJoRl2gAAAA==[0mandroid_pie_weekly_source_setup
+Finished: SUCCESS

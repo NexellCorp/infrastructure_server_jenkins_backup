@@ -1,9 +1,10 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Yocto Sumo s5p6818 daily build &#xd;
+  <description>Yocto Sumo S5p4418 daily build&#xd;
 &#xd;
-매주 화, 목일 s5p4418 daily build 실행 후&#xd;
+매주 화, 목 s5p4418 -&gt; s5p6818 -&gt; daudio-ref 순서로 진행됨.&#xd;
+s5p6818 build 직후 실행됨.&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
   <properties>
@@ -35,31 +36,15 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-repo sync
+echo &quot;*****************************************&quot;
+echo &quot;   Yocto Sumo daudio-ref qt (s5p4418)    &quot;
+echo &quot;*****************************************&quot;
+./tools/build.sh s5p4418-daudio-ref qt
 
-echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 tiny          &quot;
-echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref tiny -c
-
-
-echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 qt            &quot;
-echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref qt -c
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.BuildTrigger>
-      <childProjects>yocto_sumo_daudio-ref_daily</childProjects>
-      <threshold>
-        <name>FAILURE</name>
-        <ordinal>2</ordinal>
-        <color>RED</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </hudson.tasks.BuildTrigger>
     <hudson.tasks.Mailer plugin="mailer@1.22">
       <recipients>jenkins@nexell.co.kr</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>

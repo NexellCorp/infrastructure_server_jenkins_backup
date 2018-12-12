@@ -1,0 +1,68 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Android_pie_source_setup&#xd;
+&#xd;
+android_nougat_source_setup 후 연속으로 trigger됨.&#xd;
+&#xd;
+workspace 하위 디렉토리의 android_nougat_* 의 모든 dir 삭제 후 새로 받은 source를 copy&#xd;
+&#xd;
+&lt;&lt; project list &gt;&gt;&#xd;
+android_pie_s5p4418_weekly --&gt; convergence svmc&#xd;
+android_pie_s5p6818_weekly --&gt; avn ref</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+touch make-time-`date +%Y%m%d_%H%M`
+
+echo &quot;************************************&quot;
+echo &quot;   Android Pie Source CleanUp       &quot;
+echo &quot;************************************&quot;
+rm -rf $WORKSPACE/../android_pie_s5p4418_weekly
+rm -rf $WORKSPACE/../android_pie_s5p6818_weekly
+
+
+echo &quot;************************************&quot;
+echo &quot;   Android Pie Source Download      &quot;
+echo &quot;************************************&quot;
+repo init -u ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/android_manifest -b pie-dev --depth=10
+sed -i &apos;s/{USER_ID}/nxJenkins/g&apos; .repo/manifests/remote_nexell_ssh.xml
+repo sync
+
+
+
+echo &quot;**************************************************&quot;
+echo &quot;   Android Pie Source copy to other projects      &quot;
+echo &quot;**************************************************&quot;
+cp -a $WORKSPACE $WORKSPACE/../android_pie_s5p4418_weekly
+cp -a $WORKSPACE $WORKSPACE/../android_pie_s5p6818_weekly
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.22">
+      <recipients>jenkins@nexell.co.kr</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.36">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+      <disableDeferredWipeout>false</disableDeferredWipeout>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.10"/>
+  </buildWrappers>
+</project>

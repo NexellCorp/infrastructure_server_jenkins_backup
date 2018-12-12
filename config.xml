@@ -66,8 +66,8 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
-        <string>android_nougat</string>
-        <string>android_pie</string>
+        <string>android_nougat_source_setup</string>
+        <string>android_pie_source_setup</string>
         <string>test</string>
       </jobNames>
       <jobFilters/>

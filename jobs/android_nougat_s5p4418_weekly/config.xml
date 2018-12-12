@@ -1,15 +1,15 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Yocto Sumo s5p6818 daily build &#xd;
+  <description>Android Nougat s5p4418 weekly build&#xd;
 &#xd;
-매주 화, 목일 s5p4418 daily build 실행 후&#xd;
+매주 토 05:00 trigger됨.&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
-        <daysToKeep>5</daysToKeep>
+        <daysToKeep>10</daysToKeep>
         <numToKeep>3</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
@@ -21,38 +21,36 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>TZ=Asia/Seoul
+H(0-1) 05 * * 6</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
       <command>#!/bin/bash
 
-echo &quot;***************************************&quot;
-echo &quot;   Jenkins - Yocto environment setup   &quot;
-echo &quot;***************************************&quot;
+echo &quot;*****************************************&quot;
+echo &quot;   Jenkins - Android environment setup   &quot;
+echo &quot;*****************************************&quot;
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+export USER=nxJenkins
 
-repo sync
-
-echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 tiny          &quot;
-echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref tiny -c
-
-
-echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 qt            &quot;
-echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref qt -c
+echo &quot;*************************************&quot;
+echo &quot;   Android nougat s5p4418 navi_ref   &quot;
+echo &quot;*************************************&quot;
+./device/nexell/navi_ref/build.sh -d result-navi
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
     <hudson.tasks.BuildTrigger>
-      <childProjects>yocto_sumo_daudio-ref_daily</childProjects>
+      <childProjects>android_nougat_s5p6818_weekly</childProjects>
       <threshold>
         <name>FAILURE</name>
         <ordinal>2</ordinal>

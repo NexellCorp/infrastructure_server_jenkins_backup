@@ -3,10 +3,19 @@
   <actions/>
   <description>Yocto Sumo S5p6818 weekly build&#xd;
 &#xd;
-매주 일 09:00 trigger됨.&#xd;
+매주 일 10:00 trigger됨.&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>10</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+  </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
@@ -15,7 +24,7 @@
   <triggers>
     <hudson.triggers.TimerTrigger>
       <spec>TZ=Asia/Seoul
-H H(9-10) * * 7</spec>
+H(0-1) 10 * * 7</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>

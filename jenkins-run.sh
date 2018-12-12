@@ -7,3 +7,5 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 sudo service jenkins start
+
+#System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Seoul')

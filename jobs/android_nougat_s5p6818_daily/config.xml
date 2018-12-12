@@ -1,15 +1,15 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Yocto Sumo s5p6818 daily build &#xd;
+  <description>Android Nougat s5p6818 daily build&#xd;
 &#xd;
-매주 화, 목일 s5p4418 daily build 실행 후&#xd;
+s5p4418-navi-ref daily build 직후 trigger 됨.&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
-        <daysToKeep>5</daysToKeep>
+        <daysToKeep>10</daysToKeep>
         <numToKeep>3</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
@@ -27,39 +27,23 @@
     <hudson.tasks.Shell>
       <command>#!/bin/bash
 
-echo &quot;***************************************&quot;
-echo &quot;   Jenkins - Yocto environment setup   &quot;
-echo &quot;***************************************&quot;
+echo &quot;******************************************&quot;
+echo &quot;   Jenkins - Android environment setup    &quot;
+echo &quot;******************************************&quot;
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
-
-repo sync
-
-echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 tiny          &quot;
-echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref tiny -c
-
+export USER=nxJenkins
 
 echo &quot;************************************&quot;
-echo &quot;   Yocto Sumo s5p6818 qt            &quot;
+echo &quot;   Android nougat s5p6818 avn_ref   &quot;
 echo &quot;************************************&quot;
-./tools/build.sh s5p6818-avn-ref qt -c
+./device/nexell/avn_ref/build.sh -s s5p6818 -d result-avn
 </command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <hudson.tasks.BuildTrigger>
-      <childProjects>yocto_sumo_daudio-ref_daily</childProjects>
-      <threshold>
-        <name>FAILURE</name>
-        <ordinal>2</ordinal>
-        <color>RED</color>
-        <completeBuild>true</completeBuild>
-      </threshold>
-    </hudson.tasks.BuildTrigger>
     <hudson.tasks.Mailer plugin="mailer@1.22">
       <recipients>jenkins@nexell.co.kr</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>

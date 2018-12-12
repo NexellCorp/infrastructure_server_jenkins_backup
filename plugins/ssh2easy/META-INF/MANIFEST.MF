@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jerrycai
+Build-Jdk: 1.7.0_79
+Extension-Name: ssh2easy
+Specification-Title: This plugin allows you to ssh2 remote server to e
+ xecute linux commands , shell , sftp upload, downlaod etc
+Implementation-Title: ssh2easy
+Implementation-Version: 1.4
+Group-Id: org.jenkins-ci.plugins
+Short-Name: ssh2easy
+Long-Name: SSH2 Easy Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/SSH2Easy+Plugin
+Plugin-Version: 1.4
+Hudson-Version: 1.612
+Jenkins-Version: 1.612
+Plugin-Dependencies: matrix-auth:1.0.2
+Plugin-Developers: Jerry Cai:jerrycai:nwwh@qq.com
+

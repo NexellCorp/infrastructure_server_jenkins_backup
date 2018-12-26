@@ -50,6 +50,13 @@ cp -a $WORKSPACE $WORKSPACE/../android_pie_s5p6818_weekly
     </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.plugins.logparser.LogParserPublisher plugin="log-parser@2.0">
+      <unstableOnWarning>false</unstableOnWarning>
+      <failBuildOnError>true</failBuildOnError>
+      <showGraphs>true</showGraphs>
+      <parsingRulesPath>${JENKINS_HOME}/build_rule/build_android.rules</parsingRulesPath>
+      <useProjectRule>false</useProjectRule>
+    </hudson.plugins.logparser.LogParserPublisher>
     <hudson.tasks.Mailer plugin="mailer@1.22">
       <recipients>jenkins@nexell.co.kr</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>

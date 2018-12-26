@@ -3,22 +3,82 @@
   <disabledAdministrativeMonitors>
     <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
   </disabledAdministrativeMonitors>
-  <version>2.138.3</version>
+  <version>2.150.1</version>
   <installStateName>RUNNING</installStateName>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
-    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:nxJenkins</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:nxJenkins</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:nxJenkins</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:nxJenkins</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:nxJenkins</permission>
+    <permission>com.sonyericsson.hudson.plugins.gerrit.trigger.PluginImpl.ManualTrigger:nxJenkins</permission>
+    <permission>com.sonyericsson.hudson.plugins.gerrit.trigger.PluginImpl.ManualTrigger:suker</permission>
+    <permission>com.sonyericsson.hudson.plugins.gerrit.trigger.PluginImpl.Retrigger:nxJenkins</permission>
+    <permission>com.sonyericsson.hudson.plugins.gerrit.trigger.PluginImpl.Retrigger:nxJenkinsJobBuilder</permission>
+    <permission>com.sonyericsson.hudson.plugins.gerrit.trigger.PluginImpl.Retrigger:suker</permission>
+    <permission>hudson.model.Computer.Build:nxJenkins</permission>
+    <permission>hudson.model.Computer.Configure:nxJenkins</permission>
+    <permission>hudson.model.Computer.Connect:nxJenkins</permission>
+    <permission>hudson.model.Computer.Create:nxJenkins</permission>
+    <permission>hudson.model.Computer.Delete:nxJenkins</permission>
+    <permission>hudson.model.Computer.Disconnect:nxJenkins</permission>
+    <permission>hudson.model.Hudson.Administer:nxJenkins</permission>
+    <permission>hudson.model.Hudson.Read:anonymous</permission>
+    <permission>hudson.model.Hudson.Read:authenticated</permission>
+    <permission>hudson.model.Hudson.Read:nxJenkins</permission>
+    <permission>hudson.model.Hudson.Read:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Hudson.Read:suker</permission>
+    <permission>hudson.model.Item.Build:nxJenkins</permission>
+    <permission>hudson.model.Item.Build:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Item.Build:suker</permission>
+    <permission>hudson.model.Item.Cancel:nxJenkins</permission>
+    <permission>hudson.model.Item.Cancel:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Item.Cancel:suker</permission>
+    <permission>hudson.model.Item.Configure:nxJenkins</permission>
+    <permission>hudson.model.Item.Configure:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Item.Configure:suker</permission>
+    <permission>hudson.model.Item.Create:nxJenkins</permission>
+    <permission>hudson.model.Item.Create:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Item.Create:suker</permission>
+    <permission>hudson.model.Item.Delete:nxJenkins</permission>
+    <permission>hudson.model.Item.Discover:nxJenkins</permission>
+    <permission>hudson.model.Item.Move:nxJenkins</permission>
+    <permission>hudson.model.Item.Read:nxJenkins</permission>
+    <permission>hudson.model.Item.Read:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Item.Read:suker</permission>
+    <permission>hudson.model.Item.Workspace:nxJenkins</permission>
+    <permission>hudson.model.Item.Workspace:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.Run.Delete:nxJenkins</permission>
+    <permission>hudson.model.Run.Replay:nxJenkins</permission>
+    <permission>hudson.model.Run.Replay:suker</permission>
+    <permission>hudson.model.Run.Update:nxJenkins</permission>
+    <permission>hudson.model.Run.Update:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.View.Configure:nxJenkins</permission>
+    <permission>hudson.model.View.Configure:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.View.Configure:suker</permission>
+    <permission>hudson.model.View.Create:nxJenkins</permission>
+    <permission>hudson.model.View.Create:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.View.Create:suker</permission>
+    <permission>hudson.model.View.Delete:nxJenkins</permission>
+    <permission>hudson.model.View.Read:nxJenkins</permission>
+    <permission>hudson.model.View.Read:nxJenkinsJobBuilder</permission>
+    <permission>hudson.model.View.Read:suker</permission>
+    <permission>hudson.scm.SCM.Tag:nxJenkins</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Reserve:nxJenkins</permission>
+    <permission>org.jenkins.plugins.lockableresources.LockableResourcesManager.Unlock:nxJenkins</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
-    <disableSignup>true</disableSignup>
+    <disableSignup>false</disableSignup>
     <enableCaptcha>false</enableCaptcha>
   </securityRealm>
   <disableRememberMe>false</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -66,9 +126,18 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
-        <string>android_nougat</string>
-        <string>android_pie</string>
-        <string>test</string>
+        <string>android_nougat_daily_source_setup</string>
+        <string>android_nougat_s5p4418_daily</string>
+        <string>android_nougat_s5p4418_weekly</string>
+        <string>android_nougat_s5p6818_daily</string>
+        <string>android_nougat_s5p6818_weekly</string>
+        <string>android_nougat_weekly_source_setup</string>
+        <string>android_pie_daily_source_setup</string>
+        <string>android_pie_s5p4418_daily</string>
+        <string>android_pie_s5p4418_weekly</string>
+        <string>android_pie_s5p6818_daily</string>
+        <string>android_pie_s5p6818_weekly</string>
+        <string>android_pie_weekly_source_setup</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -91,12 +160,14 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
+        <string>yocto_sumo_daily_source_setup</string>
+        <string>yocto_sumo_daudio-ref_daily</string>
         <string>yocto_sumo_daudio-ref_weekly</string>
         <string>yocto_sumo_s5p4418_daily</string>
         <string>yocto_sumo_s5p4418_weekly</string>
         <string>yocto_sumo_s5p6818_daily</string>
         <string>yocto_sumo_s5p6818_weekly</string>
-        <string>yocto_sumo_source_setup</string>
+        <string>yocto_sumo_weekly_source_setup</string>
       </jobNames>
       <jobFilters/>
       <columns>
@@ -112,6 +183,62 @@
       </columns>
       <recurse>false</recurse>
     </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>test</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>test3</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
+        <org.jenkinsci.plugins.schedulebuild.ScheduleBuildButtonColumn plugin="schedule-build@0.5.1"/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
+    <hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.10">
+      <owner class="hudson" reference="../../.."/>
+      <name>abc</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.3.2"/>
+        <org.jenkinsci.plugins.schedulebuild.ScheduleBuildButtonColumn plugin="schedule-build@0.5.1"/>
+      </columns>
+      <recurse>false</recurse>
+      <useCssStyle>false</useCssStyle>
+      <includeStdJobList>false</includeStdJobList>
+      <hideJenkinsPanels>false</hideJenkinsPanels>
+      <leftPortletWidth>50%</leftPortletWidth>
+      <rightPortletWidth>50%</rightPortletWidth>
+      <leftPortlets/>
+      <rightPortlets/>
+      <topPortlets/>
+      <bottomPortlets/>
+    </hudson.plugins.view.dashboard.Dashboard>
   </views>
   <primaryView>all</primaryView>
   <slaveAgentPort>-1</slaveAgentPort>

@@ -1,0 +1,37 @@
+ok /not really/
+
+error /error (LNK|C)[\d*]/
+error /general error/
+error /ERROR :/
+error /FAILED:/
+
+warning /warning C[\d*]/
+warning /warning LNK(?!(4199)|(4099))/
+warning /(?i)warning:/
+warning /error: 404 Not Found/
+
+info /not really/
+
+
+#google test error /\[  FAILED  \]/
+
+# list keywords or regex for ERRORS:
+#error /(?i)error/
+#error / (?i)error/
+#error /(?i)error /
+#error / (?i)error /
+
+#error /(?i)error:/
+#error / (?i)error:/
+#error /(?i)error: /
+#error / (?i)error: /
+
+#error /Unknown database/
+#error /Connect failed/
+#error /(?i)undefined/
+#error /Call Stack:/
+
+# list keywords or regex for WARNINGS:
+#warning /(?i)^warning/
+#warning /(?i)warning/
+#warning /(?i)warning:/

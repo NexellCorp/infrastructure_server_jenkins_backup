@@ -1,0 +1,18 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>nxjenkinsjobbuilder</string>
+      <string>nxJenkinsJobBu_2623559634817679489</string>
+    </entry>
+    <entry>
+      <string>suker</string>
+      <string>suker_8179955242735938952</string>
+    </entry>
+    <entry>
+      <string>nxjenkins</string>
+      <string>nxjenkins_6949172018185079493</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

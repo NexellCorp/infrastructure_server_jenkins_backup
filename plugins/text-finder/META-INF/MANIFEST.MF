@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.7.0_51
+Extension-Name: text-finder
+Implementation-Title: text-finder
+Implementation-Version: 1.10
+Group-Id: org.jenkins-ci.plugins
+Short-Name: text-finder
+Long-Name: Jenkins TextFinder plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Text-finder+Plugin
+Plugin-Version: 1.10
+Hudson-Version: 1.480
+Jenkins-Version: 1.480
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Santiago Pericas-Geertse
+ n::
+

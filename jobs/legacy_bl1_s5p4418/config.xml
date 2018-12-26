@@ -83,7 +83,9 @@ git checkout -B jenkins-build origin/nexell
 echo &quot;========================================&quot;
 echo ${GERRIT_PATCHSET_REVISION}
 echo &quot;========================================&quot;
-${JENKINS_HOME}/scripts/getPatchSetLatest.sh -p NexellCorp/bl1_s5p4418 -b nexell -c ${GERRIT_PATCHSET_REVISION}
+if [ &quot;${GERRIT_PATCHSET_REVISION}a&quot; != &quot;a&quot; ]; then
+	${JENKINS_HOME}/scripts/getPatchSetLatest.sh -p NexellCorp/bl1_s5p4418 -b nexell -c ${GERRIT_PATCHSET_REVISION}
+fi   
 </command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
@@ -101,14 +103,38 @@ echo &quot;========================================&quot;
     <hudson.tasks.Shell>
       <command>#!/bin/sh
 echo &quot;========================================&quot;
-echo &quot; nxp4330-navi-ref build start &quot;
+echo &quot; bl1 build start for nxp4330 navi_ref board&quot;
 echo &quot;========================================&quot;
-
-#export TOOLCHAIN_ARM_EABI=&quot;/opt/crosstools/arm-eabi-4.8/bin/&quot;
-#export PATH=$PATH:${TOOLCHAIN_ARM_EABI}
 
 make clean
 make BOARD=&quot;navi&quot; CHIPNAME=&quot;NXP4330&quot; ARM_SECURE=&quot;n&quot; KERNEL_VER=&quot;4&quot;</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/sh
+echo &quot;========================================&quot;
+echo &quot; bl1 build start for nxp4330 convergence board&quot;
+echo &quot;========================================&quot;
+
+make clean
+make BOARD=&quot;con_svma&quot; CHIPNAME=&quot;NXP4330&quot; ARM_SECURE=&quot;n&quot; KERNEL_VER=&quot;4&quot;</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/sh
+echo &quot;========================================&quot;
+echo &quot; bl1 build start for nxp4330 daudio board&quot;
+echo &quot;========================================&quot;
+
+make clean
+make BOARD=&quot;daudio&quot; CHIPNAME=&quot;NXP4330&quot; ARM_SECURE=&quot;n&quot; KERNEL_VER=&quot;4&quot;</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/sh
+echo &quot;========================================&quot;
+echo &quot; bl1 build start for nxp4330 convergence_daudio board&quot;
+echo &quot;========================================&quot;
+
+make clean
+make BOARD=&quot;convergence_daudio&quot; CHIPNAME=&quot;NXP4330&quot; ARM_SECURE=&quot;n&quot; KERNEL_VER=&quot;4&quot;</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
       <command>#!/bin/sh

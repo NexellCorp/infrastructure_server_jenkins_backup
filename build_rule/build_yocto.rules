@@ -5,6 +5,11 @@ error /general error/
 error /ERROR :/
 error /FAILED:/
 
+# LAVA test report
+error /FAIL/
+error /Fail!/
+error /Failed!/
+
 warning /warning C[\d*]/
 warning /warning LNK(?!(4199)|(4099))/
 warning /(?i)warning:/

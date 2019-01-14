@@ -1,0 +1,11 @@
+ok /not really/
+
+error /FAIL/
+
+warning /warning C[\d*]/
+warning /warning LNK(?!(4199)|(4099))/
+warning /(?i)warning:/
+warning /error: 404 Not Found/
+
+info /not really/
+

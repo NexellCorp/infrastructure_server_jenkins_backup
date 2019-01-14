@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?><project>
+  <actions/>
+  <description>&lt;!-- Managed by Jenkins Job Builder --&gt;</description>
+  <keepDependencies>false</keepDependencies>
+  <disabled>false</disabled>
+  <displayName>_squad_lava_reference</displayName>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <concurrentBuild>false</concurrentBuild>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <properties>
+    <hudson.security.AuthorizationMatrixProperty>
+      <permission>hudson.model.Item.Read:anonymous</permission>
+      <permission>hudson.model.Item.ExtendedRead:anonymous</permission>
+      <permission>hudson.model.Item.Workspace:anonymous</permission>
+    </hudson.security.AuthorizationMatrixProperty>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>5</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>LAVA_SERVER</name>
+          <description>https://192.168.1.20:9099</description>
+          <defaultValue>nexell.lava.server</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>QA_SERVER</name>
+          <description>Squad server</description>
+          <defaultValue>http://192.168.1.20:5000</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>QA_SERVER_TEAM</name>
+          <description>Team Name</description>
+          <defaultValue>nx-solution-team2</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>QA_SERVER_PROJECT</name>
+          <description>project name in Squad system</description>
+          <defaultValue>qemu-prj</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>QA_REPORTS_TOKEN</name>
+          <description>token of the nxJenkins in SQUAD system</description>
+          <defaultValue>0e9c0f8a4a272851557933c7a0f6e21607670c75</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DEVICE_TYPE</name>
+          <description/>
+          <defaultValue>qemu</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <triggers class="vector">
+    <hudson.triggers.TimerTrigger>
+      <spec>H(0-1) 22 * * 2,4</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+echo "***************************************"
+echo "   Some Test scheduling                "
+echo "***************************************"
+
+echo " my build start "
+echo " my build end "
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+echo "---------------------------------------"
+echo "   submit to SQUAD                     "
+echo "---------------------------------------"
+ret=`python ${WORKSPACE}/../_Jenkins_job_builder/configs/submit_for_testing.py \
+    --device-type ${DEVICE_TYPE} \
+    --build-number ${JOB_NAME}-${BUILD_NUMBER} \
+    --lava-server ${LAVA_SERVER} \
+    --qa-server ${QA_SERVER} \
+    --qa-server-team ${QA_SERVER_TEAM} \
+    --qa-server-project ${QA_SERVER_PROJECT} \
+    --qa-token ${QA_REPORTS_TOKEN} \
+    --test-plan ${WORKSPACE}/../_Jenkins_job_builder/reference/qemu/qemu-reference.yaml`
+
+echo "---------------------------------------"
+echo "   POST return value parsing           "
+echo "---------------------------------------"
+IFS=' ' read -ra ADDR &lt;&lt;&lt; "$ret"
+if [ "${ADDR[0]}" == "SUCCESS" ] ; then
+    echo "GOOD"
+    echo "api/testjobs/${ADDR[1]}"
+fi
+
+TESTJOBS="/api/testjobs/${ADDR[1]}/"
+echo "testjobs : ${TESTJOBS}"
+
+echo "--------------------------------"
+echo " LAVA submitted check "
+echo "--------------------------------"
+python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-submitted-check.py ${QA_SERVER}${TESTJOBS}
+
+echo "--------------------------------"
+echo " LAVA fethched check "
+echo "--------------------------------"
+python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-fetched-parser.py ${QA_SERVER}${TESTJOBS}
+
+echo "--------------------------------"
+echo " LAVA pass check "
+echo "--------------------------------"
+python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-pass-check.py ${QA_SERVER}${TESTJOBS}
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.logparser.LogParserPublisher plugin="log-parser">
+      <unstableOnWarning>false</unstableOnWarning>
+      <failBuildOnError>true</failBuildOnError>
+      <showGraphs>true</showGraphs>
+      <useProjectRule>false</useProjectRule>
+      <parsingRulesPath>${JENKINS_HOME}/build_rule/build_yocto.rules</parsingRulesPath>
+    </hudson.plugins.logparser.LogParserPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper/>
+    <org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+      <bindings>
+        <org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+          <variable>QA_REPORTS_TOKEN</variable>
+          <credentialsId>QA_REPORTS_TOKEN</credentialsId>
+        </org.jenkinsci.plugins.credentialsbinding.impl.StringBinding>
+      </bindings>
+    </org.jenkinsci.plugins.credentialsbinding.impl.SecretBuildWrapper>
+  </buildWrappers>
+</project>

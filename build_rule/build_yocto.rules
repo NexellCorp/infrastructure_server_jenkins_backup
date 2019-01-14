@@ -5,6 +5,11 @@ error /general error/
 error /ERROR :/
 error /FAILED:/
 
+# LAVA test report
+error /LAVA Submitted Fail!/
+error /LAVA Fetched Fail!/
+error /LAVA Test Fail!/
+
 warning /warning C[\d*]/
 warning /warning LNK(?!(4199)|(4099))/
 warning /(?i)warning:/
@@ -12,8 +17,7 @@ warning /error: 404 Not Found/
 
 info /not really/
 
-
-#google test error /\[  FAILED  \]/
+# google test error /\[  FAILED  \]/
 
 # list keywords or regex for ERRORS:
 #error /(?i)error/

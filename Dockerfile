@@ -98,4 +98,10 @@ RUN apt-get update && apt-get install -y zip libxml2-utils
 RUN pip install jenkins-job-builder
 RUN pip install ruamel_yaml
 
+# Squad report parsing
+RUN apt-get update && apt-get install -y libcurl4-gnutls-dev librtmp-dev
+RUN pip install pycurl
+
+RUN echo "jenkins ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+
 USER jenkins

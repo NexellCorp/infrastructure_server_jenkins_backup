@@ -7,7 +7,8 @@
 workspace 하위 디렉토리의 yocto_sumo_* 의 모든 dir 삭제 후 새로 받은 source를 copy&#xd;
 &#xd;
 &lt;&lt; project list &gt;&gt;&#xd;
-yocto_sumo_s5p4418_daily&#xd;
+#yocto_sumo_s5p4418_daily&#xd;
+auto_gen_daily_s5p4418_yocto_sumo_navi-ref_testsuite&#xd;
 yocto_sumo_s5p6818_daily&#xd;
 yocto_sumo_daudio-ref_daily&#xd;
 </description>

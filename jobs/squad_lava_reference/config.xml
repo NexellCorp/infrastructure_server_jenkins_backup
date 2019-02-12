@@ -27,7 +27,7 @@
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
           <name>LAVA_SERVER</name>
-          <description>https://192.168.1.20:9099</description>
+          <description>https://192.168.1.20</description>
           <defaultValue>nexell.lava.server</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>

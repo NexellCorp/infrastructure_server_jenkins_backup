@@ -3,7 +3,7 @@
   <actions/>
   <description>Android Pie s5p6818 daily build&#xd;
 &#xd;
-s5p6818-con-svma daily build 직후 trigger 됨&#xd;
+android_pie_s5p4418_daily build 직후 trigger 됨&#xd;
 </description>
   <keepDependencies>false</keepDependencies>
   <properties>
@@ -18,7 +18,7 @@ s5p6818-con-svma daily build 직후 trigger 됨&#xd;
   </properties>
   <scm class="hudson.scm.NullSCM"/>
   <canRoam>true</canRoam>
-  <disabled>false</disabled>
+  <disabled>true</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>

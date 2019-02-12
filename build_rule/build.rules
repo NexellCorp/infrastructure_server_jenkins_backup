@@ -14,4 +14,43 @@ error /FATAL_ERROR :/
 error /error:/
 error /FAILED:/
 
+#repo sync error
+error /fatal: internal server error/
+error /error: Exited sync due to fetch errors/
 
+#build time error
+error /ERROR :/
+error /FAILED:/
+
+# LAVA test report
+error /LAVA Submitted Fail!/
+error /LAVA Fetched Fail!/
+error /LAVA Test Fail!/
+
+warning /warning C[\d*]/
+warning /warning LNK(?!(4199)|(4099))/
+warning /(?i)warning:/
+warning /error: 404 Not Found/
+
+info /not really/
+
+# list keywords or regex for ERRORS:
+#error /(?i)error/
+#error / (?i)error/
+#error /(?i)error /
+#error / (?i)error /
+
+#error /(?i)error:/
+#error / (?i)error:/
+#error /(?i)error: /
+#error / (?i)error: /
+
+#error /Unknown database/
+#error /Connect failed/
+#error /(?i)undefined/
+#error /Call Stack:/
+
+# list keywords or regex for WARNINGS:
+#warning /(?i)^warning/
+#warning /(?i)warning/
+#warning /(?i)warning:/

@@ -98,6 +98,7 @@ echo &quot;-------------------------------&quot;
 
 yamllist=$(ls -trh ${WORKSPACE}/reference/qemu/jenkins-job*.yaml \
                    ${WORKSPACE}/s5p4418/yocto/sumo/daily/jenkins-job*.yaml \
+                   ${WORKSPACE}/s5p4418/yocto/sumo/weekly/jenkins-job*.yaml \
           )
 
 echo &quot;---------------------------------&quot;

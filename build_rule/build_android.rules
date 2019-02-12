@@ -2,6 +2,7 @@ ok /not really/
 
 #repo sync error
 error /fatal: internal server error/
+error /error: Exited sync due to fetch errors/
 
 #build time error
 error /error (LNK|C)[\d*]/

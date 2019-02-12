@@ -27,7 +27,7 @@
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
           <name>LAVA_SERVER</name>
-          <description>https://192.168.1.20:9099</description>
+          <description>https://192.168.1.20</description>
           <defaultValue>nexell.lava.server</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
@@ -109,20 +109,10 @@ fi
 TESTJOBS="/api/testjobs/${ADDR[1]}/"
 echo "testjobs : ${TESTJOBS}"
 
-echo "--------------------------------"
-echo " LAVA submitted check "
-echo "--------------------------------"
-python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-submitted-check.py ${QA_SERVER}${TESTJOBS}
-
-echo "--------------------------------"
-echo " LAVA fethched check "
-echo "--------------------------------"
-python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-fetched-parser.py ${QA_SERVER}${TESTJOBS}
-
-echo "--------------------------------"
-echo " LAVA pass check "
-echo "--------------------------------"
-python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad-lava-pass-check.py ${QA_SERVER}${TESTJOBS}
+echo "---------------------------------------"
+echo " LAVA submitted &amp; fetched &amp; pass check "
+echo "---------------------------------------"
+python ${WORKSPACE}/../_Jenkins_job_builder/configs/squad_lava_check.py ${QA_SERVER}${TESTJOBS}
 </command>
     </hudson.tasks.Shell>
   </builders>

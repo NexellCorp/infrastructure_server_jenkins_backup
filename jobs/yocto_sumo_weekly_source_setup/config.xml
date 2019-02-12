@@ -31,9 +31,9 @@ H(0-1) 21 * * 6</spec>
 echo &quot;************************************&quot;
 echo &quot;   Yocto Sumo Source CleanUp        &quot;
 echo &quot;************************************&quot;
-rm -rf $WORKSPACE/../yocto_sumo_s5p4418_weekly
-rm -rf $WORKSPACE/../yocto_sumo_s5p6818_weekly
-rm -rf $WORKSPACE/../yocto_sumo_daudio-ref_weekly
+sudo rm -rf $WORKSPACE/../yocto_sumo_s5p4418_weekly
+sudo rm -rf $WORKSPACE/../yocto_sumo_s5p6818_weekly
+sudo rm -rf $WORKSPACE/../yocto_sumo_daudio-ref_weekly
 
 
 

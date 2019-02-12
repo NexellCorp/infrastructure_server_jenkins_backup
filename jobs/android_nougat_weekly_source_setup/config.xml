@@ -44,7 +44,8 @@ echo &quot;************************************&quot;
 repo init -u ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/android_manifest -b nougat-dev --depth=10
 sed -i &apos;s/{USER_ID}/nxJenkins/g&apos; .repo/manifests/remote_nexell_ssh.xml
 repo sync
-
+sleep 30
+repo sync
 
 
 echo &quot;**************************************************&quot;
@@ -65,6 +66,13 @@ cp -a $WORKSPACE $WORKSPACE/../android_nougat_s5p6818_weekly
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
+    <hudson.plugins.logparser.LogParserPublisher plugin="log-parser@2.0">
+      <unstableOnWarning>false</unstableOnWarning>
+      <failBuildOnError>false</failBuildOnError>
+      <showGraphs>false</showGraphs>
+      <parsingRulesPath>/var/lib/jenkins/build_rule/build_android.rules</parsingRulesPath>
+      <useProjectRule>false</useProjectRule>
+    </hudson.plugins.logparser.LogParserPublisher>
     <hudson.tasks.Mailer plugin="mailer@1.22">
       <recipients>jenkins@nexell.co.kr</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>

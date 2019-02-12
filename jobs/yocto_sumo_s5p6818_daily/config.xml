@@ -9,8 +9,8 @@
   <properties>
     <jenkins.model.BuildDiscarderProperty>
       <strategy class="hudson.tasks.LogRotator">
-        <daysToKeep>5</daysToKeep>
-        <numToKeep>3</numToKeep>
+        <daysToKeep>31</daysToKeep>
+        <numToKeep>10</numToKeep>
         <artifactDaysToKeep>-1</artifactDaysToKeep>
         <artifactNumToKeep>-1</artifactNumToKeep>
       </strategy>
@@ -49,8 +49,98 @@ echo &quot;************************************&quot;
 ./tools/build.sh s5p6818-avn-ref qt -c
 </command>
     </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+cd yocto/out
+
+echo &quot;************************************&quot;
+echo &quot; clean old dirs                     &quot;
+echo &quot;************************************&quot;
+rm -rf result-*-tiny*-daily.tar.gz
+rm -rf result-*-tiny*-daily
+rm -rf result-*-qt*-daily.tar.gz
+rm -rf result-*-qt*-daily
+
+echo &quot;************************************&quot;
+echo &quot; unnecessary .ext4 file remove      &quot;
+echo &quot;************************************&quot;
+rm -rf result-s5p6818-avn-ref-tiny/*.ext4
+rm -rf result-s5p6818-avn-qt/*.ext4
+
+echo &quot;************************************&quot;
+echo &quot; BUILD-INFO.txt copy to result dir  &quot;
+echo &quot;************************************&quot;
+cp ${JENKINS_HOME}/snapshot_build_info/BUILD-INFO.txt result-s5p6818-avn-ref-tiny/
+cp ${JENKINS_HOME}/snapshot_build_info/BUILD-INFO.txt result-s5p6818-avn-ref-qt/
+
+echo &quot;************************************&quot;
+echo &quot; Compress result dirs               &quot;
+echo &quot;************************************&quot;
+tar cvzf result-s5p6818-avn-ref-tiny.tar.gz   result-s5p6818-avn-ref-tiny/*
+tar cvzf result-s5p6818-avn-ref-qt.tar.gz     result-s5p6818-avn-ref-qt/*
+
+echo &quot;************************************&quot;
+echo &quot; Rename tarballs                    &quot;
+echo &quot;************************************&quot;
+mv result-s5p6818-avn-ref-tiny.tar.gz  result-s5p6818-yocto-sumo-tiny-avn-ref-`date +%Y%m%d`-daily.tar.gz
+mv result-s5p6818-avn-ref-qt.tar.gz    result-s5p6818-yocto-sumo-qt-avn-ref-`date +%Y%m%d`-daily.tar.gz
+
+echo &quot;************************************&quot;
+echo &quot; Rename result dirs                 &quot;
+echo &quot;************************************&quot;
+mv result-s5p6818-avn-ref-tiny         result-s5p6818-yocto-sumo-tiny-avn-ref-`date +%Y%m%d`-daily
+mv result-s5p6818-avn-ref-qt           result-s5p6818-yocto-sumo-qt-avn-ref-`date +%Y%m%d`-daily</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers>
+    <hudson.plugins.logparser.LogParserPublisher plugin="log-parser@2.0">
+      <unstableOnWarning>false</unstableOnWarning>
+      <failBuildOnError>true</failBuildOnError>
+      <showGraphs>true</showGraphs>
+      <parsingRulesPath>/var/lib/jenkins/build_rule/build_yocto.rules</parsingRulesPath>
+      <useProjectRule>false</useProjectRule>
+    </hudson.plugins.logparser.LogParserPublisher>
+    <jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin plugin="publish-over-ssh@1.20.1">
+      <consolePrefix>SSH: </consolePrefix>
+      <delegate plugin="publish-over@0.22">
+        <publishers>
+          <jenkins.plugins.publish__over__ssh.BapSshPublisher plugin="publish-over-ssh@1.20.1">
+            <configName>nexell-snapshot</configName>
+            <verbose>false</verbose>
+            <transfers>
+              <jenkins.plugins.publish__over__ssh.BapSshTransfer>
+                <remoteDirectory>s5p6818/yocto/sumo/daily</remoteDirectory>
+                <sourceFiles>yocto/out/result-*/**</sourceFiles>
+                <excludes></excludes>
+                <removePrefix>yocto/out</removePrefix>
+                <remoteDirectorySDF>false</remoteDirectorySDF>
+                <flatten>false</flatten>
+                <cleanRemote>false</cleanRemote>
+                <noDefaultExcludes>false</noDefaultExcludes>
+                <makeEmptyDirs>false</makeEmptyDirs>
+                <patternSeparator>[, ]+</patternSeparator>
+                <execCommand></execCommand>
+                <execTimeout>120000</execTimeout>
+                <usePty>false</usePty>
+                <useAgentForwarding>false</useAgentForwarding>
+              </jenkins.plugins.publish__over__ssh.BapSshTransfer>
+            </transfers>
+            <useWorkspaceInPromotion>false</useWorkspaceInPromotion>
+            <usePromotionTimestamp>false</usePromotionTimestamp>
+          </jenkins.plugins.publish__over__ssh.BapSshPublisher>
+        </publishers>
+        <continueOnError>false</continueOnError>
+        <failOnError>false</failOnError>
+        <alwaysPublishFromMaster>false</alwaysPublishFromMaster>
+        <hostConfigurationAccess class="jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin" reference="../.."/>
+      </delegate>
+    </jenkins.plugins.publish__over__ssh.BapSshPublisherPlugin>
+    <hudson.tasks.Mailer plugin="mailer@1.22">
+      <recipients>jenkins@nexell.co.kr</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
     <hudson.tasks.BuildTrigger>
       <childProjects>yocto_sumo_daudio-ref_daily</childProjects>
       <threshold>
@@ -60,11 +150,6 @@ echo &quot;************************************&quot;
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
-    <hudson.tasks.Mailer plugin="mailer@1.22">
-      <recipients>jenkins@nexell.co.kr</recipients>
-      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
-      <sendToIndividuals>false</sendToIndividuals>
-    </hudson.tasks.Mailer>
   </publishers>
   <buildWrappers>
     <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.10"/>

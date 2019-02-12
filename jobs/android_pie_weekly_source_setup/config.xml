@@ -38,7 +38,8 @@ echo &quot;************************************&quot;
 repo init -u ssh://nxJenkins@review.gerrithub.io:29418/NexellCorp/android_manifest -b pie-dev --depth=10
 sed -i &apos;s/{USER_ID}/nxJenkins/g&apos; .repo/manifests/remote_nexell_ssh.xml
 repo sync
-
+sleep 30
+repo sync
 
 
 echo &quot;**************************************************&quot;
@@ -54,7 +55,7 @@ cp -a $WORKSPACE $WORKSPACE/../android_pie_s5p6818_weekly
       <unstableOnWarning>false</unstableOnWarning>
       <failBuildOnError>true</failBuildOnError>
       <showGraphs>true</showGraphs>
-      <parsingRulesPath>${JENKINS_HOME}/build_rule/build_android.rules</parsingRulesPath>
+      <parsingRulesPath>/var/lib/jenkins/build_rule/build_android.rules</parsingRulesPath>
       <useProjectRule>false</useProjectRule>
     </hudson.plugins.logparser.LogParserPublisher>
     <hudson.tasks.Mailer plugin="mailer@1.22">
